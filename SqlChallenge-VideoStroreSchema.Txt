@@ -1,0 +1,22 @@
+Movie
+-> Movieno,Title,categoryid,formatid , price
+categoryMaster
+-> id , name
+FormatMaster
+-> id , name 
+member type
+-> id , name
+member
+-> id , name , member type , favcategory ={category id}
+dependent
+-> id , memberid , name
+ Rentedby type 
+-> id , name ={eg = dependent or a member}
+rent details
+-> id , rented by type , retedby id ,movie id , rentaltimes id , Amount =>{from payment details}
+rental times
+-> id , rental date , return date 
+payment type 
+-> id , type
+payment details 
+-> payment id , total price => {calculated based on movie } , payment type id .
