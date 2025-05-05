@@ -12,11 +12,15 @@ dependent
 -> id , memberid , name
  Rentedby type 
 -> id , name ={eg = dependent or a member}
+status
+-> id , type
 rent details
--> id , rented by type , retedby id ,movie id , rentaltimes id , Amount =>{from payment details}
+-> id , rented by type , retedby id ,movie id , rentaltimes id , Amount =>{from payment details} , status 
 rental times
 -> id , rental date , return date 
 payment type 
 -> id , type
 payment details 
 -> payment id , total price => {calculated based on movie } , payment type id .
+penalty 
+->  rent details id , penalty amount , status
