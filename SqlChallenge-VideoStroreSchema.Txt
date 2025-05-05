@@ -13,14 +13,14 @@ dependent
  Rentedby type 
 -> id , name ={eg = dependent or a member}
 status
--> id , type
+-> id , type eg={returned , not retruned within duration  so penalty pendind etc}
 rent details
--> id , rented by type , retedby id ,movie id , rentaltimes id , Amount =>{from payment details} , status 
+-> id , rented by type , retedby id  = { dependent id or member id },movie id , rentaltimes id , Amount =>{from payment details} , status 
 rental times
 -> id , rental date , return date 
 payment type 
--> id , type
+-> id , type ={ card , cash , upi }
 payment details 
 -> payment id , total price => {calculated based on movie } , payment type id .
 penalty 
-->  rent details id , penalty amount , status
+->  rent details id , penalty amount , status 
