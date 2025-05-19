@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/7.rotation/rotation.csproj": {}
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/7.rotation/rotation.csproj": {}
   },
   "projects": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/7.rotation/rotation.csproj": {
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/7.rotation/rotation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gowtham/Desktop/untitled folder/19-may-2025/7.rotation/rotation.csproj",
+        "projectUniqueName": "/Users/gowtham/Desktop/Genspark/19-may-2025/7.rotation/rotation.csproj",
         "projectName": "rotation",
-        "projectPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/7.rotation/rotation.csproj",
+        "projectPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/7.rotation/rotation.csproj",
         "packagesPath": "/Users/gowtham/.nuget/packages/",
-        "outputPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/7.rotation/obj/",
+        "outputPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/7.rotation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gowtham/.nuget/NuGet/NuGet.Config"

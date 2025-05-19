@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("11.validsoduku")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fa1226c96dc57ad5debbcb8ab8d9600939b8e05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9730221a29f5c046498fda8e559c73aa7ed0ed87")]
 [assembly: System.Reflection.AssemblyProductAttribute("11.validsoduku")]
 [assembly: System.Reflection.AssemblyTitleAttribute("11.validsoduku")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

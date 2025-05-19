@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/8.mergeArray/mergeArray.csproj": {}
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/8.mergeArray/mergeArray.csproj": {}
   },
   "projects": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/8.mergeArray/mergeArray.csproj": {
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/8.mergeArray/mergeArray.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gowtham/Desktop/untitled folder/19-may-2025/8.mergeArray/mergeArray.csproj",
+        "projectUniqueName": "/Users/gowtham/Desktop/Genspark/19-may-2025/8.mergeArray/mergeArray.csproj",
         "projectName": "mergeArray",
-        "projectPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/8.mergeArray/mergeArray.csproj",
+        "projectPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/8.mergeArray/mergeArray.csproj",
         "packagesPath": "/Users/gowtham/.nuget/packages/",
-        "outputPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/8.mergeArray/obj/",
+        "outputPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/8.mergeArray/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gowtham/.nuget/NuGet/NuGet.Config"

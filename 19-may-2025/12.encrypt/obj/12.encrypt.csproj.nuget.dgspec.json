@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/12.encrypt.csproj": {}
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/12.encrypt/12.encrypt.csproj": {}
   },
   "projects": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/12.encrypt.csproj": {
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/12.encrypt/12.encrypt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/12.encrypt.csproj",
+        "projectUniqueName": "/Users/gowtham/Desktop/Genspark/19-may-2025/12.encrypt/12.encrypt.csproj",
         "projectName": "12.encrypt",
-        "projectPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/12.encrypt.csproj",
+        "projectPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/12.encrypt/12.encrypt.csproj",
         "packagesPath": "/Users/gowtham/.nuget/packages/",
-        "outputPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/",
+        "outputPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/12.encrypt/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gowtham/.nuget/NuGet/NuGet.Config"

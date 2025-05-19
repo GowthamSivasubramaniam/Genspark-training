@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/5.divisiblity/divisiblity.csproj": {}
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/5.divisiblity/divisiblity.csproj": {}
   },
   "projects": {
-    "/Users/gowtham/Desktop/untitled folder/19-may-2025/5.divisiblity/divisiblity.csproj": {
+    "/Users/gowtham/Desktop/Genspark/19-may-2025/5.divisiblity/divisiblity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gowtham/Desktop/untitled folder/19-may-2025/5.divisiblity/divisiblity.csproj",
+        "projectUniqueName": "/Users/gowtham/Desktop/Genspark/19-may-2025/5.divisiblity/divisiblity.csproj",
         "projectName": "divisiblity",
-        "projectPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/5.divisiblity/divisiblity.csproj",
+        "projectPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/5.divisiblity/divisiblity.csproj",
         "packagesPath": "/Users/gowtham/.nuget/packages/",
-        "outputPath": "/Users/gowtham/Desktop/untitled folder/19-may-2025/5.divisiblity/obj/",
+        "outputPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/5.divisiblity/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gowtham/.nuget/NuGet/NuGet.Config"
