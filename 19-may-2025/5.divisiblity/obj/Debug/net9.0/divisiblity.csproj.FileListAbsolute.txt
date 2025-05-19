@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/untitled folder/divisiblity/bin/Debug/net9.0/divisiblity
+/Users/gowtham/Desktop/untitled folder/divisiblity/bin/Debug/net9.0/divisiblity.deps.json
+/Users/gowtham/Desktop/untitled folder/divisiblity/bin/Debug/net9.0/divisiblity.runtimeconfig.json
+/Users/gowtham/Desktop/untitled folder/divisiblity/bin/Debug/net9.0/divisiblity.dll
+/Users/gowtham/Desktop/untitled folder/divisiblity/bin/Debug/net9.0/divisiblity.pdb
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.AssemblyInfo.cs
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.sourcelink.json
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.dll
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/refint/divisiblity.dll
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.pdb
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/divisiblity.genruntimeconfig.cache
+/Users/gowtham/Desktop/untitled folder/divisiblity/obj/Debug/net9.0/ref/divisiblity.dll

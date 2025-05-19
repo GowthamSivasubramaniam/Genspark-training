@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.AssemblyInfo.cs
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.sourcelink.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/bin/Debug/net9.0/11.validsoduku
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/bin/Debug/net9.0/11.validsoduku.deps.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/bin/Debug/net9.0/11.validsoduku.runtimeconfig.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/bin/Debug/net9.0/11.validsoduku.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/bin/Debug/net9.0/11.validsoduku.pdb
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/refint/11.validsoduku.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.pdb
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/11.validsoduku.genruntimeconfig.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/11.validsudoku/obj/Debug/net9.0/ref/11.validsoduku.dll

@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.AssemblyInfo.cs
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.sourcelink.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/bin/Debug/net9.0/frequency
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/bin/Debug/net9.0/frequency.deps.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/bin/Debug/net9.0/frequency.runtimeconfig.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/bin/Debug/net9.0/frequency.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/bin/Debug/net9.0/frequency.pdb
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/refint/frequency.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.pdb
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/frequency.genruntimeconfig.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/frequency/obj/Debug/net9.0/ref/frequency.dll

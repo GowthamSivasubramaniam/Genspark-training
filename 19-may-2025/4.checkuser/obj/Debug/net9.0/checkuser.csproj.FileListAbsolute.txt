@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/untitled folder/checkuser/bin/Debug/net9.0/checkuser
+/Users/gowtham/Desktop/untitled folder/checkuser/bin/Debug/net9.0/checkuser.deps.json
+/Users/gowtham/Desktop/untitled folder/checkuser/bin/Debug/net9.0/checkuser.runtimeconfig.json
+/Users/gowtham/Desktop/untitled folder/checkuser/bin/Debug/net9.0/checkuser.dll
+/Users/gowtham/Desktop/untitled folder/checkuser/bin/Debug/net9.0/checkuser.pdb
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.AssemblyInfo.cs
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.sourcelink.json
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.dll
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/refint/checkuser.dll
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.pdb
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/checkuser.genruntimeconfig.cache
+/Users/gowtham/Desktop/untitled folder/checkuser/obj/Debug/net9.0/ref/checkuser.dll

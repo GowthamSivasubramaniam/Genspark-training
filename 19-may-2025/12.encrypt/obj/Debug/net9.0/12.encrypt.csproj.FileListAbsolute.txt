@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.AssemblyInfo.cs
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.sourcelink.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/bin/Debug/net9.0/12.encrypt
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/bin/Debug/net9.0/12.encrypt.deps.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/bin/Debug/net9.0/12.encrypt.runtimeconfig.json
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/bin/Debug/net9.0/12.encrypt.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/bin/Debug/net9.0/12.encrypt.pdb
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/refint/12.encrypt.dll
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.pdb
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/12.encrypt.genruntimeconfig.cache
+/Users/gowtham/Desktop/untitled folder/19-may-2025/12.encrypt/obj/Debug/net9.0/ref/12.encrypt.dll
