@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.sourcelink.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/bin/Debug/net9.0/2.Employee_Promotion_Tracking
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/bin/Debug/net9.0/2.Employee_Promotion_Tracking.deps.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/bin/Debug/net9.0/2.Employee_Promotion_Tracking.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/bin/Debug/net9.0/2.Employee_Promotion_Tracking.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/bin/Debug/net9.0/2.Employee_Promotion_Tracking.pdb
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/refint/2.Employee_Promotion_Tracking.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.pdb
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/2.Employee_Promotion_Tracking.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/2.Employee_Promotion_Tracking/obj/Debug/net9.0/ref/2.Employee_Promotion_Tracking.dll

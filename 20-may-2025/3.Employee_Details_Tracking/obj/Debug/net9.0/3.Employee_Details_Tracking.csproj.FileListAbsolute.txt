@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.sourcelink.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/bin/Debug/net9.0/3.Employee_Details_Tracking
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/bin/Debug/net9.0/3.Employee_Details_Tracking.deps.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/bin/Debug/net9.0/3.Employee_Details_Tracking.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/bin/Debug/net9.0/3.Employee_Details_Tracking.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/bin/Debug/net9.0/3.Employee_Details_Tracking.pdb
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/refint/3.Employee_Details_Tracking.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.pdb
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/3.Employee_Details_Tracking.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/3.Employee_Details_Tracking/obj/Debug/net9.0/ref/3.Employee_Details_Tracking.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "2.Employee_Promotion_Tracking/1.0.0": {
+        "runtime": {
+          "2.Employee_Promotion_Tracking.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "2.Employee_Promotion_Tracking/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

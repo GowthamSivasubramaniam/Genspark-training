@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.sourcelink.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/bin/Debug/net9.0/1.instagram
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/bin/Debug/net9.0/1.instagram.deps.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/bin/Debug/net9.0/1.instagram.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/bin/Debug/net9.0/1.instagram.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/bin/Debug/net9.0/1.instagram.pdb
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/refint/1.instagram.dll
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.pdb
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/1.instagram.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/20-may-2025/1.instagram/obj/Debug/net9.0/ref/1.instagram.dll
