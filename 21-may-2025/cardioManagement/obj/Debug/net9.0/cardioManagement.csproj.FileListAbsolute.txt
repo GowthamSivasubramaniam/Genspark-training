@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.sourcelink.json
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/bin/Debug/net9.0/cardioManagement
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/bin/Debug/net9.0/cardioManagement.deps.json
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/bin/Debug/net9.0/cardioManagement.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/bin/Debug/net9.0/cardioManagement.dll
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/bin/Debug/net9.0/cardioManagement.pdb
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.dll
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/refint/cardioManagement.dll
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.pdb
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/cardioManagement.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/21-may-2025/cardioManagement/obj/Debug/net9.0/ref/cardioManagement.dll

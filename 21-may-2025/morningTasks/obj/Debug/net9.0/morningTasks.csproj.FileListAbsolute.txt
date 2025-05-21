@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/bin/Debug/net9.0/morningTasks
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/bin/Debug/net9.0/morningTasks.deps.json
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/bin/Debug/net9.0/morningTasks.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/bin/Debug/net9.0/morningTasks.dll
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/bin/Debug/net9.0/morningTasks.pdb
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.sourcelink.json
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.dll
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/refint/morningTasks.dll
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.pdb
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/morningTasks.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/21-may-2025/morningTasks/obj/Debug/net9.0/ref/morningTasks.dll
