@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/bin/Debug/net9.0/Calculator-SolidPrinciples
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/bin/Debug/net9.0/Calculator-SolidPrinciples.deps.json
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/bin/Debug/net9.0/Calculator-SolidPrinciples.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/bin/Debug/net9.0/Calculator-SolidPrinciples.dll
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/bin/Debug/net9.0/Calculator-SolidPrinciples.pdb
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.sourcelink.json
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.dll
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/refint/Calculator-SolidPrinciples.dll
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.pdb
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/Calculator-SolidPrinciples.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/22-may-2025/Calculator-SolidPrinciples/obj/Debug/net9.0/ref/Calculator-SolidPrinciples.dll

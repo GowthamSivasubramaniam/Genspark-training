@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.sourcelink.json
+/Users/gowtham/Desktop/Genspark/22-may-2025/bin/Debug/net9.0/22-may-2025
+/Users/gowtham/Desktop/Genspark/22-may-2025/bin/Debug/net9.0/22-may-2025.deps.json
+/Users/gowtham/Desktop/Genspark/22-may-2025/bin/Debug/net9.0/22-may-2025.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/22-may-2025/bin/Debug/net9.0/22-may-2025.dll
+/Users/gowtham/Desktop/Genspark/22-may-2025/bin/Debug/net9.0/22-may-2025.pdb
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.dll
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/refint/22-may-2025.dll
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.pdb
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/22-may-2025.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/22-may-2025/obj/Debug/net9.0/ref/22-may-2025.dll
