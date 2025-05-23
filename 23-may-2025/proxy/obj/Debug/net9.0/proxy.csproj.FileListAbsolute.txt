@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.sourcelink.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/bin/Debug/net9.0/proxy
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/bin/Debug/net9.0/proxy.deps.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/bin/Debug/net9.0/proxy.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/bin/Debug/net9.0/proxy.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/bin/Debug/net9.0/proxy.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/refint/proxy.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/proxy.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/proxy/obj/Debug/net9.0/ref/proxy.dll

@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.sourcelink.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/bin/Debug/net9.0/Factory
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/bin/Debug/net9.0/Factory.deps.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/bin/Debug/net9.0/Factory.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/bin/Debug/net9.0/Factory.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/bin/Debug/net9.0/Factory.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/refint/Factory.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/Factory.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/Factory/obj/Debug/net9.0/ref/Factory.dll

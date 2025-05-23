@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/bin/Debug/net9.0/singleton
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/bin/Debug/net9.0/singleton.deps.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/bin/Debug/net9.0/singleton.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/bin/Debug/net9.0/singleton.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/bin/Debug/net9.0/singleton.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.sourcelink.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/refint/singleton.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/singleton.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/singleton/obj/Debug/net9.0/ref/singleton.dll

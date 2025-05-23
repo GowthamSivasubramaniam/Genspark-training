@@ -1,0 +1,15 @@
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.AssemblyInfoInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.AssemblyInfo.cs
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.csproj.CoreCompileInputs.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.sourcelink.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/bin/Debug/net9.0/Flyweight
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/bin/Debug/net9.0/Flyweight.deps.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/bin/Debug/net9.0/Flyweight.runtimeconfig.json
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/bin/Debug/net9.0/Flyweight.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/bin/Debug/net9.0/Flyweight.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/refint/Flyweight.dll
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.pdb
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/Flyweight.genruntimeconfig.cache
+/Users/gowtham/Desktop/Genspark/23-may-2025/Flyweight/obj/Debug/net9.0/ref/Flyweight.dll
