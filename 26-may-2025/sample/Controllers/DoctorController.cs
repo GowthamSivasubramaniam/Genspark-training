@@ -9,8 +9,8 @@ namespace DocApp.Controllers
    { 
         static List<Doctor> doctors = new List<Doctor>
         {
-            new Doctor{id=1,Name="Gowtham"},
-            new Doctor{id=2,Name="Siva"},
+            new Doctor{Id=1,Name="Gowtham"},
+            new Doctor{Id=2,Name="Siva"},
         };
 
        [HttpGet]
@@ -37,7 +37,7 @@ namespace DocApp.Controllers
        [HttpPut]
        public ActionResult<Doctor> UpdateDoctor (int id ,Doctor doctor)
        {
-        Doctor _doctor = doctors.FirstOrDefault(d => d.id == id);
+        Doctor _doctor = doctors.FirstOrDefault(d => d.Id == id);
         if (_doctor == null)
         {
             return NotFound("Doctor not found");
@@ -50,7 +50,7 @@ namespace DocApp.Controllers
        public ActionResult<string> DeleteDoctor (int id)
        {
         
-           Doctor _doctor = doctors.FirstOrDefault(d => d.id == id);
+           Doctor _doctor = doctors.FirstOrDefault(d => d.Id == id);
            if (_doctor == null)
            {
                return NotFound("Doctor not found");
