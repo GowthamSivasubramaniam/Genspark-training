@@ -21,17 +21,18 @@ namespace DocApp.Controllers
            return Ok(doctors);
        }
 
-       [HttpPost]
+        [HttpPost]
+        
        public ActionResult<Doctor> AddDoctor(Doctor doctor)
-       {
-            
-           if (doctor == null)
-           {
-               return BadRequest("Doctor cannot be null");
-           }
-           doctors.Add(doctor);
-           return Created("",doctor);
-       }
+        {
+
+            if (doctor == null)
+            {
+                return BadRequest("Doctor cannot be null");
+            }
+            doctors.Add(doctor);
+            return Created("", doctor);
+        }
 
        [HttpPut]
        public ActionResult<Doctor> UpdateDoctor (int id ,Doctor doctor)
