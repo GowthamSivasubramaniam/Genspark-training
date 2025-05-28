@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("divisiblity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d22293ee84ed6ee1f174c804b2dea707542fb466")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9bec293d1569a1403a814e7e51a77d86ef79a19")]
 [assembly: System.Reflection.AssemblyProductAttribute("divisiblity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("divisiblity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
