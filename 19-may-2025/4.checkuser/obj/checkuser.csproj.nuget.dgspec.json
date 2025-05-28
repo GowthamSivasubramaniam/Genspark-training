@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gowtham/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj": {}
+    "/Users/presidio/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj": {}
   },
   "projects": {
-    "/Users/gowtham/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj": {
+    "/Users/presidio/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gowtham/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj",
+        "projectUniqueName": "/Users/presidio/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj",
         "projectName": "checkuser",
-        "projectPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj",
-        "packagesPath": "/Users/gowtham/.nuget/packages/",
-        "outputPath": "/Users/gowtham/Desktop/Genspark/19-may-2025/4.checkuser/obj/",
+        "projectPath": "/Users/presidio/Desktop/Genspark/19-may-2025/4.checkuser/checkuser.csproj",
+        "packagesPath": "/Users/presidio/.nuget/packages/",
+        "outputPath": "/Users/presidio/Desktop/Genspark/19-may-2025/4.checkuser/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gowtham/.nuget/NuGet/NuGet.Config"
+          "/Users/presidio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
