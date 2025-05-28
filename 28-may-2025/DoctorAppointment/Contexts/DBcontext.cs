@@ -41,6 +41,11 @@ namespace DoctorAppointment.Contexts
 
         }
 
+        internal object Find(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
+
         public DbSet<Patient> patients { get; set; }
         public DbSet<Appointment> appointments { get; set; }
         public DbSet<Doctor> doctors { get; set; }

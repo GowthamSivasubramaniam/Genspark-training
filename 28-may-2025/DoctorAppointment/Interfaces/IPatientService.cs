@@ -1,0 +1,14 @@
+
+using DoctorAppointment.Models;
+namespace DoctorAppointment.Interfaces
+{
+
+    public interface IPatientService
+    {
+        public Task<Patient> Get(int key);
+        public Task<IEnumerable<Patient>> GetAll();
+        public Task<Patient> Add(Patient patient);
+        public Task<Patient> Update(int key, Patient item);
+        public Task<Patient> Delete(int key);
+    }
+}

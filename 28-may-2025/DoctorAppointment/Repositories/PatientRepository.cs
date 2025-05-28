@@ -8,7 +8,7 @@ namespace DoctorAppointment.Repositories
 {
     public  class PatientRepo : Repository<int, Patient>
     {
-        protected PatientRepo(ClinicContext clinicContext) : base(clinicContext)
+        public PatientRepo(ClinicContext clinicContext) : base(clinicContext)
         {
         }
 
