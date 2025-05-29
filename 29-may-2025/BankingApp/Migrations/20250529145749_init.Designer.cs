@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BankingApp.Migrations
 {
     [DbContext(typeof(BankContext))]
-    [Migration("20250529104549_init")]
+    [Migration("20250529145749_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -63,6 +63,9 @@ namespace BankingApp.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("ToAccountNo")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -152,7 +155,6 @@ namespace BankingApp.Migrations
                         .WithMany("ReceivedTransactions")
                         .HasForeignKey("ToAccountNo")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
                         .HasConstraintName("FK_Transactions_ToACN");
 
                     b.Navigation("FromAccount");

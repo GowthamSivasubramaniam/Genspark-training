@@ -60,8 +60,9 @@ namespace BankingApp.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Type = table.Column<string>(type: "text", nullable: false),
                     FromAccountNo = table.Column<string>(type: "text", nullable: false),
-                    ToAccountNo = table.Column<string>(type: "text", nullable: false),
+                    ToAccountNo = table.Column<string>(type: "text", nullable: true),
                     Amount = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>

@@ -30,6 +30,7 @@ builder.Services.AddControllers()
     });
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IAccountService, AccounService>();
+builder.Services.AddTransient<ITransactionservice, TransactionService>();
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {   

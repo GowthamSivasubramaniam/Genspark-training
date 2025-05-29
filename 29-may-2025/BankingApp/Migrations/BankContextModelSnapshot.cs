@@ -60,6 +60,9 @@ namespace BankingApp.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("ToAccountNo")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -149,7 +152,6 @@ namespace BankingApp.Migrations
                         .WithMany("ReceivedTransactions")
                         .HasForeignKey("ToAccountNo")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired()
                         .HasConstraintName("FK_Transactions_ToACN");
 
                     b.Navigation("FromAccount");

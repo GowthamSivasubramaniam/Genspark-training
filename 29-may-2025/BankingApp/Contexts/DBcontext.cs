@@ -1,3 +1,4 @@
+using BankingApp.DTO;
 using BankingApp.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -5,7 +6,7 @@ namespace BankingApp.Contexts
 {
     public class BankContext : DbContext
     {
-        public BankContext(DbContextOptions<BankContext> options) : base(options) {}
+        public BankContext(DbContextOptions<BankContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -14,13 +15,13 @@ namespace BankingApp.Contexts
                                               .HasForeignKey(t => t.FromAccountNo)
                                               .HasConstraintName("FK_Transactions_FromACNo")
                                               .OnDelete(DeleteBehavior.Restrict);
-                                              
 
-              modelBuilder.Entity<Transaction>().HasOne(app => app.ToAccount)
-                                              .WithMany(p => p.ReceivedTransactions)
-                                              .HasForeignKey(app => app.ToAccountNo)
-                                              .HasConstraintName("FK_Transactions_ToACN")
-                                              .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Transaction>().HasOne(app => app.ToAccount)
+                                            .WithMany(p => p.ReceivedTransactions)
+                                            .HasForeignKey(app => app.ToAccountNo)
+                                            .HasConstraintName("FK_Transactions_ToACN")
+                                            .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Account>().HasKey(a => a.AccountNo);
 
@@ -29,12 +30,21 @@ namespace BankingApp.Contexts
                                                    .HasForeignKey(ds => ds.UserId)
                                                    .HasConstraintName("FK_Account_UID")
                                                    .OnDelete(DeleteBehavior.Restrict);
-
+            modelBuilder.Entity<ViewTransactionDTo>().HasNoKey();
         }
 
         public DbSet<Account> accounts { get; set; }
         public DbSet<Transaction> transactions { get; set; }
         public DbSet<User> users { get; set; }
+        
+         public DbSet<ViewTransactionDTo> DoctorsBySpeciality{ get; set; }
+
+        public async Task<List<ViewTransactionDTo>> showTransactions(string accountNo)
+        {
+            return await this.Set<ViewTransactionDTo>()
+                        .FromSqlInterpolated($"SELECT * FROM GetTransactionsByAccountNo({accountNo});")
+                        .ToListAsync();
+        }
      
     }
 }
