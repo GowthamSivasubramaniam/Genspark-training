@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "XkVlL3nqUTI=",
+  "dgSpecHash": "o5MDHCEsQJY=",
   "success": true,
   "projectFilePath": "/Users/gowtham/Desktop/Genspark/2-june-2025/DoctorAppointment/DoctorAppointment.csproj",
   "expectedPackageFiles": [
     "/Users/gowtham/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/9.0.5/microsoft.aspnetcore.authentication.jwtbearer.9.0.5.nupkg.sha512",
-    "/Users/gowtham/.nuget/packages/microsoft.aspnetcore.openapi/9.0.3/microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "/Users/gowtham/.nuget/packages/microsoft.aspnetcore.openapi/9.0.5/microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.build.framework/17.8.3/microsoft.build.framework.17.8.3.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.build.locator/1.7.8/microsoft.build.locator.1.7.8.nupkg.sha512",
@@ -21,6 +21,7 @@
     "/Users/gowtham/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.5/microsoft.entityframeworkcore.abstractions.9.0.5.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.5/microsoft.entityframeworkcore.analyzers.9.0.5.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.entityframeworkcore.design/9.0.5/microsoft.entityframeworkcore.design.9.0.5.nupkg.sha512",
+    "/Users/gowtham/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.5/microsoft.entityframeworkcore.inmemory.9.0.5.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.5/microsoft.entityframeworkcore.relational.9.0.5.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/gowtham/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.5/microsoft.extensions.caching.abstractions.9.0.5.nupkg.sha512",

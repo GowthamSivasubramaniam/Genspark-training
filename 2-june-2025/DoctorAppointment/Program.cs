@@ -14,6 +14,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using DoctorAppointment.Misc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -68,6 +70,7 @@ builder.Services.AddControllers()
 
 builder.Services.AddScoped<PatientRepo>();
 builder.Services.AddScoped<SpecialityRepo>();
+builder.Services.AddScoped<IRepository<int, Patient>, PatientRepo>();
 builder.Services.AddScoped<IPatientService, PatientServices>();
 builder.Services.AddScoped<ISpecialityServices, SpecialityService>();
 builder.Services.AddScoped<IRepository<int, Doctor>, DoctorRepo>();
@@ -78,6 +81,10 @@ builder.Services.AddTransient<IRepository<string, User>, UserRepository>();
 builder.Services.AddTransient<IEncryptionService, EncryptionService>();
 builder.Services.AddTransient<ITokenService, TokenService>();
 builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
+builder.Services.AddTransient<IRepository<int, Appointment>, AppointmentRepo>();
+
+builder.Services.AddTransient<IAppointmentService, AppointmentServices>();
+
 builder.Services.AddAutoMapper(typeof(User));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -93,8 +100,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     };
                 });
 
+builder.Services.AddSingleton<IAuthorizationHandler, MinimumExperienceHandler>();
+builder.Services.AddSingleton<IAuthorizationPolicyProvider, MinimumExperiencePolicyProvider>();
 
-
+builder.Logging.AddLog4Net();
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {   

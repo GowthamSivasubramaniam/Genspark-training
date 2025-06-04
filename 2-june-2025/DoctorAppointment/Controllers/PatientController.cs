@@ -2,6 +2,7 @@ using DoctorAppointment.Interfaces;
 using DoctorAppointment.Models;
 using DoctorAppointment.Models.DTO;
 using DoctorAppointment.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,7 @@ namespace DoctorAppointment.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles ="Doctor")]
         public async Task<ActionResult<IEnumerable<Patient>>> GetAll()
         {
             try

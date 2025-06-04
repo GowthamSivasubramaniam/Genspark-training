@@ -37,6 +37,20 @@ namespace DoctorAppointment.Controllers
                 return BadRequest(e.Message);
             }
         }
+         [HttpGet("{name}")]
+        public async Task<ActionResult<Patient>> Get(string s)
+        {
+            try
+            {
+                var doct = await _doctorService.GetDoctByName(s);
+                return Ok(doct);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
 
     }
 }

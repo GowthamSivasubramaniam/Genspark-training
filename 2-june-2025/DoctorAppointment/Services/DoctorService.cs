@@ -109,9 +109,13 @@ namespace DoctorAppointment.Service
             return specialityIds;
         }
 
-        public Task<Doctor> GetDoctByName(string name)
+        public async Task<Doctor> GetDoctByName(string name)
         {
-            throw new NotImplementedException();
+            var doctors = await _doctorRepository.GetAll();
+            var doctorsWithGivenName = doctors.FirstOrDefault(d => d.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+            if (doctorsWithGivenName == null)
+                throw new Exception($"Doctors with Name'{name}' not found.");
+            return doctorsWithGivenName;
         }
 
         public Task<ICollection<Doctor>> GetDoctorsBySpeciality(string speciality)

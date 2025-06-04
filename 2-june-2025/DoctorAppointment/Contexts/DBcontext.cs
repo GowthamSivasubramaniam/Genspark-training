@@ -7,6 +7,7 @@ namespace DoctorAppointment.Contexts
     public class ClinicContext : DbContext
     {
         public ClinicContext(DbContextOptions<ClinicContext> options) : base(options) {}
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<DoctorSpeciality>()
