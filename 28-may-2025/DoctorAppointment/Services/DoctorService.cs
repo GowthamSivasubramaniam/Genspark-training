@@ -85,26 +85,26 @@ namespace DoctorAppointment.Service
         }
 
         public async Task<ICollection<DisplayDoctorDto>> GetDoctorsBySpeciality(string speciality)
+{
+    var doctors = await _drepo.GetAll();
+
+    var result = doctors
+        .Where(d => d.DoctorSpecialities != null &&
+                    d.DoctorSpecialities.Any(ds => 
+                        ds.Speciality != null &&
+                        ds.Speciality.Name.Equals(speciality, StringComparison.OrdinalIgnoreCase)))
+        .Select(d => new DisplayDoctorDto
         {
-            var doctors = await _drepo.GetAll();
+            Name = d.Name,
+            YearsOfExperience = d.YearsOfExperience,
+            Specialities = d.DoctorSpecialities?
+                .Select(ds => ds.Speciality.Name)
+                .ToList() ?? new List<string>()
+        })
+        .ToList();
 
-            var result = doctors
-                .Where(d => d.DoctorSpecialities != null &&
-                            d.DoctorSpecialities.Any(ds =>
-                                ds.Speciality != null &&
-                                ds.Speciality.Name.Equals(speciality, StringComparison.OrdinalIgnoreCase)))
-                .Select(d => new DisplayDoctorDto
-                {
-                    Name = d.Name,
-                    YearsOfExperience = d.YearsOfExperience,
-                    Specialities = d.DoctorSpecialities?
-                        .Select(ds => ds.Speciality.Name)
-                        .ToList() ?? new List<string>()
-                })
-                .ToList();
-
-            return result;
-        }
+    return result;
+}
 
         public async Task<IEnumerable<DisplayDoctorDto>> GetDoctors()
         {
@@ -117,7 +117,7 @@ namespace DoctorAppointment.Service
                             .Select(ds => ds.Speciality.Name)
                             .ToList() ?? new List<string>()
             });
-
+         
             return result;
 
         }
