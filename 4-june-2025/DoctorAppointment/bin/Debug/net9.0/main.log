@@ -1,0 +1,292 @@
+2025-06-04 12:39:03,586 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 12:39:03,601 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 12:39:03,602 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 12:39:03,602 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/3-june-2025/DoctorAppointment
+2025-06-04 12:55:41,981 [17] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__key_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__key_0
+LIMIT 2
+2025-06-04 12:55:41,993 [17] FATAL FirstAPI.Services.AuthenticationService - User not found
+2025-06-04 12:55:41,996 [17] ERROR DoctorAppointment.Controllers.AuthenticationController - No such user
+2025-06-04 13:00:13,405 [24] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:00:18,405 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:00:18,417 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:00:18,417 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:00:18,417 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/3-june-2025/DoctorAppointment
+2025-06-04 13:04:10,965 [11] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:04:15,902 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:04:15,919 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:04:15,920 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:04:15,920 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/3-june-2025/DoctorAppointment
+2025-06-04 13:04:30,642 [11] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__key_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__key_0
+LIMIT 2
+2025-06-04 13:04:30,651 [11] FATAL FirstAPI.Services.AuthenticationService - User not found
+2025-06-04 13:11:58,270 [22] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:12:02,965 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:12:02,976 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:12:02,977 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:12:02,977 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/3-june-2025/DoctorAppointment
+2025-06-04 13:12:30,743 [16] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:12:34,922 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:12:34,940 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:12:34,940 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:12:34,940 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/3-june-2025/DoctorAppointment
+2025-06-04 13:14:39,039 [16] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 13:14:43,115 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 13:14:43,128 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 13:14:43,128 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 13:14:43,128 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/3-june-2025/DoctorAppointment
+2025-06-04 13:16:24,812 [14] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__key_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+WHERE u."Username" = @__key_0
+LIMIT 2
+2025-06-04 13:16:24,819 [14] FATAL FirstAPI.Services.AuthenticationService - User not found
+2025-06-04 14:08:57,847 [1] ERROR Microsoft.Extensions.Hosting.Internal.Host - Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5297: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-06-04 14:09:50,289 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 14:09:50,301 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 14:09:50,301 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 14:09:50,301 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment
+2025-06-04 14:37:38,269 [16] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 14:54:02,533 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 14:54:02,545 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 14:54:02,545 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 14:54:02,545 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment
+2025-06-04 15:01:11,258 [17] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:01:15,996 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:01:16,007 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:01:16,008 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:01:16,008 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment
+2025-06-04 15:11:59,286 [26] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+2025-06-04 15:11:59,370 [26] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@p0='?', @p1='?' (DbType = Binary), @p2='?' (DbType = Binary), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Users" ("Username", "HashKey", "Password", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-04 15:11:59,404 [26] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__user_Username_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT d."Id", d."Email", d."Name", d."Status", d."YearsOfExperience"
+FROM doctors AS d
+WHERE d."Email" = @__user_Username_0
+LIMIT 1
+2025-06-04 15:25:58,059 [38] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:26:03,813 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:26:03,833 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:26:03,834 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:26:03,834 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment
+2025-06-04 15:26:45,964 [18] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:26:50,038 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:26:50,050 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:26:50,050 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:26:50,050 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment
+2025-06-04 15:27:12,195 [13] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-04 15:27:15,519 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5297
+2025-06-04 15:27:15,531 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-04 15:27:15,531 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-04 15:27:15,531 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment
+2025-06-04 15:30:42,014 [18] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at DoctorAppointment.Controllers.AuthenticationController.GoogleCallback(String code) in /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment/Controllers/AuthenticationController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-04 15:31:48,064 [24] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+2025-06-04 15:31:48,136 [24] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__user_Username_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT d."Id", d."Email", d."Name", d."Status", d."YearsOfExperience"
+FROM doctors AS d
+WHERE d."Email" = @__user_Username_0
+LIMIT 1
+2025-06-04 15:32:34,996 [26] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at DoctorAppointment.Controllers.AuthenticationController.GoogleCallback(String code) in /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment/Controllers/AuthenticationController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-04 15:32:44,274 [24] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at DoctorAppointment.Controllers.AuthenticationController.GoogleCallback(String code) in /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment/Controllers/AuthenticationController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-04 15:36:14,609 [26] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at DoctorAppointment.Controllers.AuthenticationController.GoogleCallback(String code) in /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment/Controllers/AuthenticationController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-04 15:36:22,049 [30] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at DoctorAppointment.Controllers.AuthenticationController.GoogleCallback(String code) in /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment/Controllers/AuthenticationController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-04 15:37:04,646 [33] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at DoctorAppointment.Controllers.AuthenticationController.GoogleCallback(String code) in /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment/Controllers/AuthenticationController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-04 15:37:42,116 [34] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at DoctorAppointment.Controllers.AuthenticationController.GoogleCallback(String code) in /Users/gowtham/Desktop/Genspark/4-june-2025/DoctorAppointment/Controllers/AuthenticationController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-04 15:38:41,012 [37] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+2025-06-04 15:38:41,049 [37] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__user_Username_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT d."Id", d."Email", d."Name", d."Status", d."YearsOfExperience"
+FROM doctors AS d
+WHERE d."Email" = @__user_Username_0
+LIMIT 1
+2025-06-04 15:41:13,006 [35] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT count(*)::int
+FROM patients AS p
+2025-06-04 15:41:13,019 [35] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT p."Id", p."Age", p."Email", p."Name", p."Phone"
+FROM patients AS p
+2025-06-04 15:41:53,357 [44] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT d."Id", d."Email", d."Name", d."Status", d."YearsOfExperience", s0."SerialNumber", s0."DoctorId", s0."SpecialityId", s0."Id", s0."Name", s0."Status"
+FROM doctors AS d
+LEFT JOIN (
+    SELECT d0."SerialNumber", d0."DoctorId", d0."SpecialityId", s."Id", s."Name", s."Status"
+    FROM "doctorSpecialities" AS d0
+    INNER JOIN specialities AS s ON d0."SpecialityId" = s."Id"
+) AS s0 ON d."Id" = s0."DoctorId"
+ORDER BY d."Id", s0."SerialNumber"
+2025-06-04 15:42:18,871 [39] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT count(*)::int
+FROM patients AS p
+2025-06-04 15:42:18,877 [39] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT p."Id", p."Age", p."Email", p."Name", p."Phone"
+FROM patients AS p
+2025-06-04 17:20:58,698 [54] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u."Username", u."HashKey", u."Password", u."Role"
+FROM "Users" AS u
+2025-06-04 17:20:58,797 [54] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@p0='?', @p1='?' (DbType = Binary), @p2='?' (DbType = Binary), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Users" ("Username", "HashKey", "Password", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-04 17:20:58,828 [54] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__user_Username_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT d."Id", d."Email", d."Name", d."Status", d."YearsOfExperience"
+FROM doctors AS d
+WHERE d."Email" = @__user_Username_0
+LIMIT 1
+2025-06-04 17:22:55,717 [63] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT count(*)::int
+FROM patients AS p
+2025-06-04 17:22:55,722 [58] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT p."Id", p."Age", p."Email", p."Name", p."Phone"
+FROM patients AS p
