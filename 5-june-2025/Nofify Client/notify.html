@@ -1,0 +1,30 @@
+<html>
+  <body>
+      <h2>Notification</h2>
+       <div id="msgs">
+       </div>
+      <script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@8.0.7/dist/browser/signalr.min.js"></script>
+        <script>
+            const connection = new signalR.HubConnectionBuilder()
+                                .withUrl("http://localhost:5277/notify",{
+                                    withCredentials:true
+                                })
+                                .withAutomaticReconnect()
+                                .build();
+               connection.on("Notification",(user,message)=>{
+                console.log(`${user} - ${message}`)
+                const placeHolder = document.getElementById("msgs");
+                const content = document.createElement("p")
+                content.innerHTML = `${user} - ${message}`;
+                placeHolder.append(content);
+            });
+             connection.start()
+        .then(() => {
+            console.log("SignalR connected!");
+        })
+        .catch(err => console.error("SignalR connection error: ", err));
+
+           
+        </script>
+  </body>
+</html>
