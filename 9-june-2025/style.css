@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.logo {
+  stroke: rgb(43, 188, 255);
+  width: 8%;
+  height: 100%;
+}
+.name-container {
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  gap: 3%;
+  grid-area: "section";
+  font-size: 20px;
+  font-weight: 200;
+}
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "section navbar";
+  padding: 2%;
+  height: 4%;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 5%;
+  list-style: none;
+  grid-area: "navbar";
+  margin-left: 30%;
+  align-items: center;
+  font-size: 20px;
+}
+button {
+  padding: 10px;
+  width: 100px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.Secondary-button {
+  background-color: rgb(43, 188, 255);
+  color: white;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "content image";
+  margin-top: 5%;
+  width: 100%;
+  padding-top: 5%;
+  background-color: rgb(224, 248, 255);
+}
+.content {
+  margin-left: 10%;
+  padding-bottom: 5%;
+  grid-area: "content";
+}
+.content h1 {
+  font-size: 80px;
+}
+.content p {
+  font-size: 35px;
+  font-weight: lighter;
+  color: rgb(65, 65, 65);
+}
+
+.content button {
+  padding: 2%;
+  width: 60%;
+  margin-left: 0px;
+  margin-top: 4%;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+.card {
+  padding: 30px;
+  width: 30%;
+  box-shadow: 0 2px 8px 0 gray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  gap: 10%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: rgb(130, 252, 228);
+  color: black;
+}
+.card .logo {
+  width: 70px;
+  height: 70px;
+  padding-bottom: 2vh;
+}
+.card h1 {
+  font-size: 24px;
+}
+.card p {
+  font-size: 20px;
+  width: 80%;
+}
+.sub-heading {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  padding: 40px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  background-color: rgb(224, 248, 255);
+  border-radius: 15px;
+}
+
+.testimonials h1 {
+  font-size: 40px;
+  text-align: start;
+}
+
+.testimonials-content {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+}
+.testimonials-content h1 {
+  display: flex;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-left: 4%;
+  width: 100%;
+  color: rgb(80, 80, 80);
+}
+.testimonials-content .logo {
+  width: 10%;
+  height: 100%;
+}
+
+.About-container {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+}
+.clinic-hours-container {
+  display: flex;
+  gap: 5%;
+}
+.Hours-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30%;
+  padding-left: 10%;
+  width: 100%;
+}
+.Hours-container h1 {
+  font-size: 40px;
+}
+.Hours-container p {
+  margin-top: 2%;
+  font-size: 20px;
+  width: 100%;
+}
+
+@media (max-width: 1465px) {
+  .content {
+    margin-left: 10%;
+    padding-bottom: 5%;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  .content p {
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(65, 65, 65);
+  }
+
+  .content button {
+    padding: 2%;
+    width: 60%;
+    margin-left: 0px;
+    margin-top: 4%;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  img {
+    width: 400px;
+  }
+
+  button {
+    padding: 10px;
+    width: 100%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .Secondary-button {
+    background-color: rgb(43, 188, 255);
+    color: white;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 5%;
+    list-style: none;
+    grid-area: "navbar";
+    margin-left: 10%;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .Hours-container h1 {
+    font-size: 30px;
+  }
+  .Hours-container p {
+    margin-top: 2%;
+    font-size: 15px;
+    width: 100%;
+  }
+  .card .logo {
+    width: 70px;
+    height: 70px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: 50px;
+  }
+  .name-container {
+    font-size: 15px;
+    width: 300px;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+    padding-top: 5%;
+  }
+
+  .card .logo {
+    width: 50px;
+  }
+  button {
+    padding: 4%;
+    width: 150px;
+  }
+  .navbar .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    height: 300px;
+    padding: 4%;
+    padding-left: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    gap: 10%;
+    align-items: center;
+  }
+
+  .navbar .nav-list.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 80%;
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+  .content p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(65, 65, 65);
+    padding-right: 20px;
+  }
+
+  .sub-heading {
+    font-size: 30px;
+  }
+  img {
+    width: 250px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .clinic-hours-container {
+    display: flex;
+    gap: 5%;
+    margin-left: 0;
+  }
+  .Hours-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+
+    width: 100%;
+    align-items: center;
+  }
+  .Hours-container h1 {
+    font-size: 25px;
+  }
+
+  .testimonials h1 {
+    font-size: 20px;
+  }
+  .testimonials .sub-heading {
+    font-size: 30px;
+  }
+
+  .About-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 20px;
+  }
+
+  .clinic-hours-container p {
+    font-size: 15px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,127 @@
+<Html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+         <script src="https://unpkg.com/lucide@latest"></script>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+    <body>
+        <header class="header-container">
+        <section class = "name-container">
+        <i data-lucide="stethoscope " class="logo"> </i>
+        <h2> Doctor's Clinic</h2>
+        </section>
+         <nav class="navbar">
+             <div class="hamburger" onclick="toggleMenu()">
+          ☰
+        </div>
+         <ul class="nav-list">
+            <li>Home</li>
+            <li>Services</li>
+            <li> <button class="Secondary-button">Login</button> </li>
+            <li><button class="button">Register</button> </li>
+            </ul> 
+         </nav>
+        
+        
+            
+        </ul>
+        </header>
+        <main>
+            <section class="content-container">
+                <section class="content">
+                 <h1>Quality Care for Your Health</h1>
+                 <p>Our Clinic provides the best medical services for you and your family</p>
+                 <button class="Secondary-button">Book Appointment</button>
+                </section>
+                <section class="image-Container">
+                    <img src="5d86a871bec09624fb7734913e4716fe.png" alt="txt">
+                </section>
+            </section>
+            <section class="services-container">
+                   <p class="sub-heading"> Our Services</p>
+                    <section class="card-container">
+                        <section class="card">
+                        <i data-lucide="file-text"  class="logo"> </i>
+                        <h1>Primary Care</h1>
+                        <p>Provide dector early care or cutlanes.</p>
+                        </section>
+                        <section class="card">
+                        <i data-lucide="stethoscope" class="logo"> </i>
+                        <h1>Pediatrics</h1>
+                        <p>Provide careare with kids in-names.</p>
+                        </section>
+                        <section class="card">
+                        <i data-lucide="plus-circle" class="logo"> </i>
+                        <h1>Specialty Care</h1>
+                        <p>Provide accarecarie and curisel-car.</p>
+                        </section>
+                    </section>
+            </section>
+            <section class="testimonials">
+             <h1 class="sub-heading">
+                What Our Patients Are Saying
+             </h1>
+             <section class ="testimonials-content">
+                <i data-lucide="quote" class="logo"> </i>
+                        <section>
+                        <h1>Excellent service and wonderful staff.</h1>
+                        <h1>I always feel well taken care of.</h1>
+                       <h1>John D.</h1>
+                       </section>
+             </section>
+            </section>
+            <section class="About-container">
+             <section class ="Hours-container">
+         
+                        <h1>Clinic Hours</h1>
+                         <section class="clinic-hours-container">
+                        <section >
+                        <p>Monday-Friday</p>
+                        <p>Saturday</p>
+                        </section>
+                        <section class="timings">
+                         <p>
+                            8:00 AM - 6:00 PM
+                         </p>
+                         <p>
+                            9:00 AM - 1:00 PM
+                         </p>
+                        </section>
+                        </section>
+                        
+             </section>
+             <section class ="Hours-container">
+                        <h1 >Clinic Hours</h1>
+                        <section class="clinic-hours-container">
+                        <section >
+                        <p>Monday-Friday</p>
+                        </section>
+                        <section class="timings">
+                         <p>
+                            8:00 AM - 6:00 PM
+                         </p>
+                         <p>
+                            9:00 AM - 1:00 PM
+                         </p>
+                        </section>
+                        </section>
+             </section>
+            </section>
+        </main>
+    </body>
+    <script>
+    lucide.createIcons(); 
+  </script>
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector(".nav-list");
+    menu.classList.toggle("show");
+  }
+</script>
+
+  
+</Html>
