@@ -5333,19 +5333,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/gowtham/.nuget/packages/": {}
+    "/Users/presidio/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gowtham/Desktop/Genspark/5-june-2025/DoctorAppointment/DoctorAppointment.csproj",
+      "projectUniqueName": "/Users/presidio/Desktop/Genspark/5-june-2025/DoctorAppointment/DoctorAppointment.csproj",
       "projectName": "DoctorAppointment",
-      "projectPath": "/Users/gowtham/Desktop/Genspark/5-june-2025/DoctorAppointment/DoctorAppointment.csproj",
-      "packagesPath": "/Users/gowtham/.nuget/packages/",
-      "outputPath": "/Users/gowtham/Desktop/Genspark/5-june-2025/DoctorAppointment/obj/",
+      "projectPath": "/Users/presidio/Desktop/Genspark/5-june-2025/DoctorAppointment/DoctorAppointment.csproj",
+      "packagesPath": "/Users/presidio/.nuget/packages/",
+      "outputPath": "/Users/presidio/Desktop/Genspark/5-june-2025/DoctorAppointment/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/gowtham/.nuget/NuGet/NuGet.Config"
+        "/Users/presidio/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -5369,7 +5369,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -5449,7 +5449,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
