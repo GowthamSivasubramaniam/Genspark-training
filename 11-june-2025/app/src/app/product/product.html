@@ -1,0 +1,18 @@
+
+<main>
+<h2>Product List</h2>
+<div class="Cart-container">
+<i class="bi bi-cart"></i> <p>{{count}}</p> 
+</div>
+  <div class="products-conatiner" *ngFor="let product of products">
+    <div>
+        <img src={{product.img}}>
+      <h2> {{ product.name }}</h2>
+       <h2>Rs {{ product.price }} </h2>
+       <button (click)="addcart()">Add to cart</button>
+    </div>
+   
+  </div>
+</main>
+
+

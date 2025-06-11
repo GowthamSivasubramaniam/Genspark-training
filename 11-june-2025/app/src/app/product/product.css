@@ -1,0 +1,92 @@
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family: 'nunito';
+}
+
+img
+{
+    height: 100px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+.Cart-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+.Cart-container i {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.Cart-container p {
+  margin: 0;
+  font-weight: bold;
+}
+
+
+.products-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+.products-conatiner  div {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-top: 1rem;
+}
+
+.products-conatiner  div:hover {
+  transform: scale(1.03);
+}
+
+
+.products-conatiner img {
+ 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.products-conatiner h1 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+
+
+.products-conatiner button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.products-conatiner button:hover {
+  background-color: #0056b3;
+}
