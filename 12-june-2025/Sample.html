@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h2>Callback vs Promise vs Async/Await</h2>
+  <button onclick="handleCallback()">Callback</button>
+  <button onclick="handlePromise()">Promise</button>
+  <button onclick="handleAsyncAwait()">Async/Await</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    const data = [
+      { name: "Gowtham", age: 25 },
+      { name: "Muthu", age: 30 },
+      { name: "Arjun", age: 28 }
+    ];
+
+
+    function fetchDataCallback(callback) {
+      setTimeout(() => {
+        callback(data);
+      }, 1000);
+    }
+
+    function handleCallback() {
+      fetchDataCallback((result) => {
+       createUserCards(result, "callback");
+      });
+    }
+
+
+    function CreatePromise() {
+      return new Promise((x) => {
+        setTimeout(() => {
+          x(data);
+        }, 1000);
+      });
+    }
+   function createUserCards(users, label) {
+  const output = document.getElementById("output");
+  output.innerHTML = `<h3>${label}</h3>`;
+
+   users.forEach(user => {
+    const card = document.createElement("div");
+    card.className = "user-card";
+
+    const normalizedLabel = label.trim().toLowerCase();
+
+    if (normalizedLabel.localeCompare("promise") == 1) {
+        console.log("hii")
+      card.style.backgroundColor = "#e8f4fc"; 
+    } else if (normalizedLabel.localeCompare("async/await") == 1) {
+      card.style.backgroundColor = "#f0f8ec"; 
+    } else {
+      card.style.backgroundColor = "#e0e0e0"; 
+    }
+
+
+    card.innerHTML = `
+      <h4>${user.name}</h4>
+      <p>Age: ${user.age}</p>
+    `;
+    output.appendChild(card);
+  });
+}
+
+
+    function handlePromise() {
+      CreatePromise().then((result) => {
+       createUserCards(result, "Promise:");
+      });
+    }
+
+    async function handleAsyncAwait() {
+      const result = await  CreatePromise();
+      createUserCards(result, "Async/Await:");
+    }
+  </script>
+</body>
+</html>
+
