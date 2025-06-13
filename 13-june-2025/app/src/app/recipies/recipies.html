@@ -1,0 +1,17 @@
+<div>cart</div>
+<p>Recipies : {{cartCount}}</p>
+@for (item of cartItems; track $index) {
+  <p>{{item.Id}} => {{item.Count}}</p>
+}
+
+@if (recipes()) {
+  <div class="recipe-container">
+    @for (item of recipes(); track item.id) {
+      <app-recipe  (addToCart)="handleAddToCart($event)" [recipe]="item"></app-recipe>
+    }
+  </div>
+} @else {
+  <div class="no-recipe">
+    No recipes available.
+  </div>
+}

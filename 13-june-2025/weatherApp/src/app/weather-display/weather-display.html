@@ -1,0 +1,32 @@
+<div class="history-select">
+  <label for="citySelect"><strong>Select from history:</strong></label>
+  <select id="citySelect" #citySelect (change)="onSelectCity(citySelect.value)">
+    <option value="">-- Select a city --</option>
+    @for (city of history; track city) {
+      <option [value]="city">{{ city }}</option>
+    }
+  </select>
+</div>
+
+
+<div class="weather-card">
+  <h2 class="location-heading">
+   {{ condition.location.name }}, {{ condition.location.region }}, {{ condition.location.country }}
+  </h2>
+
+  <div class="weather-main">
+    <img [src]="condition.current.weather_icons[0]" [alt]="condition.current.weather_descriptions[0]" />
+    <div class="temperature">{{ condition.current.temperature }}°C</div>
+    <div class="description">{{ condition.current.weather_descriptions[0] }}</div>
+  </div>
+
+  <div class="weather-details">
+    <p><strong>Feels Like:</strong> {{ condition.current.feelslike }}°C</p>
+    <p><strong>Humidity:</strong> {{ condition.current.humidity }}%</p>
+    <p><strong>Wind:</strong> {{ condition.current.wind_speed }} km/h ({{ condition.current.wind_dir }})</p>
+    <p><strong>Visibility:</strong> {{ condition.current.visibility }} km</p>
+    <p><strong>Pressure:</strong> {{ condition.current.pressure }} mb</p>
+    <p><strong>UV Index:</strong> {{ condition.current.uv_index }}</p>
+    <p><strong>Observation Time:</strong> {{ condition.current.observation_time }}</p>
+  </div>
+</div>

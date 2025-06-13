@@ -1,0 +1,23 @@
+
+<main>
+<h2>Add Customer</h2>
+
+<form (ngSubmit)="addCustomer()">
+  <input type="text" placeholder="Name" [(ngModel)]="newCustomer.name" name="name" required>
+  <input type="text" placeholder="Address" [(ngModel)]="newCustomer.address" name="address" required>
+  <input type="text" placeholder="Phone Number" [(ngModel)]="newCustomer.phno" name="phno" required>
+  <button type="submit">Add</button>
+</form>
+
+<hr>
+
+<div class="customer-container"  *ngFor="let c of customer; let i = index">
+  <h3>Name: {{ c.name }}</h3>
+  <p>Address: {{ c.address }}</p>
+  <p>Phone: {{ c.phno }}</p>
+  <div>
+    <i class="bi bi-hand-thumbs-up" (click)="like(i)"></i> {{ c.likes }}
+    <i class="bi bi-hand-thumbs-down" (click)="dislike(i)"></i> {{ c.dislikes }}
+  </div>
+</div>
+</main>
