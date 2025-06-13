@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "RWJ4aWUVDNg5Sl2sFi723WM6QoPWmbgS3E/EgKMpQGU=",
+  "Source": "VehicleServiceManagement",
+  "BasePath": "_content/VehicleServiceManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

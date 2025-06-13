@@ -1,0 +1,528 @@
+2025-06-12 12:40:05 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-12 12:40:05 [Debug] Hosting starting
+2025-06-12 12:40:05 [Information] User profile is available. Using '"/Users/gowtham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2025-06-12 12:40:05 [Debug] Reading data from file '"/Users/gowtham/.aspnet/DataProtection-Keys/key-a37a6d69-5f7a-4f51-ba1d-6013710d3ab3.xml"'.
+2025-06-12 12:40:05 [Debug] Found key {a37a6d69-5f7a-4f51-ba1d-6013710d3ab3}.
+2025-06-12 12:40:05 [Debug] Considering key {a37a6d69-5f7a-4f51-ba1d-6013710d3ab3} with expiration date 2025-07-22 09:25:09Z as default key.
+2025-06-12 12:40:05 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2025-06-12 12:40:05 [Debug] Using managed symmetric algorithm '"System.Security.Cryptography.Aes"'.
+2025-06-12 12:40:05 [Debug] Using managed keyed hash algorithm '"System.Security.Cryptography.HMACSHA256"'.
+2025-06-12 12:40:05 [Debug] Using key {a37a6d69-5f7a-4f51-ba1d-6013710d3ab3} as the default key.
+2025-06-12 12:40:05 [Debug] Key ring with default key {a37a6d69-5f7a-4f51-ba1d-6013710d3ab3} was loaded during application startup.
+2025-06-12 12:40:05 [Debug] Middleware configuration started with options: "{AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}"
+2025-06-12 12:40:05 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2025-06-12 12:40:05 [Information] Now listening on: "http://localhost:5154"
+2025-06-12 12:40:05 [Debug] Loaded hosting startup assembly "VehicleServiceManagement"
+2025-06-12 12:40:05 [Information] Application started. Press Ctrl+C to shut down.
+2025-06-12 12:40:05 [Information] Hosting environment: "Development"
+2025-06-12 12:40:05 [Information] Content root path: "/Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement"
+2025-06-12 12:40:05 [Debug] Hosting started
+2025-06-12 12:41:43 [Debug] Connection id ""0HND9G1HDBA8F"" accepted.
+2025-06-12 12:41:43 [Debug] Connection id ""0HND9G1HDBA8F"" started.
+2025-06-12 12:41:43 [Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5154""""/api/Bill""" - "application/json" 145
+2025-06-12 12:41:43 [Debug] 1 candidate(s) found for the request path '"/api/Bill"'
+2025-06-12 12:41:43 [Debug] Endpoint '"VSM.Controllers.BillController.Add (VehicleServiceManagement)"' with route pattern '"api/Bill"' is valid for the request path '"/api/Bill"'
+2025-06-12 12:41:43 [Debug] Request matched endpoint '"VSM.Controllers.BillController.Add (VehicleServiceManagement)"'
+2025-06-12 12:41:43 [Debug] Successfully validated the token.
+2025-06-12 12:41:43 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-06-12 12:41:43 [Debug] Authorization was successful.
+2025-06-12 12:41:43 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-06-12 12:41:43 [Information] Executing endpoint '"VSM.Controllers.BillController.Add (VehicleServiceManagement)"'
+2025-06-12 12:41:43 [Information] Route matched with "{action = \"Add\", controller = \"Bill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[VSM.DTO.BillDisplayDto]] Add(VSM.DTO.BillAddDto)" on controller "VSM.Controllers.BillController" ("VehicleServiceManagement").
+2025-06-12 12:41:43 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-06-12 12:41:43 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-06-12 12:41:43 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-12 12:41:43 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-06-12 12:41:43 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-12 12:41:43 [Debug] Executing controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-06-12 12:41:43 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-12 12:41:43 [Debug] Executed controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-06-12 12:41:43 [Debug] Attempting to bind parameter '"dto"' of type '"VSM.DTO.BillAddDto"' ...
+2025-06-12 12:41:43 [Debug] Attempting to bind parameter '"dto"' of type '"VSM.DTO.BillAddDto"' using the name '""' in request data ...
+2025-06-12 12:41:43 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2025-06-12 12:41:43 [Debug] Connection id ""0HND9G1HDBA8F"", Request id ""0HND9G1HDBA8F:00000001"": started reading request body.
+2025-06-12 12:41:43 [Debug] Connection id ""0HND9G1HDBA8F"", Request id ""0HND9G1HDBA8F:00000001"": done reading request body.
+2025-06-12 12:41:43 [Debug] JSON input formatter succeeded, deserializing to type '"VSM.DTO.BillAddDto"'
+2025-06-12 12:41:43 [Debug] Done attempting to bind parameter '"dto"' of type '"VSM.DTO.BillAddDto"'.
+2025-06-12 12:41:43 [Debug] Done attempting to bind parameter '"dto"' of type '"VSM.DTO.BillAddDto"'.
+2025-06-12 12:41:43 [Debug] Attempting to validate the bound parameter '"dto"' of type '"VSM.DTO.BillAddDto"' ...
+2025-06-12 12:41:43 [Debug] Done attempting to validate the bound parameter '"dto"' of type '"VSM.DTO.BillAddDto"'.
+2025-06-12 12:41:43 [Debug] The index "{'ServiceCategoriesCategoryID'}" was not created on entity type '"ServiceServiceCategory (Dictionary<string, object>)"' as the properties are already covered by the index "{'ServiceCategoriesCategoryID', 'ServicesServiceID'}".
+2025-06-12 12:41:44 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-06-12 12:41:44 [Debug] Compiling query expression: "
+"'"DbSet<ServiceRecord>()
+    .Include(sr => sr.Service)
+    .ThenInclude(s => s.ServiceCategories)
+    .SingleOrDefault(u => u.ServiceRecordID == __key_0)"'
+2025-06-12 12:41:44 [Debug] Including navigation: '"ServiceRecord.Service"'.
+2025-06-12 12:41:44 [Debug] Including navigation: '"Service.ServiceCategories"'.
+2025-06-12 12:41:44 [Debug] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<ServiceRecord>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<ServiceRecord>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: ServiceRecord.ServiceRecordID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ServiceRecord.BookingID (Guid) Required FK Index, 1], [Property: ServiceRecord.CustomerID (Guid) Required FK Index, 2], [Property: ServiceRecord.IsDeleted (bool) Required, 3], [Property: ServiceRecord.MechanicId (Guid) Required FK Index, 4], [Property: ServiceRecord.ServiceID (Guid) Required FK Index, 5], [Property: ServiceRecord.Status (string) Required, 6] }
+                1 -> Dictionary<IProperty, int> { [Property: Service.ServiceID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: Service.Description (string) Required, 8], [Property: Service.IsDeleted (bool) Required, 9], [Property: Service.VehicleID (Guid) Required FK Index, 10] }
+                2 -> 0
+                3 -> 7
+                4 -> Dictionary<IProperty, int> { [Property: ServiceServiceCategory (Dictionary<string, object>).ServiceCategoriesCategoryID (no field, Guid) Indexer Required PK FK AfterSave:Throw, 11], [Property: ServiceServiceCategory (Dictionary<string, object>).ServicesServiceID (no field, Guid) Indexer Required PK FK Index AfterSave:Throw, 12] }
+                5 -> Dictionary<IProperty, int> { [Property: ServiceCategory.CategoryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: ServiceCategory.Amount (float) Required, 14], [Property: ServiceCategory.Name (string) Required, 15] }
+                6 -> 11
+                7 -> 12
+                8 -> 13
+            SELECT s3.ServiceRecordID, s3.BookingID, s3.CustomerID, s3.IsDeleted, s3.MechanicId, s3.ServiceID, s3.Status, s3.ServiceID0, s3.Description, s3.IsDeleted0, s3.VehicleID, s4.ServiceCategoriesCategoryID, s4.ServicesServiceID, s4.CategoryID, s4.Amount, s4.Name
+            FROM 
+            (
+                SELECT TOP(2) s.ServiceRecordID, s.BookingID, s.CustomerID, s.IsDeleted, s.MechanicId, s.ServiceID, s.Status, s0.ServiceID AS ServiceID0, s0.Description, s0.IsDeleted AS IsDeleted0, s0.VehicleID
+                FROM serviceRecords AS s
+                INNER JOIN Services AS s0 ON s.ServiceID == s0.ServiceID
+                WHERE s.ServiceRecordID == @__key_0
+            ) AS s3
+            LEFT JOIN 
+            (
+                SELECT s1.ServiceCategoriesCategoryID, s1.ServicesServiceID, s2.CategoryID, s2.Amount, s2.Name
+                FROM ServiceServiceCategory AS s1
+                INNER JOIN ServiceCategories AS s2 ON s1.ServiceCategoriesCategoryID == s2.CategoryID
+            ) AS s4 ON s3.ServiceID0 == s4.ServicesServiceID
+            ORDER BY s3.ServiceRecordID ASC, s3.ServiceID0 ASC, s4.ServiceCategoriesCategoryID ASC, s4.ServicesServiceID ASC) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: ServiceRecord.ServiceRecordID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ServiceRecord.BookingID (Guid) Required FK Index, 1], [Property: ServiceRecord.CustomerID (Guid) Required FK Index, 2], [Property: ServiceRecord.IsDeleted (bool) Required, 3], [Property: ServiceRecord.MechanicId (Guid) Required FK Index, 4], [Property: ServiceRecord.ServiceID (Guid) Required FK Index, 5], [Property: ServiceRecord.Status (string) Required, 6] }
+                1 -> Dictionary<IProperty, int> { [Property: Service.ServiceID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: Service.Description (string) Required, 8], [Property: Service.IsDeleted (bool) Required, 9], [Property: Service.VehicleID (Guid) Required FK Index, 10] }
+                2 -> 0
+                3 -> 7
+                4 -> Dictionary<IProperty, int> { [Property: ServiceServiceCategory (Dictionary<string, object>).ServiceCategoriesCategoryID (no field, Guid) Indexer Required PK FK AfterSave:Throw, 11], [Property: ServiceServiceCategory (Dictionary<string, object>).ServicesServiceID (no field, Guid) Indexer Required PK FK Index AfterSave:Throw, 12] }
+                5 -> Dictionary<IProperty, int> { [Property: ServiceCategory.CategoryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: ServiceCategory.Amount (float) Required, 14], [Property: ServiceCategory.Name (string) Required, 15] }
+                6 -> 11
+                7 -> 12
+                8 -> 13
+            SELECT s3.ServiceRecordID, s3.BookingID, s3.CustomerID, s3.IsDeleted, s3.MechanicId, s3.ServiceID, s3.Status, s3.ServiceID0, s3.Description, s3.IsDeleted0, s3.VehicleID, s4.ServiceCategoriesCategoryID, s4.ServicesServiceID, s4.CategoryID, s4.Amount, s4.Name
+            FROM 
+            (
+                SELECT TOP(2) s.ServiceRecordID, s.BookingID, s.CustomerID, s.IsDeleted, s.MechanicId, s.ServiceID, s.Status, s0.ServiceID AS ServiceID0, s0.Description, s0.IsDeleted AS IsDeleted0, s0.VehicleID
+                FROM serviceRecords AS s
+                INNER JOIN Services AS s0 ON s.ServiceID == s0.ServiceID
+                WHERE s.ServiceRecordID == @__key_0
+            ) AS s3
+            LEFT JOIN 
+            (
+                SELECT s1.ServiceCategoriesCategoryID, s1.ServicesServiceID, s2.CategoryID, s2.Amount, s2.Name
+                FROM ServiceServiceCategory AS s1
+                INNER JOIN ServiceCategories AS s2 ON s1.ServiceCategoriesCategoryID == s2.CategoryID
+            ) AS s4 ON s3.ServiceID0 == s4.ServicesServiceID
+            ORDER BY s3.ServiceRecordID ASC, s3.ServiceID0 ASC, s4.ServiceCategoriesCategoryID ASC, s4.ServicesServiceID ASC, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            resultContext.Values == null ? 
+            {
+                ServiceRecord entity;
+                Service entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext1;
+                    IEntityType entityType1;
+                    ServiceRecord instance1;
+                    InternalEntityEntry entry1;
+                    bool hasNullKey1;
+                    materializationContext1 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance1 = default(ServiceRecord);
+                    entry1 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: ServiceRecord.ServiceRecordID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\").FindPrimaryKey()], 
+                        keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                        throwOnNullKey: True, 
+                        hasNullKey: hasNullKey1);
+                    !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                    {
+                        entityType1 = entry1.EntityType;
+                        return instance1 = (ServiceRecord)entry1.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot1;
+                        shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType1 = [LIFTABLE Constant: EntityType: ServiceRecord | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\")];
+                        instance1 = switch (entityType1)
+                        {
+                            case [LIFTABLE Constant: EntityType: ServiceRecord | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\")]: 
+                                {
+                                    return 
+                                    {
+                                        ServiceRecord instance;
+                                        instance = new ServiceRecord();
+                                        instance.<ServiceRecordID>k__BackingField = dataReader.GetGuid(0);
+                                        instance.<BookingID>k__BackingField = dataReader.GetGuid(1);
+                                        instance.<CustomerID>k__BackingField = dataReader.GetGuid(2);
+                                        instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(3);
+                                        instance.<MechanicId>k__BackingField = dataReader.GetGuid(4);
+                                        instance.<ServiceID>k__BackingField = dataReader.GetGuid(5);
+                                        instance.<Status>k__BackingField = dataReader.GetString(6);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext1.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: ServiceRecord | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(ServiceRecord)
+                        }
+                        ;
+                        entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType1, 
+                            entity: instance1, 
+                            snapshot: shadowSnapshot1);
+                        return instance1;
+                    } : default(void);
+                    return instance1;
+                };
+                entity = 
+                {
+                    MaterializationContext materializationContext2;
+                    IEntityType entityType2;
+                    Service instance2;
+                    InternalEntityEntry entry2;
+                    bool hasNullKey2;
+                    materializationContext2 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance2 = default(Service);
+                    entry2 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: Service.ServiceID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindPrimaryKey()], 
+                        keyValues: new object[]{ (object)dataReader.GetGuid(7) }, 
+                        throwOnNullKey: True, 
+                        hasNullKey: hasNullKey2);
+                    !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                    {
+                        entityType2 = entry2.EntityType;
+                        return instance2 = (Service)entry2.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot2;
+                        shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType2 = [LIFTABLE Constant: EntityType: Service | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\")];
+                        instance2 = switch (entityType2)
+                        {
+                            case [LIFTABLE Constant: EntityType: Service | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\")]: 
+                                {
+                                    return 
+                                    {
+                                        Service instance;
+                                        instance = new Service();
+                                        instance.<ServiceID>k__BackingField = dataReader.GetGuid(7);
+                                        instance.<Description>k__BackingField = dataReader.GetString(8);
+                                        instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(9);
+                                        instance.<VehicleID>k__BackingField = dataReader.GetGuid(10);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext2.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: Service | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(Service)
+                        }
+                        ;
+                        entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType2, 
+                            entity: instance2, 
+                            snapshot: shadowSnapshot2);
+                        return instance2;
+                    } : default(void);
+                    return instance2;
+                };
+                resultContext.Values = new object[]
+                { 
+                    entity, 
+                    entity 
+                };
+                ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Service, Service>(
+                    collectionId: 0, 
+                    queryContext: queryContext, 
+                    dbDataReader: dataReader, 
+                    resultCoordinator: resultCoordinator, 
+                    entity: (Service)(resultContext.Values[1]), 
+                    parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                    { 
+                        (object)(Guid?)dataReader.GetGuid(0), 
+                        (object)(Guid?)dataReader.GetGuid(7) 
+                    }], 
+                    outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                    { 
+                        (object)(Guid?)dataReader.GetGuid(0), 
+                        (object)(Guid?)dataReader.GetGuid(7) 
+                    }], 
+                    navigation: [LIFTABLE Constant: SkipNavigation: Service.ServiceCategories (ICollection<ServiceCategory>) CollectionServiceCategory Inverse: Services | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindSkipNavigation(\"ServiceCategories\")], 
+                    clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Service, ICollection<ServiceCategory>, ServiceCategory> | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindSkipNavigation(\"ServiceCategories\").GetCollectionAccessor()], 
+                    trackingQuery: True, 
+                    setLoaded: True);
+                ShaperProcessingExpressionVisitor.IncludeReference<ServiceRecord, ServiceRecord, Service>(
+                    queryContext: queryContext, 
+                    entity: (ServiceRecord)(resultContext.Values[0]), 
+                    relatedEntity: (Service)(resultContext.Values[1]), 
+                    navigation: [LIFTABLE Constant: Navigation: ServiceRecord.Service (Service) ToPrincipal Service Inverse: ServiceRecord | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\").FindNavigation(\"Service\")], 
+                    inverseNavigation: [LIFTABLE Constant: Navigation: Service.ServiceRecord (ServiceRecord) ToDependent ServiceRecord Inverse: Service | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindNavigation(\"ServiceRecord\")], 
+                    fixup: (namelessParameter{10}, namelessParameter{11}) => 
+                    {
+                        namelessParameter{10}.<Service>k__BackingField = namelessParameter{11};
+                        return namelessParameter{11}.<ServiceRecord>k__BackingField = namelessParameter{10};
+                    }, 
+                    trackingQuery: True);
+            } : default(void);
+            ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Service, ServiceCategory>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(Guid?)dataReader.GetGuid(0), 
+                    (object)(Guid?)dataReader.GetGuid(7) 
+                }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(Guid?)dataReader.GetGuid(0), 
+                    (object)(Guid?)dataReader.GetGuid(7) 
+                }], 
+                selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)dataReader.IsDBNull(11) ? default(Guid?) : (Guid?)dataReader.GetGuid(11), 
+                    (object)dataReader.IsDBNull(12) ? default(Guid?) : (Guid?)dataReader.GetGuid(12), 
+                    (object)dataReader.IsDBNull(13) ? default(Guid?) : (Guid?)dataReader.GetGuid(13) 
+                }], 
+                parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+                { 
+                    (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                    (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+                }], 
+                outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+                { 
+                    (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                    (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+                }], 
+                selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+                { 
+                    (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                    (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                    (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+                }], 
+                innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                {
+                    Dictionary<string, object> entity;
+                    ServiceCategory entity;
+                    entity = 
+                    {
+                        MaterializationContext materializationContext3;
+                        IEntityType entityType3;
+                        Dictionary<string, object> instance3;
+                        InternalEntityEntry entry3;
+                        bool hasNullKey3;
+                        materializationContext3 = new MaterializationContext(
+                            [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                            queryContext.Context
+                        );
+                        instance3 = default(Dictionary<string, object>);
+                        entry3 = queryContext.TryGetEntry(
+                            key: [LIFTABLE Constant: Key: ServiceServiceCategory (Dictionary<string, object>).ServiceCategoriesCategoryID, ServiceServiceCategory (Dictionary<string, object>).ServicesServiceID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\").FindPrimaryKey()], 
+                            keyValues: new object[]
+                            { 
+                                dataReader.IsDBNull(11) ? default(object) : (object)dataReader.GetGuid(11), 
+                                dataReader.IsDBNull(12) ? default(object) : (object)dataReader.GetGuid(12) 
+                            }, 
+                            throwOnNullKey: False, 
+                            hasNullKey: hasNullKey3);
+                        !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+                        {
+                            entityType3 = entry3.EntityType;
+                            return instance3 = (Dictionary<string, object>)entry3.Entity;
+                        } : 
+                        {
+                            ISnapshot shadowSnapshot3;
+                            shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                            entityType3 = [LIFTABLE Constant: EntityType: ServiceServiceCategory (Dictionary<string, object>) CLR Type: Dictionary<string, object> | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\")];
+                            instance3 = switch (entityType3)
+                            {
+                                case [LIFTABLE Constant: EntityType: ServiceServiceCategory (Dictionary<string, object>) CLR Type: Dictionary<string, object> | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\")]: 
+                                    {
+                                        return 
+                                        {
+                                            Dictionary<string, object> instance;
+                                            instance = new Dictionary<string, object>();
+                                            instance[\"ServiceCategoriesCategoryID\"] = dataReader.IsDBNull(11) ? default(object) : (object)dataReader.GetGuid(11);
+                                            instance[\"ServicesServiceID\"] = dataReader.IsDBNull(12) ? default(object) : (object)dataReader.GetGuid(12);
+                                            (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                context: materializationContext3.Context, 
+                                                entity: instance, 
+                                                queryTrackingBehavior: TrackAll, 
+                                                structuralType: [LIFTABLE Constant: EntityType: ServiceServiceCategory (Dictionary<string, object>) CLR Type: Dictionary<string, object> | Resolver: namelessParameter{14} => namelessParameter{14}.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\")]) : default(void);
+                                            return instance;
+                                        }}
+                                default: 
+                                    default(Dictionary<string, object>)
+                            }
+                            ;
+                            entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                entityType: entityType3, 
+                                entity: instance3, 
+                                snapshot: shadowSnapshot3);
+                            return instance3;
+                        } : default(void);
+                        return instance3;
+                    };
+                    entity = 
+                    {
+                        MaterializationContext materializationContext4;
+                        IEntityType entityType4;
+                        ServiceCategory instance4;
+                        InternalEntityEntry entry4;
+                        bool hasNullKey4;
+                        materializationContext4 = new MaterializationContext(
+                            [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                            queryContext.Context
+                        );
+                        instance4 = default(ServiceCategory);
+                        entry4 = queryContext.TryGetEntry(
+                            key: [LIFTABLE Constant: Key: ServiceCategory.CategoryID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\").FindPrimaryKey()], 
+                            keyValues: new object[]{ dataReader.IsDBNull(13) ? default(object) : (object)dataReader.GetGuid(13) }, 
+                            throwOnNullKey: False, 
+                            hasNullKey: hasNullKey4);
+                        !(hasNullKey4) ? entry4 != default(InternalEntityEntry) ? 
+                        {
+                            entityType4 = entry4.EntityType;
+                            return instance4 = (ServiceCategory)entry4.Entity;
+                        } : 
+                        {
+                            ISnapshot shadowSnapshot4;
+                            shadowSnapshot4 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                            entityType4 = [LIFTABLE Constant: EntityType: ServiceCategory | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\")];
+                            instance4 = switch (entityType4)
+                            {
+                                case [LIFTABLE Constant: EntityType: ServiceCategory | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\")]: 
+                                    {
+                                        return 
+                                        {
+                                            ServiceCategory instance;
+                                            instance = new ServiceCategory();
+                                            instance.<CategoryID>k__BackingField = dataReader.IsDBNull(13) ? default(Guid) : dataReader.GetGuid(13);
+                                            instance.<Amount>k__BackingField = dataReader.IsDBNull(14) ? default(float) : dataReader.GetFloat(14);
+                                            instance.<Name>k__BackingField = dataReader.IsDBNull(15) ? default(string) : dataReader.GetString(15);
+                                            (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                context: materializationContext4.Context, 
+                                                entity: instance, 
+                                                queryTrackingBehavior: TrackAll, 
+                                                structuralType: [LIFTABLE Constant: EntityType: ServiceCategory | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\")]) : default(void);
+                                            return instance;
+                                        }}
+                                default: 
+                                    default(ServiceCategory)
+                            }
+                            ;
+                            entry4 = entityType4 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                entityType: entityType4, 
+                                entity: instance4, 
+                                snapshot: shadowSnapshot4);
+                            return instance4;
+                        } : default(void);
+                        return instance4;
+                    };
+                    return NavigationExpandingExpressionVisitor.FetchJoinEntity<Dictionary<string, object>, ServiceCategory>(
+                        joinEntity: entity, 
+                        targetEntity: entity);
+                }, 
+                inverseNavigation: [LIFTABLE Constant: SkipNavigation: ServiceCategory.Services (ICollection<Service>) CollectionService Inverse: ServiceCategories | Resolver: namelessParameter{18} => namelessParameter{18}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\").FindSkipNavigation(\"Services\")], 
+                fixup: (namelessParameter{19}, namelessParameter{20}) => 
+                {
+                    [LIFTABLE Constant: ClrICollectionAccessor<Service, ICollection<ServiceCategory>, ServiceCategory> | Resolver: namelessParameter{21} => namelessParameter{21}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindSkipNavigation(\"ServiceCategories\").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{19}, 
+                        value: namelessParameter{20}, 
+                        forMaterialization: True);
+                    return [LIFTABLE Constant: ClrICollectionAccessor<ServiceCategory, ICollection<Service>, Service> | Resolver: namelessParameter{22} => namelessParameter{22}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\").FindSkipNavigation(\"Services\").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{20}, 
+                        value: namelessParameter{19}, 
+                        forMaterialization: True);
+                }, 
+                trackingQuery: True);
+            return IsTrue(resultCoordinator.ResultReady)
+             ? (ServiceRecord)(resultContext.Values[0]) : default(ServiceRecord);
+        }, 
+        contextType: VSM.Contexts.VSMContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-06-12 12:41:44 [Debug] Creating DbConnection.
+2025-06-12 12:41:44 [Debug] Created DbConnection. (11ms).
+2025-06-12 12:41:44 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-12 12:41:44 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-12 12:41:44 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-12 12:41:44 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-12 12:41:44 [Debug] Initialized DbCommand for '"ExecuteReader"' (3ms).
+2025-06-12 12:41:44 [Debug] Executing DbCommand [Parameters=["@__key_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT s3.\"ServiceRecordID\", s3.\"BookingID\", s3.\"CustomerID\", s3.\"IsDeleted\", s3.\"MechanicId\", s3.\"ServiceID\", s3.\"Status\", s3.\"ServiceID0\", s3.\"Description\", s3.\"IsDeleted0\", s3.\"VehicleID\", s4.\"ServiceCategoriesCategoryID\", s4.\"ServicesServiceID\", s4.\"CategoryID\", s4.\"Amount\", s4.\"Name\"
+FROM (
+    SELECT s.\"ServiceRecordID\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"ServiceID\" AS \"ServiceID0\", s0.\"Description\", s0.\"IsDeleted\" AS \"IsDeleted0\", s0.\"VehicleID\"
+    FROM \"serviceRecords\" AS s
+    INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+    WHERE s.\"ServiceRecordID\" = @__key_0
+    LIMIT 2
+) AS s3
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s4 ON s3.\"ServiceID0\" = s4.\"ServicesServiceID\"
+ORDER BY s3.\"ServiceRecordID\", s3.\"ServiceID0\", s4.\"ServiceCategoriesCategoryID\", s4.\"ServicesServiceID\""
+2025-06-12 12:41:44 [Information] Executed DbCommand ("26"ms) [Parameters=["@__key_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT s3.\"ServiceRecordID\", s3.\"BookingID\", s3.\"CustomerID\", s3.\"IsDeleted\", s3.\"MechanicId\", s3.\"ServiceID\", s3.\"Status\", s3.\"ServiceID0\", s3.\"Description\", s3.\"IsDeleted0\", s3.\"VehicleID\", s4.\"ServiceCategoriesCategoryID\", s4.\"ServicesServiceID\", s4.\"CategoryID\", s4.\"Amount\", s4.\"Name\"
+FROM (
+    SELECT s.\"ServiceRecordID\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"ServiceID\" AS \"ServiceID0\", s0.\"Description\", s0.\"IsDeleted\" AS \"IsDeleted0\", s0.\"VehicleID\"
+    FROM \"serviceRecords\" AS s
+    INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+    WHERE s.\"ServiceRecordID\" = @__key_0
+    LIMIT 2
+) AS s3
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s4 ON s3.\"ServiceID0\" = s4.\"ServicesServiceID\"
+ORDER BY s3.\"ServiceRecordID\", s3.\"ServiceID0\", s4.\"ServiceCategoriesCategoryID\", s4.\"ServicesServiceID\""
+2025-06-12 12:41:44 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-12 12:41:44 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 3ms reading results.
+2025-06-12 12:41:44 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-12 12:41:44 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (1ms).
+2025-06-12 12:41:44 [Error] Error Adding bill
+2025-06-12 12:41:44 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-12 12:41:44 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-06-12 12:41:44 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-06-12 12:41:44 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-12 12:41:44 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-12 12:41:44 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-06-12 12:41:44 [Information] Executing "BadRequestObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-06-12 12:41:44 [Information] Executed action "VSM.Controllers.BillController.Add (VehicleServiceManagement)" in 644.4097ms
+2025-06-12 12:41:44 [Information] Executed endpoint '"VSM.Controllers.BillController.Add (VehicleServiceManagement)"'
+2025-06-12 12:41:44 [Debug] Connection id ""0HND9G1HDBA8F"" completed keep alive response.
+2025-06-12 12:41:44 [Debug] '"VSMContext"' disposed.
+2025-06-12 12:41:44 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-12 12:41:44 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-12 12:41:44 [Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5154""""/api/Bill""" - 400 null "application/json; charset=utf-8" 767.6715ms
+2025-06-12 12:41:44 [Debug] Connection id ""0HND9G1HDBA8F"" received FIN.
+2025-06-12 12:41:44 [Debug] Connection id ""0HND9G1HDBA8F"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-12 12:41:44 [Debug] Connection id ""0HND9G1HDBA8F"" disconnecting.
+2025-06-12 12:41:44 [Debug] Connection id ""0HND9G1HDBA8F"" stopped.
+2025-06-12 12:43:13 [Debug] Hosting stopping
+2025-06-12 12:43:13 [Information] Application is shutting down...
+2025-06-12 12:43:13 [Debug] Hosting stopped

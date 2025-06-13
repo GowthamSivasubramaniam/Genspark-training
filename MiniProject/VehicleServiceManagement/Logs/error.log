@@ -1,0 +1,793 @@
+2025-06-10 23:00:31Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 27
+
+2025-06-11 09:29:37Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 28
+
+2025-06-11 09:31:19Z [ERROR] Error Getting Available Slots
+Npgsql.PostgresException (0x80004005): 42703: column b.Imageurl does not exist
+
+POSITION: 71
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at VSM.Repositories.BookingRepository.GetAll(Int32 pageNumber, Int32 pageSize) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 22
+   at VSM.Services.BookingService.DisplaySlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 76
+   at VSM.Controllers.BookingController.GetAvailableSlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 44
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column b.Imageurl does not exist
+    Position: 71
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+
+2025-06-11 09:31:30Z [ERROR] Error Getting Available Slots
+Npgsql.PostgresException (0x80004005): 42703: column b.Imageurl does not exist
+
+POSITION: 71
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at VSM.Repositories.BookingRepository.GetAll(Int32 pageNumber, Int32 pageSize) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 22
+   at VSM.Services.BookingService.DisplaySlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 76
+   at VSM.Controllers.BookingController.GetAvailableSlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 44
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column b.Imageurl does not exist
+    Position: 71
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+
+2025-06-11 09:31:31Z [ERROR] Error Getting Available Slots
+Npgsql.PostgresException (0x80004005): 42703: column b.Imageurl does not exist
+
+POSITION: 71
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at VSM.Repositories.BookingRepository.GetAll(Int32 pageNumber, Int32 pageSize) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 22
+   at VSM.Services.BookingService.DisplaySlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 76
+   at VSM.Controllers.BookingController.GetAvailableSlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 44
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column b.Imageurl does not exist
+    Position: 71
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+
+2025-06-11 09:36:57Z [ERROR] Error Getting Available Slots
+Npgsql.PostgresException (0x80004005): 2201X: OFFSET must not be negative
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at VSM.Repositories.BookingRepository.GetAll(Int32 pageNumber, Int32 pageSize) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 22
+   at VSM.Services.BookingService.DisplaySlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 76
+   at VSM.Controllers.BookingController.GetAvailableSlots() in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 44
+  Exception data:
+    Severity: ERROR
+    SqlState: 2201X
+    MessageText: OFFSET must not be negative
+    File: nodeLimit.c
+    Line: 373
+    Routine: recompute_limits
+
+2025-06-11 17:24:20Z [ERROR] Error Adding Service
+System.Exception: One or more categories not found
+   at VSM.Services.ServiceService.AddService(ServiceAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 38
+   at VSM.Controllers.ServiceController.AddService(ServiceAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 28
+
+2025-06-11 17:46:24Z [ERROR] Error Adding bill
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_Bills_ServiceRecordID"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_Bills_ServiceRecordID"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Bills
+    ConstraintName: IX_Bills_ServiceRecordID
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Add(T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 20
+   at VSM.Services.BillService.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BillService.cs:line 57
+   at VSM.Controllers.BillController.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/BillController.cs:line 27
+
+2025-06-11 17:46:55Z [ERROR] Error Adding ServiceRecord
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_serviceRecords_BookingID"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_serviceRecords_BookingID"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: serviceRecords
+    ConstraintName: IX_serviceRecords_BookingID
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Add(T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 20
+   at VSM.Services.ServiceRecordService.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 44
+   at VSM.Controllers.ServiceRecordController.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 27
+
+2025-06-11 17:47:09Z [ERROR] Error Adding bill
+System.Exception: Item Not Found
+   at VSM.Repositories.ServiceRecordRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/ServiceRecordRepository.cs:line 19
+   at VSM.Services.BillService.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BillService.cs:line 24
+   at VSM.Controllers.BillController.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/BillController.cs:line 27
+
+2025-06-11 17:47:35Z [ERROR] Error Adding ServiceRecord
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_serviceRecords_BookingID"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_serviceRecords_BookingID"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: serviceRecords
+    ConstraintName: IX_serviceRecords_BookingID
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Add(T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 20
+   at VSM.Services.ServiceRecordService.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 44
+   at VSM.Controllers.ServiceRecordController.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 27
+
+2025-06-11 19:09:37Z [ERROR] Error Getting Customers By Name
+System.Exception: No customers found with name containing 'gowtham'
+   at VSM.Services.CustomerService.GetByName(String name) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 91
+   at VSM.Controllers.CustomerController.GetByName(String name) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 75
+
+2025-06-11 19:31:56Z [ERROR] Error Creating Booking
+System.Exception: Invalid time slot. Please choose an available slot.
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 45
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 28
+
+2025-06-11 19:51:48Z [ERROR] Error Getting Vehicle By Id
+System.Exception: User Not Found
+   at VSM.Repositories.VehicleRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/vehicleRepository.cs:line 15
+   at VSM.Services.VehicleService.GetById(Guid Id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 41
+   at VSM.Controllers.VehicleController.GetById(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 59
+
+2025-06-11 19:55:21Z [ERROR] Error Getting Vehicle By Id
+System.Exception: User Not Found
+   at VSM.Repositories.VehicleRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/vehicleRepository.cs:line 15
+   at VSM.Services.VehicleService.GetById(Guid Id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 41
+   at VSM.Controllers.VehicleController.GetById(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 59
+
+2025-06-11 19:55:24Z [ERROR] Error Getting Vehicle By Id
+System.Exception: User Not Found
+   at VSM.Repositories.VehicleRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/vehicleRepository.cs:line 15
+   at VSM.Services.VehicleService.GetById(Guid Id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 41
+   at VSM.Controllers.VehicleController.GetById(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 59
+
+2025-06-11 19:55:42Z [ERROR] Error Getting Vehicle By Id
+System.Exception: Vehicle Not Found
+   at VSM.Repositories.VehicleRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/vehicleRepository.cs:line 15
+   at VSM.Services.VehicleService.GetById(Guid Id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 41
+   at VSM.Controllers.VehicleController.GetById(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 59
+
+2025-06-11 21:22:42Z [ERROR] Error Downlodaing bill
+System.Exception: Bill Not Found
+   at VSM.Repositories.BillRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BillRepository.cs:line 23
+   at VSM.Services.BillService.DownloadBillPdf(Guid billId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BillService.cs:line 83
+   at VSM.Controllers.BillController.DownloadBillPdf(Guid billId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/BillController.cs:line 80
+
+2025-06-11 23:08:18Z [ERROR] Error Downlodaing bill
+System.Exception: No Bills found
+   at VSM.Services.BillService.GetByServiceRecordId(Guid serviceRecordId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BillService.cs:line 88
+   at VSM.Controllers.BillController.GetByServiceRecordId(Guid serviceRecordId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/BillController.cs:line 65
+
+2025-06-11 23:26:23Z [ERROR] Error Updating Booking
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Update(K key, T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 58
+   at VSM.Services.BookingService.UpdateBooking(Guid id, DateTime slot) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 124
+   at VSM.Controllers.BookingController.UpdateBooking(Guid id, DateTime slot) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 90
+
+2025-06-11 23:32:26Z [ERROR] Error Updating Booking
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Update(K key, T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 58
+   at VSM.Services.BookingService.UpdateBooking(Guid id, DateTime slot) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 124
+   at VSM.Controllers.BookingController.UpdateBooking(Guid id, DateTime slot) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 90
+
+2025-06-11 23:35:56Z [ERROR] Error Updating Booking
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Update(K key, T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 58
+   at VSM.Services.BookingService.UpdateBooking(Guid id, DateTime slot) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 125
+   at VSM.Controllers.BookingController.UpdateBooking(Guid id, DateTime slot) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 90
+
+2025-06-11 23:43:59Z [ERROR] Error Cancelling Booking
+System.Exception: Booking Not Found
+   at VSM.Repositories.BookingRepository.Get(Guid key)
+   at VSM.Services.BookingService.CancelBooking(Guid id)
+   at VSM.Controllers.BookingController.CancelBooking(Guid id)
+
+2025-06-11 23:48:00Z [ERROR] Error Cancelling Booking
+System.Exception: Booking Not Found
+   at VSM.Repositories.BookingRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 15
+   at VSM.Services.BookingService.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 133
+   at VSM.Controllers.BookingController.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 106
+
+2025-06-11 23:49:28Z [ERROR] Error Cancelling Booking
+System.Exception: Booking Not Found
+   at VSM.Repositories.BookingRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 15
+   at VSM.Services.BookingService.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 133
+   at VSM.Controllers.BookingController.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 106
+
+2025-06-11 23:49:37Z [ERROR] Error Cancelling Booking
+System.Exception: Booking Not Found
+   at VSM.Repositories.BookingRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 15
+   at VSM.Services.BookingService.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 133
+   at VSM.Controllers.BookingController.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 106
+
+2025-06-11 23:52:41Z [ERROR] Error Cancelling Booking
+System.Exception: Booking Not Found
+   at VSM.Repositories.BookingRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/BookingRepository.cs:line 15
+   at VSM.Services.BookingService.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 133
+   at VSM.Controllers.BookingController.CancelBooking(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 106
+
+2025-06-11 23:59:14Z [ERROR] Error Creating Booking
+System.Exception: Mechanic Not Found
+   at VSM.Repositories.CustomerRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/CustomerRepository.cs:line 15
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 25
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 28
+
+2025-06-12 00:33:36Z [ERROR] Error Updating Customer
+System.Exception: Customer with email 'abc@gmail.com
+' not found
+   at VSM.Services.CustomerService.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 109
+   at VSM.Controllers.CustomerController.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 105
+
+2025-06-12 00:34:32Z [ERROR] Error Updating Customer
+System.Exception: Customer with email 'abc@gmail.com
+' not found
+   at VSM.Services.CustomerService.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 109
+   at VSM.Controllers.CustomerController.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 105
+
+2025-06-12 00:42:35Z [ERROR] Error Updating Mechanic
+System.Exception: UpdateMechanic: Mechanic with email 'mech@gmailgmail.com' not found.
+   at VSM.Services.MechanicServices.UpdateMechanic(String email, MechanicUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/MechanicServices.cs:line 141
+   at VSM.Controllers.MechanicController.UpdateMechanic(String email, MechanicUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/MechanicController.cs:line 105
+
+2025-06-12 00:42:51Z [ERROR] Error Updating Mechanic
+System.Exception: UpdateMechanic: Mechanic with email 'mech@gmailgmail.com' not found.
+   at VSM.Services.MechanicServices.UpdateMechanic(String email, MechanicUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/MechanicServices.cs:line 141
+   at VSM.Controllers.MechanicController.UpdateMechanic(String email, MechanicUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/MechanicController.cs:line 105
+
+2025-06-12 00:43:43Z [ERROR] Error Registering Mechanic
+System.Exception: User already exists
+   at VSM.Services.MechanicServices.AddMechanic(MechanicAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/MechanicServices.cs:line 65
+   at VSM.Controllers.MechanicController.RegisterMechanic(MechanicAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/MechanicController.cs:line 28
+
+2025-06-12 01:07:06Z [ERROR] Error Deleting Vehicle
+System.Exception: Vehicle not Found
+   at VSM.Services.VehicleService.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 32
+   at VSM.Controllers.VehicleController.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 43
+
+2025-06-12 01:13:28Z [ERROR] Error Adding Service
+System.Exception: Vehicle not found
+   at VSM.Services.ServiceService.AddService(ServiceAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 30
+   at VSM.Controllers.ServiceController.AddService(ServiceAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 28
+
+2025-06-12 01:26:31Z [ERROR] Error Updating Service Categories
+System.Exception: One or more categories Are Existing Please Remove them
+   at VSM.Services.ServiceService.UpdateServiceCategories(Guid serviceId, List`1 categoryNames) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 93
+   at VSM.Controllers.ServiceController.UpdateServiceCategories(Guid serviceId, ServiceCategoryUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 92
+
+2025-06-12 01:28:18Z [ERROR] Error Updating Service Categories
+System.Exception: One or more categories Are Existing Please Remove them
+   at VSM.Services.ServiceService.UpdateServiceCategories(Guid serviceId, List`1 categoryNames) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 93
+   at VSM.Controllers.ServiceController.UpdateServiceCategories(Guid serviceId, ServiceCategoryUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 92
+
+2025-06-12 01:28:47Z [ERROR] Error Updating Service Categories
+System.Exception: One or more categories Are Existing Please Remove them
+   at VSM.Services.ServiceService.UpdateServiceCategories(Guid serviceId, List`1 categoryNames) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 93
+   at VSM.Controllers.ServiceController.UpdateServiceCategories(Guid serviceId, ServiceCategoryUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 92
+
+2025-06-12 01:32:02Z [ERROR] Error Updating Service Categories
+System.Exception: All categories already exist. No new categories to add.
+   at VSM.Services.ServiceService.UpdateServiceCategories(Guid serviceId, List`1 categoryNames) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 98
+   at VSM.Controllers.ServiceController.UpdateServiceCategories(Guid serviceId, ServiceCategoryUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 92
+
+2025-06-12 01:34:56Z [ERROR] Error Updating Service Categories
+System.Exception: One or more categories not found
+   at VSM.Services.ServiceService.UpdateServiceCategories(Guid serviceId, List`1 categoryNames) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 86
+   at VSM.Controllers.ServiceController.UpdateServiceCategories(Guid serviceId, ServiceCategoryUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 92
+
+2025-06-12 01:38:31Z [ERROR] Error Deleting Vehicle
+System.Exception: Vehicle not Found
+   at VSM.Services.VehicleService.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 32
+   at VSM.Controllers.VehicleController.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 43
+
+2025-06-12 01:39:11Z [ERROR] Error Getting Vehicle By Id
+System.Exception: Vehicle Not Found
+   at VSM.Repositories.VehicleRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/vehicleRepository.cs:line 15
+   at VSM.Services.VehicleService.GetById(Guid Id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 41
+   at VSM.Controllers.VehicleController.GetById(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 59
+
+2025-06-12 01:39:19Z [ERROR] Error Getting Vehicle By Id
+System.Exception: Vehicle Not Found
+   at VSM.Repositories.VehicleRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/vehicleRepository.cs:line 15
+   at VSM.Services.VehicleService.GetById(Guid Id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 41
+   at VSM.Controllers.VehicleController.GetById(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 59
+
+2025-06-12 01:39:26Z [ERROR] Error Getting Vehicle By Id
+System.Exception: Vehicle Not Found
+   at VSM.Repositories.VehicleRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/vehicleRepository.cs:line 15
+   at VSM.Services.VehicleService.GetById(Guid Id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 41
+   at VSM.Controllers.VehicleController.GetById(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 59
+
+2025-06-12 01:39:30Z [ERROR] Error Deleting Vehicle
+System.Exception: Vehicle not Found
+   at VSM.Services.VehicleService.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 32
+   at VSM.Controllers.VehicleController.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 43
+
+2025-06-12 01:39:44Z [ERROR] Error Deleting Vehicle
+System.Exception: Vehicle not Found
+   at VSM.Services.VehicleService.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 32
+   at VSM.Controllers.VehicleController.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 43
+
+2025-06-12 01:39:54Z [ERROR] Error Deleting Vehicle
+System.Exception: Vehicle not Found
+   at VSM.Services.VehicleService.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 32
+   at VSM.Controllers.VehicleController.DeleteVehicle(Guid id) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 43
+
+2025-06-12 01:40:50Z [ERROR] Error Soft Deleting Service
+System.Exception: Service not found
+   at VSM.Services.ServiceService.SoftDeleteService(Guid serviceId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceService.cs:line 51
+   at VSM.Controllers.ServiceController.SoftDeleteService(Guid serviceId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceController.cs:line 44
+
+2025-06-12 01:50:02Z [ERROR] Error Adding ServiceRecord
+System.Exception: Booking Was Deleted or Cancelled
+   at VSM.Services.ServiceRecordService.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 41
+   at VSM.Controllers.ServiceRecordController.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 27
+
+2025-06-12 01:51:20Z [ERROR] Error Adding ServiceRecord
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_serviceRecords_ServiceID"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_serviceRecords_ServiceID"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: serviceRecords
+    ConstraintName: IX_serviceRecords_ServiceID
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Add(T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 20
+   at VSM.Services.ServiceRecordService.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 45
+   at VSM.Controllers.ServiceRecordController.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 27
+
+2025-06-12 02:00:06Z [ERROR] Error Updating ServiceRecord Status
+System.Exception: Item Not Found
+   at VSM.Repositories.ServiceRecordRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/ServiceRecordRepository.cs:line 19
+   at VSM.Services.ServiceRecordService.UpdateStatus(ServiceRecordStatusUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 51
+   at VSM.Controllers.ServiceRecordController.UpdateStatus(ServiceRecordStatusUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 43
+
+2025-06-12 02:04:29Z [ERROR] Error Adding bill
+System.Exception: Item Not Found
+   at VSM.Repositories.ServiceRecordRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/ServiceRecordRepository.cs:line 19
+   at VSM.Services.BillService.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BillService.cs:line 24
+   at VSM.Controllers.BillController.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/BillController.cs:line 27
+
+2025-06-12 02:23:44Z [ERROR] Error Deleting Customer
+System.Exception: Customer with email 'abc3@gmail.com' not found
+   at VSM.Services.CustomerService.DeleteCustomer(String email) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 64
+   at VSM.Controllers.CustomerController.DeleteCustomer(String email) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 44
+
+2025-06-12 02:27:09Z [ERROR] Error Deleting Mechanic
+System.Exception: DeleteMechanic: Mechanic with email 'abc4@gmail.com
+' not found.
+   at VSM.Services.MechanicServices.DeleteMechanic(String email) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/MechanicServices.cs:line 77
+   at VSM.Controllers.MechanicController.DeleteMechanic(String email) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/MechanicController.cs:line 44
+
+2025-06-12 12:54:16Z [ERROR] Error Adding bill
+System.Exception: Item Not Found
+   at VSM.Repositories.ServiceRecordRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/ServiceRecordRepository.cs:line 19
+   at VSM.Services.BillService.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BillService.cs:line 24
+   at VSM.Controllers.BillController.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/BillController.cs:line 29
+
+2025-06-12 12:55:13Z [ERROR] Error Adding bill
+System.Exception: Item Not Found
+   at VSM.Repositories.ServiceRecordRepository.Get(Guid key) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/ServiceRecordRepository.cs:line 19
+   at VSM.Services.BillService.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BillService.cs:line 24
+   at VSM.Controllers.BillController.Add(BillAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/BillController.cs:line 29
+
+2025-06-12 19:39:47Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 29
+
+2025-06-12 19:46:05Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 29
+
+2025-06-12 19:51:58Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 29
+
+2025-06-12 19:52:06Z [ERROR] Error Updating Customer
+System.Exception: Customer with email 'null' not found
+   at VSM.Services.CustomerService.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 109
+   at VSM.Controllers.CustomerController.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 106
+
+2025-06-12 19:52:08Z [ERROR] Error Updating Customer
+System.Exception: Customer with email 'null' not found
+   at VSM.Services.CustomerService.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 109
+   at VSM.Controllers.CustomerController.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 106
+
+2025-06-12 19:52:09Z [ERROR] Error Updating Customer
+System.Exception: Customer with email 'null' not found
+   at VSM.Services.CustomerService.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 109
+   at VSM.Controllers.CustomerController.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 106
+
+2025-06-12 19:52:11Z [ERROR] Error Updating Customer
+System.Exception: Customer with email 'null' not found
+   at VSM.Services.CustomerService.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 109
+   at VSM.Controllers.CustomerController.UpdateCustomer(String email, CustomerUpdateDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 106
+
+2025-06-12 19:52:44Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 29
+
+2025-06-12 19:53:06Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 29
+
+2025-06-12 19:54:19Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 29
+
+2025-06-12 20:09:44Z [ERROR] Error Creating Booking
+System.Exception: Invalid time slot. Please choose an available slot.
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 45
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 20:26:57Z [ERROR] Error Registering Mechanic
+System.Exception: User already exists
+   at VSM.Services.MechanicServices.AddMechanic(MechanicAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/MechanicServices.cs:line 65
+   at VSM.Controllers.MechanicController.RegisterMechanic(MechanicAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/MechanicController.cs:line 29
+
+2025-06-12 20:44:31Z [ERROR] Error Getting ServiceRecords By CustomerId
+System.Exception: No service records found
+   at VSM.Services.ServiceRecordService.GetByCustomerId(Guid customerId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 75
+   at VSM.Controllers.ServiceRecordController.GetByCustomerId(Guid customerId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 92
+
+2025-06-12 20:46:26Z [ERROR] Error Getting ServiceRecords By MechanicId
+System.Exception: No service records found
+   at VSM.Services.ServiceRecordService.GetByMechanicId(Guid mechanicId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 82
+   at VSM.Controllers.ServiceRecordController.GetByMechanicId(Guid mechanicId) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 107
+
+2025-06-12 21:07:28Z [ERROR] Error Creating Booking
+System.Exception: You have already booked this slot
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 63
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 21:07:37Z [ERROR] Error Creating Booking
+System.Exception: You have already booked this slot
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 63
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 21:07:48Z [ERROR] Error Creating Booking
+System.Exception: You have already booked this slot
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 63
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 21:10:22Z [ERROR] Error Creating Booking
+System.Exception: You have already booked this slot
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 63
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 21:10:25Z [ERROR] Error Creating Booking
+System.Exception: You have already booked this slot
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 63
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 21:10:50Z [ERROR] Error Creating Booking
+System.Exception: You have already booked this slot
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 63
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 21:16:07Z [ERROR] Error Adding ServiceRecord
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_serviceRecords_ServiceID"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "IX_serviceRecords_ServiceID"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: serviceRecords
+    ConstraintName: IX_serviceRecords_ServiceID
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at VSM.Repositories.Repository`2.Add(T item) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Repositories/Repository.cs:line 20
+   at VSM.Services.ServiceRecordService.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/ServiceRecordService.cs:line 45
+   at VSM.Controllers.ServiceRecordController.Add(ServiceRecordAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/ServiceRecordController.cs:line 28
+
+2025-06-12 21:19:57Z [ERROR] Error Registering Customer
+System.Exception: User already exists
+   at VSM.Services.CustomerService.AddCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/CustomerService.cs:line 56
+   at VSM.Controllers.CustomerController.RegisterCustomer(CustomerAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/CustomerController.cs:line 29
+
+2025-06-12 23:49:48Z [ERROR] Error Creating Booking
+System.Exception: Customer already has a booking for this slot.
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 66
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 23:50:22Z [ERROR] Error Creating Booking
+System.Exception: Customer already has a booking for this slot.
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 66
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 29
+
+2025-06-12 23:57:04Z [ERROR] Error Adding Vehicle
+System.Exception: Vehicle with the same details already exists.
+   at VSM.Services.VehicleService.AddVehicle(VehicleAdd dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/VehicleService.cs:line 40
+   at VSM.Controllers.VehicleController.AddVehicle(VehicleAdd dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Vehiclecontroller.cs:line 28
+
+2025-06-13 13:36:54Z [ERROR] Error Registering Mechanic
+System.Exception: User already exists
+   at VSM.Services.MechanicServices.AddMechanic(MechanicAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/MechanicServices.cs:line 65
+   at VSM.Controllers.MechanicController.RegisterMechanic(MechanicAddDto dto) in /Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/MechanicController.cs:line 29
+

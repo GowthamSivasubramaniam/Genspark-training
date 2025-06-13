@@ -1,0 +1,1457 @@
+2025-06-13 00:05:34 [Debug] Connection id ""0HND9RQEK52BI"" accepted.
+2025-06-13 00:05:34 [Debug] Connection id ""0HND9RQEK52BI"" started.
+2025-06-13 00:05:34 [Debug] Connection "0HND9RQEK52BI" established using the following protocol: Tls12
+2025-06-13 00:05:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/index.html""" - null null
+2025-06-13 00:05:34 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2025-06-13 00:05:34 [Debug] Request did not match any endpoints
+2025-06-13 00:05:34 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 00:05:34 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 24.3255ms
+2025-06-13 00:05:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/v1/swagger.json""" - null null
+2025-06-13 00:05:34 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2025-06-13 00:05:34 [Debug] Request did not match any endpoints
+2025-06-13 00:05:34 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 00:05:35 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 36.9915ms
+2025-06-13 00:05:36 [Debug] Connection id ""0HND9RQEK52BI"" received FIN.
+2025-06-13 00:05:36 [Debug] The connection queue processing loop for "0HND9RQEK52BI" completed.
+2025-06-13 00:05:36 [Debug] Connection id ""0HND9RQEK52BI"" is closed. The last processed stream ID was 3.
+2025-06-13 00:05:36 [Debug] Connection id ""0HND9RQEK52BI"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 00:05:36 [Debug] Connection id ""0HND9RQEK52BI"" stopped.
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BJ"" received FIN.
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BJ"" accepted.
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BJ"" started.
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BK"" accepted.
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BK"" started.
+2025-06-13 13:34:32 [Debug] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BJ"" stopped.
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BJ"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 13:34:32 [Debug] Connection "0HND9RQEK52BK" established using the following protocol: Tls12
+2025-06-13 13:34:32 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - null null
+2025-06-13 13:34:32 [Debug] 1 candidate(s) found for the request path '"/api/v1/bill"'
+2025-06-13 13:34:32 [Debug] Endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Bill"' is valid for the request path '"/api/v1/bill"'
+2025-06-13 13:34:32 [Debug] Request matched endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-06-13 13:34:32 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 13:34:32 [Debug] Policy authentication schemes "" did not succeed
+2025-06-13 13:34:32 [Information] Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)"
+2025-06-13 13:34:32 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-06-13 13:34:32 [Debug] Connection id ""0HND9RQEK52BK"" completed keep alive response.
+2025-06-13 13:34:32 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - 401 0 null 53.8804ms
+2025-06-13 13:34:51 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Authentication/login""" - "application/json" 57
+2025-06-13 13:34:51 [Debug] 1 candidate(s) found for the request path '"/api/v1/Authentication/login"'
+2025-06-13 13:34:51 [Debug] Endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Authentication/login"' is valid for the request path '"/api/v1/Authentication/login"'
+2025-06-13 13:34:51 [Debug] Request matched endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"'
+2025-06-13 13:34:51 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 13:34:51 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-06-13 13:34:51 [Information] Executing endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"'
+2025-06-13 13:34:51 [Information] Route matched with "{action = \"Login\", controller = \"Authentication\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[VSM.DTO.UserLoginResponse]] Login(VSM.DTO.UserLoginRequest)" on controller "VSM.Controllers.AuthenticationController" ("VehicleServiceManagement").
+2025-06-13 13:34:51 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-06-13 13:34:51 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-06-13 13:34:51 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:34:51 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-06-13 13:34:51 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:34:51 [Debug] Executing controller factory for controller "VSM.Controllers.AuthenticationController" ("VehicleServiceManagement")
+2025-06-13 13:34:51 [Debug] Executed controller factory for controller "VSM.Controllers.AuthenticationController" ("VehicleServiceManagement")
+2025-06-13 13:34:51 [Debug] Attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"' ...
+2025-06-13 13:34:51 [Debug] Attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"' using the name '""' in request data ...
+2025-06-13 13:34:51 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2025-06-13 13:34:51 [Debug] Connection id ""0HND9RQEK52BK"", Request id ""0HND9RQEK52BK:00000002"": started reading request body.
+2025-06-13 13:34:51 [Debug] Connection id ""0HND9RQEK52BK"", Request id ""0HND9RQEK52BK:00000002"": done reading request body.
+2025-06-13 13:34:52 [Debug] JSON input formatter succeeded, deserializing to type '"VSM.DTO.UserLoginRequest"'
+2025-06-13 13:34:52 [Debug] Done attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"'.
+2025-06-13 13:34:52 [Debug] Done attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"'.
+2025-06-13 13:34:52 [Debug] Attempting to validate the bound parameter '"request"' of type '"VSM.DTO.UserLoginRequest"' ...
+2025-06-13 13:34:52 [Debug] Done attempting to validate the bound parameter '"request"' of type '"VSM.DTO.UserLoginRequest"'.
+2025-06-13 13:34:52 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-06-13 13:34:52 [Debug] Creating DbConnection.
+2025-06-13 13:34:52 [Debug] Created DbConnection. (1ms).
+2025-06-13 13:34:52 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:34:52 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:34:52 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:34:52 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:34:52 [Debug] Initialized DbCommand for '"ExecuteReader"' (1ms).
+2025-06-13 13:34:52 [Debug] Executing DbCommand [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:34:52 [Information] Executed DbCommand ("35"ms) [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:34:52 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:34:52 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-06-13 13:34:52 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:34:52 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:34:52 [Fatal] User not found
+2025-06-13 13:34:52 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-13 13:34:52 [Debug] No information found on request to perform content negotiation.
+2025-06-13 13:34:52 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-13 13:34:52 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-13 13:34:52 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-06-13 13:34:52 [Information] Executing "UnauthorizedObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-06-13 13:34:52 [Information] Executed action "VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)" in 189.7062ms
+2025-06-13 13:34:52 [Information] Executed endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"'
+2025-06-13 13:34:52 [Debug] Connection id ""0HND9RQEK52BK"" completed keep alive response.
+2025-06-13 13:34:52 [Debug] '"VSMContext"' disposed.
+2025-06-13 13:34:52 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:34:52 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:34:52 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Authentication/login""" - 401 null "application/json; charset=utf-8" 219.7089ms
+2025-06-13 13:35:00 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Authentication/login""" - "application/json" 51
+2025-06-13 13:35:00 [Debug] 1 candidate(s) found for the request path '"/api/v1/Authentication/login"'
+2025-06-13 13:35:00 [Debug] Endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Authentication/login"' is valid for the request path '"/api/v1/Authentication/login"'
+2025-06-13 13:35:00 [Debug] Request matched endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"'
+2025-06-13 13:35:00 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 13:35:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-06-13 13:35:00 [Information] Executing endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"'
+2025-06-13 13:35:00 [Information] Route matched with "{action = \"Login\", controller = \"Authentication\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[VSM.DTO.UserLoginResponse]] Login(VSM.DTO.UserLoginRequest)" on controller "VSM.Controllers.AuthenticationController" ("VehicleServiceManagement").
+2025-06-13 13:35:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-06-13 13:35:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-06-13 13:35:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:35:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-06-13 13:35:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:35:00 [Debug] Executing controller factory for controller "VSM.Controllers.AuthenticationController" ("VehicleServiceManagement")
+2025-06-13 13:35:00 [Debug] Executed controller factory for controller "VSM.Controllers.AuthenticationController" ("VehicleServiceManagement")
+2025-06-13 13:35:00 [Debug] Attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"' ...
+2025-06-13 13:35:00 [Debug] Attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"' using the name '""' in request data ...
+2025-06-13 13:35:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2025-06-13 13:35:00 [Debug] Connection id ""0HND9RQEK52BK"", Request id ""0HND9RQEK52BK:00000003"": started reading request body.
+2025-06-13 13:35:00 [Debug] Connection id ""0HND9RQEK52BK"", Request id ""0HND9RQEK52BK:00000003"": done reading request body.
+2025-06-13 13:35:00 [Debug] JSON input formatter succeeded, deserializing to type '"VSM.DTO.UserLoginRequest"'
+2025-06-13 13:35:00 [Debug] Done attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"'.
+2025-06-13 13:35:00 [Debug] Done attempting to bind parameter '"request"' of type '"VSM.DTO.UserLoginRequest"'.
+2025-06-13 13:35:00 [Debug] Attempting to validate the bound parameter '"request"' of type '"VSM.DTO.UserLoginRequest"' ...
+2025-06-13 13:35:00 [Debug] Done attempting to validate the bound parameter '"request"' of type '"VSM.DTO.UserLoginRequest"'.
+2025-06-13 13:35:00 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-06-13 13:35:00 [Debug] Creating DbConnection.
+2025-06-13 13:35:00 [Debug] Created DbConnection. (0ms).
+2025-06-13 13:35:00 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:35:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:35:00 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:35:00 [Debug] Executing DbCommand [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:35:00 [Information] Executed DbCommand ("22"ms) [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:35:00 [Debug] Context '"VSMContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:00 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 6ms reading results.
+2025-06-13 13:35:00 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:35:00 [Debug] An entity of type '"User"' tracked by '"VSMContext"' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:00 [Debug] SaveChanges starting for '"VSMContext"'.
+2025-06-13 13:35:00 [Debug] DetectChanges starting for '"VSMContext"'.
+2025-06-13 13:35:00 [Debug] DetectChanges completed for '"VSMContext"'.
+2025-06-13 13:35:00 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:35:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:35:00 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:35:00 [Debug] Executing DbCommand [Parameters=["@p6='?', @p0='?' (DbType = Binary), @p1='?' (DbType = Boolean), @p2='?' (DbType = Binary), @p3='?', @p4='?', @p5='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"Users\" SET \"HashKey\" = @p0, \"IsActive\" = @p1, \"Password\" = @p2, \"RefreshToken\" = @p3, \"Role\" = @p4, \"TTL\" = @p5
+WHERE \"Email\" = @p6;"
+2025-06-13 13:35:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@p6='?', @p0='?' (DbType = Binary), @p1='?' (DbType = Boolean), @p2='?' (DbType = Binary), @p3='?', @p4='?', @p5='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"Users\" SET \"HashKey\" = @p0, \"IsActive\" = @p1, \"Password\" = @p2, \"RefreshToken\" = @p3, \"Role\" = @p4, \"TTL\" = @p5
+WHERE \"Email\" = @p6;"
+2025-06-13 13:35:00 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-06-13 13:35:00 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:35:00 [Debug] An entity of type '"User"' tracked by '"VSMContext"' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:00 [Debug] SaveChanges completed for '"VSMContext"' with 1 entities written to the database.
+2025-06-13 13:35:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-13 13:35:00 [Debug] No information found on request to perform content negotiation.
+2025-06-13 13:35:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-13 13:35:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-13 13:35:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-06-13 13:35:00 [Information] Executing "OkObjectResult", writing value of type '"VSM.DTO.UserLoginResponse"'.
+2025-06-13 13:35:00 [Information] Executed action "VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)" in 56.3263ms
+2025-06-13 13:35:00 [Information] Executed endpoint '"VSM.Controllers.AuthenticationController.Login (VehicleServiceManagement)"'
+2025-06-13 13:35:00 [Debug] Connection id ""0HND9RQEK52BK"" completed keep alive response.
+2025-06-13 13:35:00 [Debug] '"VSMContext"' disposed.
+2025-06-13 13:35:00 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:00 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:35:00 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Authentication/login""" - 200 null "application/json; charset=utf-8" 60.455ms
+2025-06-13 13:35:06 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - null null
+2025-06-13 13:35:06 [Debug] 1 candidate(s) found for the request path '"/api/v1/bill"'
+2025-06-13 13:35:06 [Debug] Endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Bill"' is valid for the request path '"/api/v1/bill"'
+2025-06-13 13:35:06 [Debug] Request matched endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-06-13 13:35:06 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 13:35:06 [Debug] Policy authentication schemes "" did not succeed
+2025-06-13 13:35:06 [Information] Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)"
+2025-06-13 13:35:06 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-06-13 13:35:06 [Debug] Connection id ""0HND9RQEK52BK"" completed keep alive response.
+2025-06-13 13:35:06 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - 401 0 null 2.7859ms
+2025-06-13 13:35:07 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - null null
+2025-06-13 13:35:07 [Debug] 1 candidate(s) found for the request path '"/api/v1/bill"'
+2025-06-13 13:35:07 [Debug] Endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Bill"' is valid for the request path '"/api/v1/bill"'
+2025-06-13 13:35:07 [Debug] Request matched endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-06-13 13:35:07 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 13:35:07 [Debug] Policy authentication schemes "" did not succeed
+2025-06-13 13:35:07 [Information] Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)"
+2025-06-13 13:35:07 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-06-13 13:35:07 [Debug] Connection id ""0HND9RQEK52BK"" completed keep alive response.
+2025-06-13 13:35:07 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - 401 0 null 2.0827ms
+2025-06-13 13:35:36 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - null null
+2025-06-13 13:35:36 [Debug] 1 candidate(s) found for the request path '"/api/v1/bill"'
+2025-06-13 13:35:36 [Debug] Endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Bill"' is valid for the request path '"/api/v1/bill"'
+2025-06-13 13:35:36 [Debug] Request matched endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-06-13 13:35:36 [Debug] Successfully validated the token.
+2025-06-13 13:35:36 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-06-13 13:35:36 [Debug] Authorization was successful.
+2025-06-13 13:35:36 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-06-13 13:35:36 [Information] Executing endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-06-13 13:35:36 [Information] Route matched with "{action = \"GetAll\", controller = \"Bill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.BillDisplayDto]]] GetAll()" on controller "VSM.Controllers.BillController" ("VehicleServiceManagement").
+2025-06-13 13:35:36 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-06-13 13:35:36 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-06-13 13:35:36 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:35:36 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-06-13 13:35:36 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:35:36 [Debug] Executing controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-06-13 13:35:36 [Debug] Executed controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-06-13 13:35:36 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-06-13 13:35:36 [Debug] Compiling query expression: "
+"'"DbSet<Bill>()
+    .Include(b => b.CategoryDetails)
+    .Include(b => b.ServiceRecord)
+    .ThenInclude(sr => sr.Service)
+    .ThenInclude(s => s.ServiceCategories)
+    .Include(b => b.ServiceRecord)
+    .ThenInclude(sr => sr.Customer)
+    .Skip(__p_0)
+    .Take(__p_1)"'
+2025-06-13 13:35:36 [Debug] Including navigation: '"Bill.CategoryDetails"'.
+2025-06-13 13:35:36 [Debug] Including navigation: '"Bill.ServiceRecord"'.
+2025-06-13 13:35:36 [Debug] Including navigation: '"ServiceRecord.Service"'.
+2025-06-13 13:35:36 [Debug] Including navigation: '"Service.ServiceCategories"'.
+2025-06-13 13:35:36 [Debug] Including navigation: '"ServiceRecord.Customer"'.
+2025-06-13 13:35:36 [Warning] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-13 13:35:36 [Warning] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-13 13:35:36 [Warning] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-13 13:35:36 [Debug] Generated query execution expression: "
+"'"queryContext => SingleQueryingEnumerable.Create<Bill>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Bill.BillID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Bill.Amount (float) Required, 1], [Property: Bill.Description (string) Required, 2], [Property: Bill.ServiceRecordID (Guid) Required FK Index, 3] }
+            1 -> 0
+            2 -> 4
+            3 -> 5
+            4 -> 6
+            5 -> Dictionary<IProperty, int> { [Property: BillCategoryDetail.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: BillCategoryDetail.Amount (float) Required, 8], [Property: BillCategoryDetail.BillId (Guid) Required FK Index, 9], [Property: BillCategoryDetail.CategoryName (string) Required, 10] }
+            6 -> 7
+            7 -> Dictionary<IProperty, int> { [Property: ServiceRecord.ServiceRecordID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 4], [Property: ServiceRecord.BookingID (Guid) Required FK Index, 11], [Property: ServiceRecord.CustomerID (Guid) Required FK Index, 12], [Property: ServiceRecord.IsDeleted (bool) Required, 13], [Property: ServiceRecord.MechanicId (Guid) Required FK Index, 14], [Property: ServiceRecord.ServiceID (Guid) Required FK Index, 15], [Property: ServiceRecord.Status (string) Required, 16] }
+            8 -> Dictionary<IProperty, int> { [Property: Service.ServiceID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 5], [Property: Service.Description (string) Required, 17], [Property: Service.IsDeleted (bool) Required, 18], [Property: Service.VehicleID (Guid) Required FK Index, 19] }
+            9 -> Dictionary<IProperty, int> { [Property: ServiceServiceCategory (Dictionary<string, object>).ServiceCategoriesCategoryID (no field, Guid) Indexer Required PK FK AfterSave:Throw, 20], [Property: ServiceServiceCategory (Dictionary<string, object>).ServicesServiceID (no field, Guid) Indexer Required PK FK Index AfterSave:Throw, 21] }
+            10 -> Dictionary<IProperty, int> { [Property: ServiceCategory.CategoryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 22], [Property: ServiceCategory.Amount (float) Required, 23], [Property: ServiceCategory.Name (string) Required, 24] }
+            11 -> 20
+            12 -> 21
+            13 -> 22
+            14 -> Dictionary<IProperty, int> { [Property: Customer.CustomerID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 6], [Property: Customer.Email (string) Required FK Index, 25], [Property: Customer.Name (string) Required, 26], [Property: Customer.Phone (string) Required, 27], [Property: Customer.Status (string) Required, 28] }
+        SELECT b0.BillID, b0.Amount, b0.Description, b0.ServiceRecordID, s.ServiceRecordID, s0.ServiceID, c.CustomerID, b1.Id, b1.Amount, b1.BillId, b1.CategoryName, s.BookingID, s.CustomerID, s.IsDeleted, s.MechanicId, s.ServiceID, s.Status, s0.Description, s0.IsDeleted, s0.VehicleID, s3.ServiceCategoriesCategoryID, s3.ServicesServiceID, s3.CategoryID, s3.Amount, s3.Name, c.Email, c.Name, c.Phone, c.Status
+        FROM 
+        (
+            SELECT b.BillID, b.Amount, b.Description, b.ServiceRecordID
+            FROM Bills AS b
+            OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+        ) AS b0
+        INNER JOIN serviceRecords AS s ON b0.ServiceRecordID == s.ServiceRecordID
+        INNER JOIN Services AS s0 ON s.ServiceID == s0.ServiceID
+        INNER JOIN Customers AS c ON s.CustomerID == c.CustomerID
+        LEFT JOIN BillCategoryDetail AS b1 ON b0.BillID == b1.BillId
+        LEFT JOIN 
+        (
+            SELECT s1.ServiceCategoriesCategoryID, s1.ServicesServiceID, s2.CategoryID, s2.Amount, s2.Name
+            FROM ServiceServiceCategory AS s1
+            INNER JOIN ServiceCategories AS s2 ON s1.ServiceCategoriesCategoryID == s2.CategoryID
+        ) AS s3 ON s0.ServiceID == s3.ServicesServiceID
+        ORDER BY b0.BillID ASC, s.ServiceRecordID ASC, s0.ServiceID ASC, c.CustomerID ASC, b1.Id ASC, s3.ServiceCategoriesCategoryID ASC, s3.ServicesServiceID ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Bill.BillID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Bill.Amount (float) Required, 1], [Property: Bill.Description (string) Required, 2], [Property: Bill.ServiceRecordID (Guid) Required FK Index, 3] }
+            1 -> 0
+            2 -> 4
+            3 -> 5
+            4 -> 6
+            5 -> Dictionary<IProperty, int> { [Property: BillCategoryDetail.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: BillCategoryDetail.Amount (float) Required, 8], [Property: BillCategoryDetail.BillId (Guid) Required FK Index, 9], [Property: BillCategoryDetail.CategoryName (string) Required, 10] }
+            6 -> 7
+            7 -> Dictionary<IProperty, int> { [Property: ServiceRecord.ServiceRecordID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 4], [Property: ServiceRecord.BookingID (Guid) Required FK Index, 11], [Property: ServiceRecord.CustomerID (Guid) Required FK Index, 12], [Property: ServiceRecord.IsDeleted (bool) Required, 13], [Property: ServiceRecord.MechanicId (Guid) Required FK Index, 14], [Property: ServiceRecord.ServiceID (Guid) Required FK Index, 15], [Property: ServiceRecord.Status (string) Required, 16] }
+            8 -> Dictionary<IProperty, int> { [Property: Service.ServiceID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 5], [Property: Service.Description (string) Required, 17], [Property: Service.IsDeleted (bool) Required, 18], [Property: Service.VehicleID (Guid) Required FK Index, 19] }
+            9 -> Dictionary<IProperty, int> { [Property: ServiceServiceCategory (Dictionary<string, object>).ServiceCategoriesCategoryID (no field, Guid) Indexer Required PK FK AfterSave:Throw, 20], [Property: ServiceServiceCategory (Dictionary<string, object>).ServicesServiceID (no field, Guid) Indexer Required PK FK Index AfterSave:Throw, 21] }
+            10 -> Dictionary<IProperty, int> { [Property: ServiceCategory.CategoryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 22], [Property: ServiceCategory.Amount (float) Required, 23], [Property: ServiceCategory.Name (string) Required, 24] }
+            11 -> 20
+            12 -> 21
+            13 -> 22
+            14 -> Dictionary<IProperty, int> { [Property: Customer.CustomerID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 6], [Property: Customer.Email (string) Required FK Index, 25], [Property: Customer.Name (string) Required, 26], [Property: Customer.Phone (string) Required, 27], [Property: Customer.Status (string) Required, 28] }
+        SELECT b0.BillID, b0.Amount, b0.Description, b0.ServiceRecordID, s.ServiceRecordID, s0.ServiceID, c.CustomerID, b1.Id, b1.Amount, b1.BillId, b1.CategoryName, s.BookingID, s.CustomerID, s.IsDeleted, s.MechanicId, s.ServiceID, s.Status, s0.Description, s0.IsDeleted, s0.VehicleID, s3.ServiceCategoriesCategoryID, s3.ServicesServiceID, s3.CategoryID, s3.Amount, s3.Name, c.Email, c.Name, c.Phone, c.Status
+        FROM 
+        (
+            SELECT b.BillID, b.Amount, b.Description, b.ServiceRecordID
+            FROM Bills AS b
+            OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+        ) AS b0
+        INNER JOIN serviceRecords AS s ON b0.ServiceRecordID == s.ServiceRecordID
+        INNER JOIN Services AS s0 ON s.ServiceID == s0.ServiceID
+        INNER JOIN Customers AS c ON s.CustomerID == c.CustomerID
+        LEFT JOIN BillCategoryDetail AS b1 ON b0.BillID == b1.BillId
+        LEFT JOIN 
+        (
+            SELECT s1.ServiceCategoriesCategoryID, s1.ServicesServiceID, s2.CategoryID, s2.Amount, s2.Name
+            FROM ServiceServiceCategory AS s1
+            INNER JOIN ServiceCategories AS s2 ON s1.ServiceCategoriesCategoryID == s2.CategoryID
+        ) AS s3 ON s0.ServiceID == s3.ServicesServiceID
+        ORDER BY b0.BillID ASC, s.ServiceRecordID ASC, s0.ServiceID ASC, c.CustomerID ASC, b1.Id ASC, s3.ServiceCategoriesCategoryID ASC, s3.ServicesServiceID ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        resultContext.Values == null ? 
+        {
+            Bill entity;
+            ServiceRecord entity;
+            Service entity;
+            Customer entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Bill instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Bill);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Bill.BillID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Bill)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Bill | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Bill | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\")]: 
+                            {
+                                return 
+                                {
+                                    Bill instance;
+                                    instance = new Bill();
+                                    instance.<BillID>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<Amount>k__BackingField = dataReader.GetFloat(1);
+                                    instance.<Description>k__BackingField = dataReader.GetString(2);
+                                    instance.<ServiceRecordID>k__BackingField = dataReader.GetGuid(3);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Bill | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Bill)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            entity = 
+            {
+                MaterializationContext materializationContext3;
+                IEntityType entityType3;
+                ServiceRecord instance3;
+                InternalEntityEntry entry3;
+                bool hasNullKey3;
+                materializationContext3 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance3 = default(ServiceRecord);
+                entry3 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: ServiceRecord.ServiceRecordID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(4) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey3);
+                !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+                {
+                    entityType3 = entry3.EntityType;
+                    return instance3 = (ServiceRecord)entry3.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot3;
+                    shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType3 = [LIFTABLE Constant: EntityType: ServiceRecord | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\")];
+                    instance3 = switch (entityType3)
+                    {
+                        case [LIFTABLE Constant: EntityType: ServiceRecord | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\")]: 
+                            {
+                                return 
+                                {
+                                    ServiceRecord instance;
+                                    instance = new ServiceRecord();
+                                    instance.<ServiceRecordID>k__BackingField = dataReader.GetGuid(4);
+                                    instance.<BookingID>k__BackingField = dataReader.GetGuid(11);
+                                    instance.<CustomerID>k__BackingField = dataReader.GetGuid(12);
+                                    instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(13);
+                                    instance.<MechanicId>k__BackingField = dataReader.GetGuid(14);
+                                    instance.<ServiceID>k__BackingField = dataReader.GetGuid(15);
+                                    instance.<Status>k__BackingField = dataReader.GetString(16);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext3.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: ServiceRecord | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(ServiceRecord)
+                    }
+                    ;
+                    entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType3, 
+                        entity: instance3, 
+                        snapshot: shadowSnapshot3);
+                    return instance3;
+                } : default(void);
+                return instance3;
+            };
+            entity = 
+            {
+                MaterializationContext materializationContext4;
+                IEntityType entityType4;
+                Service instance4;
+                InternalEntityEntry entry4;
+                bool hasNullKey4;
+                materializationContext4 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance4 = default(Service);
+                entry4 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Service.ServiceID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(5) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey4);
+                !(hasNullKey4) ? entry4 != default(InternalEntityEntry) ? 
+                {
+                    entityType4 = entry4.EntityType;
+                    return instance4 = (Service)entry4.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot4;
+                    shadowSnapshot4 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType4 = [LIFTABLE Constant: EntityType: Service | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\")];
+                    instance4 = switch (entityType4)
+                    {
+                        case [LIFTABLE Constant: EntityType: Service | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\")]: 
+                            {
+                                return 
+                                {
+                                    Service instance;
+                                    instance = new Service();
+                                    instance.<ServiceID>k__BackingField = dataReader.GetGuid(5);
+                                    instance.<Description>k__BackingField = dataReader.GetString(17);
+                                    instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(18);
+                                    instance.<VehicleID>k__BackingField = dataReader.GetGuid(19);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext4.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Service | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Service)
+                    }
+                    ;
+                    entry4 = entityType4 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType4, 
+                        entity: instance4, 
+                        snapshot: shadowSnapshot4);
+                    return instance4;
+                } : default(void);
+                return instance4;
+            };
+            entity = 
+            {
+                MaterializationContext materializationContext7;
+                IEntityType entityType7;
+                Customer instance7;
+                InternalEntityEntry entry7;
+                bool hasNullKey7;
+                materializationContext7 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance7 = default(Customer);
+                entry7 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Customer.CustomerID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(6) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey7);
+                !(hasNullKey7) ? entry7 != default(InternalEntityEntry) ? 
+                {
+                    entityType7 = entry7.EntityType;
+                    return instance7 = (Customer)entry7.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot7;
+                    shadowSnapshot7 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType7 = [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\")];
+                    instance7 = switch (entityType7)
+                    {
+                        case [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\")]: 
+                            {
+                                return 
+                                {
+                                    Customer instance;
+                                    instance = new Customer();
+                                    instance.<CustomerID>k__BackingField = dataReader.GetGuid(6);
+                                    instance.<Email>k__BackingField = dataReader.GetString(25);
+                                    instance.<Name>k__BackingField = dataReader.GetString(26);
+                                    instance.<Phone>k__BackingField = dataReader.GetString(27);
+                                    instance.<Status>k__BackingField = dataReader.GetString(28);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext7.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Customer)
+                    }
+                    ;
+                    entry7 = entityType7 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType7, 
+                        entity: instance7, 
+                        snapshot: shadowSnapshot7);
+                    return instance7;
+                } : default(void);
+                return instance7;
+            };
+            resultContext.Values = new object[]
+            { 
+                entity, 
+                entity, 
+                entity, 
+                entity 
+            };
+            ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Bill, Bill>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                entity: (Bill)(resultContext.Values[0]), 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(Guid?)dataReader.GetGuid(0), 
+                    (object)(Guid?)dataReader.GetGuid(4), 
+                    (object)(Guid?)dataReader.GetGuid(5), 
+                    (object)(Guid?)dataReader.GetGuid(6) 
+                }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(Guid?)dataReader.GetGuid(0), 
+                    (object)(Guid?)dataReader.GetGuid(4), 
+                    (object)(Guid?)dataReader.GetGuid(5), 
+                    (object)(Guid?)dataReader.GetGuid(6) 
+                }], 
+                navigation: [LIFTABLE Constant: Navigation: Bill.CategoryDetails (ICollection<BillCategoryDetail>) Collection ToDependent BillCategoryDetail Inverse: Bill | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\").FindNavigation(\"CategoryDetails\")], 
+                clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Bill, ICollection<BillCategoryDetail>, BillCategoryDetail> | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\").FindNavigation(\"CategoryDetails\").GetCollectionAccessor()], 
+                trackingQuery: True, 
+                setLoaded: True);
+            ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Service, Service>(
+                collectionId: 1, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                entity: (Service)(resultContext.Values[2]), 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(Guid?)dataReader.GetGuid(0), 
+                    (object)(Guid?)dataReader.GetGuid(4), 
+                    (object)(Guid?)dataReader.GetGuid(5), 
+                    (object)(Guid?)dataReader.GetGuid(6) 
+                }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(Guid?)dataReader.GetGuid(0), 
+                    (object)(Guid?)dataReader.GetGuid(4), 
+                    (object)(Guid?)dataReader.GetGuid(5), 
+                    (object)(Guid?)dataReader.GetGuid(6), 
+                    (object)dataReader.IsDBNull(7) ? default(Guid?) : (Guid?)dataReader.GetGuid(7) 
+                }], 
+                navigation: [LIFTABLE Constant: SkipNavigation: Service.ServiceCategories (ICollection<ServiceCategory>) CollectionServiceCategory Inverse: Services | Resolver: namelessParameter{14} => namelessParameter{14}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindSkipNavigation(\"ServiceCategories\")], 
+                clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Service, ICollection<ServiceCategory>, ServiceCategory> | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindSkipNavigation(\"ServiceCategories\").GetCollectionAccessor()], 
+                trackingQuery: True, 
+                setLoaded: True);
+            ShaperProcessingExpressionVisitor.IncludeReference<ServiceRecord, ServiceRecord, Service>(
+                queryContext: queryContext, 
+                entity: (ServiceRecord)(resultContext.Values[1]), 
+                relatedEntity: (Service)(resultContext.Values[2]), 
+                navigation: [LIFTABLE Constant: Navigation: ServiceRecord.Service (Service) ToPrincipal Service Inverse: ServiceRecord | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\").FindNavigation(\"Service\")], 
+                inverseNavigation: [LIFTABLE Constant: Navigation: Service.ServiceRecord (ServiceRecord) ToDependent ServiceRecord Inverse: Service | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindNavigation(\"ServiceRecord\")], 
+                fixup: (namelessParameter{18}, namelessParameter{19}) => 
+                {
+                    namelessParameter{18}.<Service>k__BackingField = namelessParameter{19};
+                    return namelessParameter{19}.<ServiceRecord>k__BackingField = namelessParameter{18};
+                }, 
+                trackingQuery: True);
+            ShaperProcessingExpressionVisitor.IncludeReference<ServiceRecord, ServiceRecord, Customer>(
+                queryContext: queryContext, 
+                entity: (ServiceRecord)(resultContext.Values[1]), 
+                relatedEntity: (Customer)(resultContext.Values[3]), 
+                navigation: [LIFTABLE Constant: Navigation: ServiceRecord.Customer (Customer) ToPrincipal Customer Inverse: ServiceRecords | Resolver: namelessParameter{20} => namelessParameter{20}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\").FindNavigation(\"Customer\")], 
+                inverseNavigation: [LIFTABLE Constant: Navigation: Customer.ServiceRecords (ICollection<ServiceRecord>) Collection ToDependent ServiceRecord Inverse: Customer | Resolver: namelessParameter{21} => namelessParameter{21}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\").FindNavigation(\"ServiceRecords\")], 
+                fixup: (namelessParameter{22}, namelessParameter{23}) => 
+                {
+                    namelessParameter{22}.<Customer>k__BackingField = namelessParameter{23};
+                    return [LIFTABLE Constant: ClrICollectionAccessor<Customer, ICollection<ServiceRecord>, ServiceRecord> | Resolver: namelessParameter{24} => namelessParameter{24}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\").FindNavigation(\"ServiceRecords\").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{23}, 
+                        value: namelessParameter{22}, 
+                        forMaterialization: True);
+                }, 
+                trackingQuery: True);
+            ShaperProcessingExpressionVisitor.IncludeReference<Bill, Bill, ServiceRecord>(
+                queryContext: queryContext, 
+                entity: (Bill)(resultContext.Values[0]), 
+                relatedEntity: (ServiceRecord)(resultContext.Values[1]), 
+                navigation: [LIFTABLE Constant: Navigation: Bill.ServiceRecord (ServiceRecord) ToPrincipal ServiceRecord Inverse: Bill | Resolver: namelessParameter{25} => namelessParameter{25}.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\").FindNavigation(\"ServiceRecord\")], 
+                inverseNavigation: [LIFTABLE Constant: Navigation: ServiceRecord.Bill (Bill) ToDependent Bill Inverse: ServiceRecord | Resolver: namelessParameter{26} => namelessParameter{26}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceRecord\").FindNavigation(\"Bill\")], 
+                fixup: (namelessParameter{27}, namelessParameter{28}) => 
+                {
+                    namelessParameter{27}.<ServiceRecord>k__BackingField = namelessParameter{28};
+                    return namelessParameter{28}.<Bill>k__BackingField = namelessParameter{27};
+                }, 
+                trackingQuery: True);
+        } : default(void);
+        ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Bill, BillCategoryDetail>(
+            collectionId: 0, 
+            queryContext: queryContext, 
+            dbDataReader: dataReader, 
+            resultCoordinator: resultCoordinator, 
+            parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+            { 
+                (object)(Guid?)dataReader.GetGuid(0), 
+                (object)(Guid?)dataReader.GetGuid(4), 
+                (object)(Guid?)dataReader.GetGuid(5), 
+                (object)(Guid?)dataReader.GetGuid(6) 
+            }], 
+            outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+            { 
+                (object)(Guid?)dataReader.GetGuid(0), 
+                (object)(Guid?)dataReader.GetGuid(4), 
+                (object)(Guid?)dataReader.GetGuid(5), 
+                (object)(Guid?)dataReader.GetGuid(6) 
+            }], 
+            selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ (object)dataReader.IsDBNull(7) ? default(Guid?) : (Guid?)dataReader.GetGuid(7) }], 
+            parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+            { 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+            }], 
+            outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+            { 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+            }], 
+            selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right }], 
+            innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+            {
+                BillCategoryDetail entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext2;
+                    IEntityType entityType2;
+                    BillCategoryDetail instance2;
+                    InternalEntityEntry entry2;
+                    bool hasNullKey2;
+                    materializationContext2 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance2 = default(BillCategoryDetail);
+                    entry2 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: BillCategoryDetail.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.BillCategoryDetail\").FindPrimaryKey()], 
+                        keyValues: new object[]{ dataReader.IsDBNull(7) ? default(object) : (object)dataReader.GetGuid(7) }, 
+                        throwOnNullKey: False, 
+                        hasNullKey: hasNullKey2);
+                    !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                    {
+                        entityType2 = entry2.EntityType;
+                        return instance2 = (BillCategoryDetail)entry2.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot2;
+                        shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType2 = [LIFTABLE Constant: EntityType: BillCategoryDetail | Resolver: namelessParameter{29} => namelessParameter{29}.Dependencies.Model.FindEntityType(\"VSM.Models.BillCategoryDetail\")];
+                        instance2 = switch (entityType2)
+                        {
+                            case [LIFTABLE Constant: EntityType: BillCategoryDetail | Resolver: namelessParameter{30} => namelessParameter{30}.Dependencies.Model.FindEntityType(\"VSM.Models.BillCategoryDetail\")]: 
+                                {
+                                    return 
+                                    {
+                                        BillCategoryDetail instance;
+                                        instance = new BillCategoryDetail();
+                                        instance.<Id>k__BackingField = dataReader.IsDBNull(7) ? default(Guid) : dataReader.GetGuid(7);
+                                        instance.<Amount>k__BackingField = dataReader.IsDBNull(8) ? default(float) : dataReader.GetFloat(8);
+                                        instance.<BillId>k__BackingField = dataReader.IsDBNull(9) ? default(Guid) : dataReader.GetGuid(9);
+                                        instance.<CategoryName>k__BackingField = dataReader.IsDBNull(10) ? default(string) : dataReader.GetString(10);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext2.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: BillCategoryDetail | Resolver: namelessParameter{31} => namelessParameter{31}.Dependencies.Model.FindEntityType(\"VSM.Models.BillCategoryDetail\")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(BillCategoryDetail)
+                        }
+                        ;
+                        entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType2, 
+                            entity: instance2, 
+                            snapshot: shadowSnapshot2);
+                        return instance2;
+                    } : default(void);
+                    return instance2;
+                };
+                return entity;
+            }, 
+            inverseNavigation: [LIFTABLE Constant: Navigation: BillCategoryDetail.Bill (Bill) ToPrincipal Bill Inverse: CategoryDetails | Resolver: namelessParameter{32} => namelessParameter{32}.Dependencies.Model.FindEntityType(\"VSM.Models.BillCategoryDetail\").FindNavigation(\"Bill\")], 
+            fixup: (namelessParameter{33}, namelessParameter{34}) => 
+            {
+                [LIFTABLE Constant: ClrICollectionAccessor<Bill, ICollection<BillCategoryDetail>, BillCategoryDetail> | Resolver: namelessParameter{35} => namelessParameter{35}.Dependencies.Model.FindEntityType(\"VSM.Models.Bill\").FindNavigation(\"CategoryDetails\").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{33}, 
+                    value: namelessParameter{34}, 
+                    forMaterialization: True);
+                return namelessParameter{34}.<Bill>k__BackingField = namelessParameter{33};
+            }, 
+            trackingQuery: True);
+        ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Service, ServiceCategory>(
+            collectionId: 1, 
+            queryContext: queryContext, 
+            dbDataReader: dataReader, 
+            resultCoordinator: resultCoordinator, 
+            parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+            { 
+                (object)(Guid?)dataReader.GetGuid(0), 
+                (object)(Guid?)dataReader.GetGuid(4), 
+                (object)(Guid?)dataReader.GetGuid(5), 
+                (object)(Guid?)dataReader.GetGuid(6) 
+            }], 
+            outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+            { 
+                (object)(Guid?)dataReader.GetGuid(0), 
+                (object)(Guid?)dataReader.GetGuid(4), 
+                (object)(Guid?)dataReader.GetGuid(5), 
+                (object)(Guid?)dataReader.GetGuid(6), 
+                (object)dataReader.IsDBNull(7) ? default(Guid?) : (Guid?)dataReader.GetGuid(7) 
+            }], 
+            selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+            { 
+                (object)dataReader.IsDBNull(20) ? default(Guid?) : (Guid?)dataReader.GetGuid(20), 
+                (object)dataReader.IsDBNull(21) ? default(Guid?) : (Guid?)dataReader.GetGuid(21), 
+                (object)dataReader.IsDBNull(22) ? default(Guid?) : (Guid?)dataReader.GetGuid(22) 
+            }], 
+            parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+            { 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+            }], 
+            outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+            { 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+            }], 
+            selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+            { 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right, 
+                (left, right) => left == null ? right == null : right != null && (Guid)left == (Guid)right 
+            }], 
+            innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+            {
+                Dictionary<string, object> entity;
+                ServiceCategory entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext5;
+                    IEntityType entityType5;
+                    Dictionary<string, object> instance5;
+                    InternalEntityEntry entry5;
+                    bool hasNullKey5;
+                    materializationContext5 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance5 = default(Dictionary<string, object>);
+                    entry5 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: ServiceServiceCategory (Dictionary<string, object>).ServiceCategoriesCategoryID, ServiceServiceCategory (Dictionary<string, object>).ServicesServiceID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\").FindPrimaryKey()], 
+                        keyValues: new object[]
+                        { 
+                            dataReader.IsDBNull(20) ? default(object) : (object)dataReader.GetGuid(20), 
+                            dataReader.IsDBNull(21) ? default(object) : (object)dataReader.GetGuid(21) 
+                        }, 
+                        throwOnNullKey: False, 
+                        hasNullKey: hasNullKey5);
+                    !(hasNullKey5) ? entry5 != default(InternalEntityEntry) ? 
+                    {
+                        entityType5 = entry5.EntityType;
+                        return instance5 = (Dictionary<string, object>)entry5.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot5;
+                        shadowSnapshot5 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType5 = [LIFTABLE Constant: EntityType: ServiceServiceCategory (Dictionary<string, object>) CLR Type: Dictionary<string, object> | Resolver: namelessParameter{36} => namelessParameter{36}.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\")];
+                        instance5 = switch (entityType5)
+                        {
+                            case [LIFTABLE Constant: EntityType: ServiceServiceCategory (Dictionary<string, object>) CLR Type: Dictionary<string, object> | Resolver: namelessParameter{37} => namelessParameter{37}.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\")]: 
+                                {
+                                    return 
+                                    {
+                                        Dictionary<string, object> instance;
+                                        instance = new Dictionary<string, object>();
+                                        instance[\"ServiceCategoriesCategoryID\"] = dataReader.IsDBNull(20) ? default(object) : (object)dataReader.GetGuid(20);
+                                        instance[\"ServicesServiceID\"] = dataReader.IsDBNull(21) ? default(object) : (object)dataReader.GetGuid(21);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext5.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: ServiceServiceCategory (Dictionary<string, object>) CLR Type: Dictionary<string, object> | Resolver: namelessParameter{38} => namelessParameter{38}.Dependencies.Model.FindEntityType(\"ServiceServiceCategory\")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(Dictionary<string, object>)
+                        }
+                        ;
+                        entry5 = entityType5 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType5, 
+                            entity: instance5, 
+                            snapshot: shadowSnapshot5);
+                        return instance5;
+                    } : default(void);
+                    return instance5;
+                };
+                entity = 
+                {
+                    MaterializationContext materializationContext6;
+                    IEntityType entityType6;
+                    ServiceCategory instance6;
+                    InternalEntityEntry entry6;
+                    bool hasNullKey6;
+                    materializationContext6 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance6 = default(ServiceCategory);
+                    entry6 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: ServiceCategory.CategoryID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\").FindPrimaryKey()], 
+                        keyValues: new object[]{ dataReader.IsDBNull(22) ? default(object) : (object)dataReader.GetGuid(22) }, 
+                        throwOnNullKey: False, 
+                        hasNullKey: hasNullKey6);
+                    !(hasNullKey6) ? entry6 != default(InternalEntityEntry) ? 
+                    {
+                        entityType6 = entry6.EntityType;
+                        return instance6 = (ServiceCategory)entry6.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot6;
+                        shadowSnapshot6 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType6 = [LIFTABLE Constant: EntityType: ServiceCategory | Resolver: namelessParameter{39} => namelessParameter{39}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\")];
+                        instance6 = switch (entityType6)
+                        {
+                            case [LIFTABLE Constant: EntityType: ServiceCategory | Resolver: namelessParameter{40} => namelessParameter{40}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\")]: 
+                                {
+                                    return 
+                                    {
+                                        ServiceCategory instance;
+                                        instance = new ServiceCategory();
+                                        instance.<CategoryID>k__BackingField = dataReader.IsDBNull(22) ? default(Guid) : dataReader.GetGuid(22);
+                                        instance.<Amount>k__BackingField = dataReader.IsDBNull(23) ? default(float) : dataReader.GetFloat(23);
+                                        instance.<Name>k__BackingField = dataReader.IsDBNull(24) ? default(string) : dataReader.GetString(24);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext6.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: ServiceCategory | Resolver: namelessParameter{41} => namelessParameter{41}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(ServiceCategory)
+                        }
+                        ;
+                        entry6 = entityType6 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType6, 
+                            entity: instance6, 
+                            snapshot: shadowSnapshot6);
+                        return instance6;
+                    } : default(void);
+                    return instance6;
+                };
+                return NavigationExpandingExpressionVisitor.FetchJoinEntity<Dictionary<string, object>, ServiceCategory>(
+                    joinEntity: entity, 
+                    targetEntity: entity);
+            }, 
+            inverseNavigation: [LIFTABLE Constant: SkipNavigation: ServiceCategory.Services (ICollection<Service>) CollectionService Inverse: ServiceCategories | Resolver: namelessParameter{42} => namelessParameter{42}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\").FindSkipNavigation(\"Services\")], 
+            fixup: (namelessParameter{43}, namelessParameter{44}) => 
+            {
+                [LIFTABLE Constant: ClrICollectionAccessor<Service, ICollection<ServiceCategory>, ServiceCategory> | Resolver: namelessParameter{45} => namelessParameter{45}.Dependencies.Model.FindEntityType(\"VSM.Models.Service\").FindSkipNavigation(\"ServiceCategories\").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{43}, 
+                    value: namelessParameter{44}, 
+                    forMaterialization: True);
+                return [LIFTABLE Constant: ClrICollectionAccessor<ServiceCategory, ICollection<Service>, Service> | Resolver: namelessParameter{46} => namelessParameter{46}.Dependencies.Model.FindEntityType(\"VSM.Models.ServiceCategory\").FindSkipNavigation(\"Services\").GetCollectionAccessor()].Add(
+                    entity: namelessParameter{44}, 
+                    value: namelessParameter{43}, 
+                    forMaterialization: True);
+            }, 
+            trackingQuery: True);
+        return IsTrue(resultCoordinator.ResultReady)
+         ? (Bill)(resultContext.Values[0]) : default(Bill);
+    }, 
+    contextType: VSM.Contexts.VSMContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)"'
+2025-06-13 13:35:36 [Debug] Creating DbConnection.
+2025-06-13 13:35:36 [Debug] Created DbConnection. (0ms).
+2025-06-13 13:35:36 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:36 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:36 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:35:36 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:35:36 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:35:36 [Debug] Executing DbCommand [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT b0.\"BillID\", b0.\"Amount\", b0.\"Description\", b0.\"ServiceRecordID\", s.\"ServiceRecordID\", s0.\"ServiceID\", c.\"CustomerID\", b1.\"Id\", b1.\"Amount\", b1.\"BillId\", b1.\"CategoryName\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"Description\", s0.\"IsDeleted\", s0.\"VehicleID\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\", s3.\"CategoryID\", s3.\"Amount\", s3.\"Name\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM (
+    SELECT b.\"BillID\", b.\"Amount\", b.\"Description\", b.\"ServiceRecordID\"
+    FROM \"Bills\" AS b
+    LIMIT @__p_1 OFFSET @__p_0
+) AS b0
+INNER JOIN \"serviceRecords\" AS s ON b0.\"ServiceRecordID\" = s.\"ServiceRecordID\"
+INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+INNER JOIN \"Customers\" AS c ON s.\"CustomerID\" = c.\"CustomerID\"
+LEFT JOIN \"BillCategoryDetail\" AS b1 ON b0.\"BillID\" = b1.\"BillId\"
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s3 ON s0.\"ServiceID\" = s3.\"ServicesServiceID\"
+ORDER BY b0.\"BillID\", s.\"ServiceRecordID\", s0.\"ServiceID\", c.\"CustomerID\", b1.\"Id\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\""
+2025-06-13 13:35:36 [Information] Executed DbCommand ("21"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT b0.\"BillID\", b0.\"Amount\", b0.\"Description\", b0.\"ServiceRecordID\", s.\"ServiceRecordID\", s0.\"ServiceID\", c.\"CustomerID\", b1.\"Id\", b1.\"Amount\", b1.\"BillId\", b1.\"CategoryName\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"Description\", s0.\"IsDeleted\", s0.\"VehicleID\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\", s3.\"CategoryID\", s3.\"Amount\", s3.\"Name\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM (
+    SELECT b.\"BillID\", b.\"Amount\", b.\"Description\", b.\"ServiceRecordID\"
+    FROM \"Bills\" AS b
+    LIMIT @__p_1 OFFSET @__p_0
+) AS b0
+INNER JOIN \"serviceRecords\" AS s ON b0.\"ServiceRecordID\" = s.\"ServiceRecordID\"
+INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+INNER JOIN \"Customers\" AS c ON s.\"CustomerID\" = c.\"CustomerID\"
+LEFT JOIN \"BillCategoryDetail\" AS b1 ON b0.\"BillID\" = b1.\"BillId\"
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s3 ON s0.\"ServiceID\" = s3.\"ServicesServiceID\"
+ORDER BY b0.\"BillID\", s.\"ServiceRecordID\", s0.\"ServiceID\", c.\"CustomerID\", b1.\"Id\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\""
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:35:36 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:36 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 34ms reading results.
+2025-06-13 13:35:36 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:36 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:35:36 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-13 13:35:36 [Debug] No information found on request to perform content negotiation.
+2025-06-13 13:35:36 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-13 13:35:36 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-13 13:35:36 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-06-13 13:35:36 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListSelectIterator`2[[VSM.Models.Bill, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[VSM.DTO.BillDisplayDto, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-06-13 13:35:36 [Information] Executed action "VSM.Controllers.BillController.GetAll (VehicleServiceManagement)" in 199.1179ms
+2025-06-13 13:35:36 [Information] Executed endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-06-13 13:35:36 [Debug] Connection id ""0HND9RQEK52BK"" completed keep alive response.
+2025-06-13 13:35:36 [Debug] '"VSMContext"' disposed.
+2025-06-13 13:35:36 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:35:36 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:35:36 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/bill""" - 200 null "application/json; charset=utf-8" 226.4092ms
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BL"" received FIN.
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BL"" accepted.
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BL"" started.
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BM"" accepted.
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BM"" started.
+2025-06-13 13:36:54 [Debug] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BL"" stopped.
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BL"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 13:36:54 [Debug] Connection "0HND9RQEK52BM" established using the following protocol: Tls12
+2025-06-13 13:36:54 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Mechanic/register""" - "application/json" 100
+2025-06-13 13:36:54 [Debug] 1 candidate(s) found for the request path '"/api/v1/Mechanic/register"'
+2025-06-13 13:36:54 [Debug] Endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Mechanic/register"' is valid for the request path '"/api/v1/Mechanic/register"'
+2025-06-13 13:36:54 [Debug] Request matched endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"'
+2025-06-13 13:36:54 [Debug] Successfully validated the token.
+2025-06-13 13:36:54 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-06-13 13:36:54 [Debug] Authorization was successful.
+2025-06-13 13:36:54 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-06-13 13:36:54 [Information] Executing endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"'
+2025-06-13 13:36:54 [Information] Route matched with "{action = \"RegisterMechanic\", controller = \"Mechanic\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[VSM.DTO.MechanicDisplayDto]] RegisterMechanic(VSM.DTO.MechanicAddDto)" on controller "VSM.Controllers.MechanicController" ("VehicleServiceManagement").
+2025-06-13 13:36:54 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-06-13 13:36:54 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-06-13 13:36:54 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:36:54 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-06-13 13:36:54 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:36:54 [Debug] Executing controller factory for controller "VSM.Controllers.MechanicController" ("VehicleServiceManagement")
+2025-06-13 13:36:54 [Debug] Executed controller factory for controller "VSM.Controllers.MechanicController" ("VehicleServiceManagement")
+2025-06-13 13:36:54 [Debug] Attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"' ...
+2025-06-13 13:36:54 [Debug] Attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"' using the name '""' in request data ...
+2025-06-13 13:36:54 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BM"", Request id ""0HND9RQEK52BM:00000001"": started reading request body.
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BM"", Request id ""0HND9RQEK52BM:00000001"": done reading request body.
+2025-06-13 13:36:54 [Debug] JSON input formatter succeeded, deserializing to type '"VSM.DTO.MechanicAddDto"'
+2025-06-13 13:36:54 [Debug] Done attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"'.
+2025-06-13 13:36:54 [Debug] Done attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"'.
+2025-06-13 13:36:54 [Debug] Attempting to validate the bound parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"' ...
+2025-06-13 13:36:54 [Debug] Done attempting to validate the bound parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"'.
+2025-06-13 13:36:54 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-06-13 13:36:54 [Debug] Creating DbConnection.
+2025-06-13 13:36:54 [Debug] Created DbConnection. (0ms).
+2025-06-13 13:36:54 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:36:54 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:36:54 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2025-06-13 13:36:54 [Debug] Began transaction with isolation level '"ReadCommitted"'.
+2025-06-13 13:36:54 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:36:54 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:36:54 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:36:54 [Debug] Executing DbCommand [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:36:54 [Information] Executed DbCommand ("2"ms) [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:36:54 [Debug] Context '"VSMContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:36:54 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:36:54 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-06-13 13:36:54 [Debug] Rolling back transaction.
+2025-06-13 13:36:54 [Debug] Rolled back transaction.
+2025-06-13 13:36:54 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:36:54 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:36:54 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-13 13:36:54 [Debug] No information found on request to perform content negotiation.
+2025-06-13 13:36:54 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-13 13:36:54 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-13 13:36:54 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-06-13 13:36:54 [Information] Executing "BadRequestObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-06-13 13:36:54 [Information] Executed action "VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)" in 41.5113ms
+2025-06-13 13:36:54 [Information] Executed endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"'
+2025-06-13 13:36:54 [Debug] Connection id ""0HND9RQEK52BM"" completed keep alive response.
+2025-06-13 13:36:54 [Debug] '"VSMContext"' disposed.
+2025-06-13 13:36:54 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:36:54 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:36:54 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Mechanic/register""" - 400 null "application/json; charset=utf-8" 55.0309ms
+2025-06-13 13:37:01 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Mechanic/register""" - "application/json" 101
+2025-06-13 13:37:01 [Debug] 1 candidate(s) found for the request path '"/api/v1/Mechanic/register"'
+2025-06-13 13:37:01 [Debug] Endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Mechanic/register"' is valid for the request path '"/api/v1/Mechanic/register"'
+2025-06-13 13:37:01 [Debug] Request matched endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"'
+2025-06-13 13:37:01 [Debug] Successfully validated the token.
+2025-06-13 13:37:01 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-06-13 13:37:01 [Debug] Authorization was successful.
+2025-06-13 13:37:01 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-06-13 13:37:01 [Information] Executing endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"'
+2025-06-13 13:37:01 [Information] Route matched with "{action = \"RegisterMechanic\", controller = \"Mechanic\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[VSM.DTO.MechanicDisplayDto]] RegisterMechanic(VSM.DTO.MechanicAddDto)" on controller "VSM.Controllers.MechanicController" ("VehicleServiceManagement").
+2025-06-13 13:37:01 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-06-13 13:37:01 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-06-13 13:37:01 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:37:01 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-06-13 13:37:01 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 13:37:01 [Debug] Executing controller factory for controller "VSM.Controllers.MechanicController" ("VehicleServiceManagement")
+2025-06-13 13:37:01 [Debug] Executed controller factory for controller "VSM.Controllers.MechanicController" ("VehicleServiceManagement")
+2025-06-13 13:37:01 [Debug] Attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"' ...
+2025-06-13 13:37:01 [Debug] Attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"' using the name '""' in request data ...
+2025-06-13 13:37:01 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2025-06-13 13:37:01 [Debug] Connection id ""0HND9RQEK52BM"", Request id ""0HND9RQEK52BM:00000002"": started reading request body.
+2025-06-13 13:37:01 [Debug] Connection id ""0HND9RQEK52BM"", Request id ""0HND9RQEK52BM:00000002"": done reading request body.
+2025-06-13 13:37:01 [Debug] JSON input formatter succeeded, deserializing to type '"VSM.DTO.MechanicAddDto"'
+2025-06-13 13:37:01 [Debug] Done attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"'.
+2025-06-13 13:37:01 [Debug] Done attempting to bind parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"'.
+2025-06-13 13:37:01 [Debug] Attempting to validate the bound parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"' ...
+2025-06-13 13:37:01 [Debug] Done attempting to validate the bound parameter '"dto"' of type '"VSM.DTO.MechanicAddDto"'.
+2025-06-13 13:37:01 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-06-13 13:37:01 [Debug] Creating DbConnection.
+2025-06-13 13:37:01 [Debug] Created DbConnection. (0ms).
+2025-06-13 13:37:01 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:37:01 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:37:01 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2025-06-13 13:37:01 [Debug] Began transaction with isolation level '"ReadCommitted"'.
+2025-06-13 13:37:01 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:37:01 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:37:01 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:37:01 [Debug] Executing DbCommand [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:37:01 [Information] Executed DbCommand ("1"ms) [Parameters=["@__key_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Email\", u.\"HashKey\", u.\"IsActive\", u.\"Password\", u.\"RefreshToken\", u.\"Role\", u.\"TTL\"
+FROM \"Users\" AS u
+WHERE u.\"Email\" = @__key_0
+LIMIT 2"
+2025-06-13 13:37:01 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:37:01 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-06-13 13:37:01 [Debug] Context '"VSMContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:37:01 [Debug] SaveChanges starting for '"VSMContext"'.
+2025-06-13 13:37:01 [Debug] DetectChanges starting for '"VSMContext"'.
+2025-06-13 13:37:01 [Debug] DetectChanges completed for '"VSMContext"'.
+2025-06-13 13:37:01 [Debug] Creating transaction savepoint.
+2025-06-13 13:37:01 [Debug] Created transaction savepoint.
+2025-06-13 13:37:01 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:37:01 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:37:01 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:37:01 [Debug] Executing DbCommand [Parameters=["@p0='?', @p1='?' (DbType = Binary), @p2='?' (DbType = Boolean), @p3='?' (DbType = Binary), @p4='?', @p5='?', @p6='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Users\" (\"Email\", \"HashKey\", \"IsActive\", \"Password\", \"RefreshToken\", \"Role\", \"TTL\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+2025-06-13 13:37:01 [Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?', @p1='?' (DbType = Binary), @p2='?' (DbType = Boolean), @p3='?' (DbType = Binary), @p4='?', @p5='?', @p6='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Users\" (\"Email\", \"HashKey\", \"IsActive\", \"Password\", \"RefreshToken\", \"Role\", \"TTL\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+2025-06-13 13:37:01 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:37:01 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-06-13 13:37:01 [Debug] Releasing transaction savepoint.
+2025-06-13 13:37:01 [Debug] Released transaction savepoint.
+2025-06-13 13:37:01 [Debug] An entity of type '"User"' tracked by '"VSMContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:37:01 [Debug] SaveChanges completed for '"VSMContext"' with 1 entities written to the database.
+2025-06-13 13:37:01 [Debug] The navigation '"Mechanic"."User"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:37:01 [Debug] The navigation '"User"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:37:01 [Debug] Context '"VSMContext"' started tracking '"Mechanic"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:37:01 [Debug] SaveChanges starting for '"VSMContext"'.
+2025-06-13 13:37:01 [Debug] DetectChanges starting for '"VSMContext"'.
+2025-06-13 13:37:01 [Debug] DetectChanges completed for '"VSMContext"'.
+2025-06-13 13:37:01 [Debug] Creating transaction savepoint.
+2025-06-13 13:37:01 [Debug] Created transaction savepoint.
+2025-06-13 13:37:01 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 13:37:01 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:37:01 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 13:37:01 [Debug] Executing DbCommand [Parameters=["@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Mechanics\" (\"MechanicId\", \"Email\", \"Name\", \"Phone\", \"Status\")
+VALUES (@p0, @p1, @p2, @p3, @p4);"
+2025-06-13 13:37:01 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?', @p4='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Mechanics\" (\"MechanicId\", \"Email\", \"Name\", \"Phone\", \"Status\")
+VALUES (@p0, @p1, @p2, @p3, @p4);"
+2025-06-13 13:37:01 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:37:01 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-06-13 13:37:01 [Debug] Releasing transaction savepoint.
+2025-06-13 13:37:01 [Debug] Released transaction savepoint.
+2025-06-13 13:37:01 [Debug] An entity of type '"Mechanic"' tracked by '"VSMContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 13:37:01 [Debug] SaveChanges completed for '"VSMContext"' with 1 entities written to the database.
+2025-06-13 13:37:01 [Debug] Committing transaction.
+2025-06-13 13:37:01 [Debug] Committed transaction.
+2025-06-13 13:37:01 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:37:01 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:37:01 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-13 13:37:01 [Debug] No information found on request to perform content negotiation.
+2025-06-13 13:37:01 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-13 13:37:01 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-13 13:37:01 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-06-13 13:37:01 [Information] Executing "OkObjectResult", writing value of type '"VSM.DTO.MechanicDisplayDto"'.
+2025-06-13 13:37:01 [Information] Executed action "VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)" in 53.7036ms
+2025-06-13 13:37:01 [Information] Executed endpoint '"VSM.Controllers.MechanicController.RegisterMechanic (VehicleServiceManagement)"'
+2025-06-13 13:37:01 [Debug] Connection id ""0HND9RQEK52BM"" completed keep alive response.
+2025-06-13 13:37:01 [Debug] '"VSMContext"' disposed.
+2025-06-13 13:37:01 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 13:37:01 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 13:37:01 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7176""""/api/v1/Mechanic/register""" - 200 null "application/json; charset=utf-8" 82.0119ms
+2025-06-13 13:38:37 [Debug] Connection id ""0HND9RQEK52BK"" disconnecting.
+2025-06-13 13:38:37 [Debug] Connection id ""0HND9RQEK52BK"" stopped.
+2025-06-13 13:38:37 [Debug] Connection id ""0HND9RQEK52BK"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 13:41:32 [Debug] Connection id ""0HND9RQEK52BM"" disconnecting.
+2025-06-13 13:41:32 [Debug] Connection id ""0HND9RQEK52BM"" stopped.
+2025-06-13 13:41:32 [Debug] Connection id ""0HND9RQEK52BM"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 14:19:19 [Debug] Connection id ""0HND9RQEK52BN"" accepted.
+2025-06-13 14:19:19 [Debug] Connection id ""0HND9RQEK52BN"" started.
+2025-06-13 14:19:19 [Debug] Connection "0HND9RQEK52BN" established using the following protocol: Tls12
+2025-06-13 14:19:19 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/index.html""" - null null
+2025-06-13 14:19:19 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2025-06-13 14:19:19 [Debug] Request did not match any endpoints
+2025-06-13 14:19:19 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 14:19:19 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 26.3616ms
+2025-06-13 14:19:19 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/v1/swagger.json""" - null null
+2025-06-13 14:19:19 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2025-06-13 14:19:19 [Debug] Request did not match any endpoints
+2025-06-13 14:19:19 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-06-13 14:19:19 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 51.5922ms
+2025-06-13 14:19:24 [Debug] Connection id ""0HND9RQEK52BN"" received FIN.
+2025-06-13 14:19:24 [Debug] The connection queue processing loop for "0HND9RQEK52BN" completed.
+2025-06-13 14:19:24 [Debug] Connection id ""0HND9RQEK52BN"" is closed. The last processed stream ID was 3.
+2025-06-13 14:19:24 [Debug] Connection id ""0HND9RQEK52BN"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 14:19:24 [Debug] Connection id ""0HND9RQEK52BN"" stopped.
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BO"" received FIN.
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BO"" accepted.
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BO"" started.
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BP"" accepted.
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BP"" started.
+2025-06-13 14:19:52 [Debug] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BO"" stopped.
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BO"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 14:19:52 [Debug] Connection "0HND9RQEK52BP" established using the following protocol: Tls12
+2025-06-13 14:19:52 [Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/Customer/name/gowtham""" - null null
+2025-06-13 14:19:52 [Debug] 1 candidate(s) found for the request path '"/api/v1/Customer/name/gowtham"'
+2025-06-13 14:19:52 [Debug] Endpoint '"VSM.Controllers.CustomerController.GetByName (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Customer/name/{name}"' is valid for the request path '"/api/v1/Customer/name/gowtham"'
+2025-06-13 14:19:52 [Debug] Request matched endpoint '"VSM.Controllers.CustomerController.GetByName (VehicleServiceManagement)"'
+2025-06-13 14:19:52 [Debug] Successfully validated the token.
+2025-06-13 14:19:52 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-06-13 14:19:52 [Debug] Authorization was successful.
+2025-06-13 14:19:52 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-06-13 14:19:52 [Information] Executing endpoint '"VSM.Controllers.CustomerController.GetByName (VehicleServiceManagement)"'
+2025-06-13 14:19:52 [Information] Route matched with "{action = \"GetByName\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.CustomerDisplayDto]]] GetByName(System.String)" on controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement").
+2025-06-13 14:19:52 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-06-13 14:19:52 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-06-13 14:19:52 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 14:19:52 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-06-13 14:19:52 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-13 14:19:52 [Debug] Executing controller factory for controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement")
+2025-06-13 14:19:52 [Debug] Executed controller factory for controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement")
+2025-06-13 14:19:52 [Debug] Attempting to bind parameter '"name"' of type '"System.String"' ...
+2025-06-13 14:19:52 [Debug] Attempting to bind parameter '"name"' of type '"System.String"' using the name '"name"' in request data ...
+2025-06-13 14:19:52 [Debug] Done attempting to bind parameter '"name"' of type '"System.String"'.
+2025-06-13 14:19:52 [Debug] Done attempting to bind parameter '"name"' of type '"System.String"'.
+2025-06-13 14:19:52 [Debug] Attempting to validate the bound parameter '"name"' of type '"System.String"' ...
+2025-06-13 14:19:52 [Debug] Done attempting to validate the bound parameter '"name"' of type '"System.String"'.
+2025-06-13 14:19:52 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-06-13 14:19:52 [Debug] Compiling query expression: "
+"'"DbSet<Customer>()
+    .Skip(__p_0)
+    .Take(__p_1)"'
+2025-06-13 14:19:52 [Warning] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-13 14:19:52 [Warning] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-13 14:19:52 [Debug] Generated query execution expression: "
+"'"queryContext => SingleQueryingEnumerable.Create<Customer>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Customer.CustomerID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Customer.Email (string) Required FK Index, 1], [Property: Customer.Name (string) Required, 2], [Property: Customer.Phone (string) Required, 3], [Property: Customer.Status (string) Required, 4] }
+        SELECT c.CustomerID, c.Email, c.Name, c.Phone, c.Status
+        FROM Customers AS c
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Customer.CustomerID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Customer.Email (string) Required FK Index, 1], [Property: Customer.Name (string) Required, 2], [Property: Customer.Phone (string) Required, 3], [Property: Customer.Status (string) Required, 4] }
+        SELECT c.CustomerID, c.Email, c.Name, c.Phone, c.Status
+        FROM Customers AS c
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Customer entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Customer instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Customer);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Customer.CustomerID PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Customer)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\")]: 
+                        {
+                            return 
+                            {
+                                Customer instance;
+                                instance = new Customer();
+                                instance.<CustomerID>k__BackingField = dataReader.GetGuid(0);
+                                instance.<Email>k__BackingField = dataReader.GetString(1);
+                                instance.<Name>k__BackingField = dataReader.GetString(2);
+                                instance.<Phone>k__BackingField = dataReader.GetString(3);
+                                instance.<Status>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"VSM.Models.Customer\")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Customer)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: VSM.Contexts.VSMContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)"'
+2025-06-13 14:19:52 [Debug] Creating DbConnection.
+2025-06-13 14:19:52 [Debug] Created DbConnection. (0ms).
+2025-06-13 14:19:52 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 14:19:52 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 14:19:52 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-06-13 14:19:52 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 14:19:52 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-06-13 14:19:52 [Debug] Executing DbCommand [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Customers\" AS c
+LIMIT @__p_1 OFFSET @__p_0"
+2025-06-13 14:19:52 [Information] Executed DbCommand ("17"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Customers\" AS c
+LIMIT @__p_1 OFFSET @__p_0"
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-13 14:19:52 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 14:19:52 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 2ms reading results.
+2025-06-13 14:19:52 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 14:19:52 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 14:19:52 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-13 14:19:52 [Debug] No information found on request to perform content negotiation.
+2025-06-13 14:19:52 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-13 14:19:52 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-13 14:19:52 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-06-13 14:19:52 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListWhereSelectIterator`2[[VSM.Models.Customer, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[VSM.DTO.CustomerDisplayDto, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-06-13 14:19:52 [Information] Executed action "VSM.Controllers.CustomerController.GetByName (VehicleServiceManagement)" in 119.4704ms
+2025-06-13 14:19:52 [Information] Executed endpoint '"VSM.Controllers.CustomerController.GetByName (VehicleServiceManagement)"'
+2025-06-13 14:19:52 [Debug] Connection id ""0HND9RQEK52BP"" completed keep alive response.
+2025-06-13 14:19:52 [Debug] '"VSMContext"' disposed.
+2025-06-13 14:19:52 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-06-13 14:19:52 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-06-13 14:19:52 [Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7176""""/api/v1/Customer/name/gowtham""" - 200 null "application/json; charset=utf-8" 157.5476ms
+2025-06-13 14:22:04 [Debug] Connection id ""0HND9RQEK52BP"" disconnecting.
+2025-06-13 14:22:04 [Debug] Connection id ""0HND9RQEK52BP"" stopped.
+2025-06-13 14:22:04 [Debug] Connection id ""0HND9RQEK52BP"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-06-13 14:39:30 [Information] Application is shutting down...
+2025-06-13 14:39:30 [Debug] Hosting stopping
+2025-06-13 14:39:30 [Debug] Hosting stopped
