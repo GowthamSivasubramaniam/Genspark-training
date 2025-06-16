@@ -1,0 +1,20 @@
+h1
+{
+    text-align: center;
+    margin-top: 20%;
+    color: rgb(156, 154, 154);
+    animation: popin ease-out 2s;
+}
+@keyframes popin
+{
+    0% {
+    transform: scale(0.5);
+   
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+   
+    opacity: 1;
+  }
+}
