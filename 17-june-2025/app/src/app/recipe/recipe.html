@@ -1,0 +1,12 @@
+
+  <div class="recipe-card">
+    <img class="recipe-image" [src]="recipe?.image" alt="Recipe Image">
+    <div class="recipe-body">
+      <h5 class="recipe-title">{{ recipe?.name }}</h5>
+      <h2 class="recipe-title">{{ recipe?.cuisine }}</h2>
+      <p class="recipe-text"><span class="side-heading">Cook Time: </span>{{ recipe?.cookTimeMinutes }} min</p>
+      <p class="recipe-text"><span class="side-heading">Ingredients:</span> {{ recipe?.ingredients?.join(', ') || '' }}</p>
+       <button (click)="handleBuyClick(recipe?.id)" class="btn btn-primary">Buy </button>
+    </div>
+  </div>
+
