@@ -1,0 +1,36 @@
+<!-- Filter Section -->
+<div class="filter-container">
+  <label>Role:</label>
+  <select [(ngModel)]="selectedRole">
+    <option [ngValue]="null">All</option>
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+  </select>
+
+  <label>Gender:</label>
+  <select [(ngModel)]="selectedGender">
+    <option [ngValue]="null">All</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <button (click)="applyFilters()">Apply</button>
+</div>
+
+<!-- Chart Section -->
+<div class="chart-container">
+  <div class="pie">
+    <h2>Roles</h2>
+    <canvas baseChart [data]="roleChartData" [type]="'bar'"></canvas>
+  </div>
+
+  <div class="gender-chart">
+    <h2>Gender</h2>
+    <canvas baseChart [data]="genderChartData" [type]="'pie'"></canvas>
+  </div>
+
+  <div class="state-chart">
+    <h2>States</h2>
+    <app-map [stateCounts]="stateCounts"></app-map>
+  </div>
+</div>

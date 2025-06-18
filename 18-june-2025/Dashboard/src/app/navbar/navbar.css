@@ -1,0 +1,28 @@
+nav {
+  background-color: #f8f8f8;
+  padding: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.25em;
+}
+a:hover {
+  font-weight: bold;
+  color: #007bff;
+}
+a.active-link
+{
+   color: #007bff;
+}
+h1
+{
+    margin-right: auto;
+}

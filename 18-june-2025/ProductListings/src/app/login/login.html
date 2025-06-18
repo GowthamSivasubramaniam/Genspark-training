@@ -1,0 +1,20 @@
+<form [formGroup]="loginForm" class="loginDiv" (ngSubmit)="login()">
+    
+<!-- <input type="text" placeholder="Username" required [(ngModel)]="uname"  #un="ngModel">
+@if(un.control.touched && un.control.errors)
+    {
+        <span class="alert alert-danger">Username cannot be empty</span>
+    } -->
+<input type="text" placeholder="Username" required  formControlName="uname">
+@if(uname.touched && uname.errors)
+    {
+        <span class="alert alert-danger">Username cannot be empty</span>
+    }
+
+<input type="password" placeholder="Password" required  formControlName="pass">
+ @if(pass.touched && pass.errors)
+    {
+        <span class="alert alert-danger">Psssword cannot be empty</span>
+    }
+<button >Login</button>
+</form>

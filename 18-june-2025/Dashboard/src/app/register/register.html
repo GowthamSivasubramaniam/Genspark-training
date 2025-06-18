@@ -1,0 +1,38 @@
+<form [formGroup]="registerForm" class="loginDiv" (ngSubmit)="Adduser()">
+    
+<input type="text" placeholder="Firstname" required  formControlName="fname">
+@if(fname.touched && fname.errors)
+    {
+        <span class="alert alert-danger">Firstname cannot be empty</span>
+    }
+
+<input type="text" placeholder="Lastname" required  formControlName="lname">
+ @if(lname.touched && lname.errors)
+    {
+        <span class="alert alert-danger">Lastname cannot be empty</span>
+    }
+<input type="number" placeholder="Age" required  formControlName="age">
+ @if(age.touched && age.errors)
+    {
+        <span class="alert alert-danger">Age cannot be empty</span>
+    }
+<input type="text" placeholder="Gender" required  formControlName="gender">
+ @if(gender.touched && gender.errors)
+    {
+        <span class="alert alert-danger">Gender cannot be empty</span>
+    }
+<input type="text" placeholder="State" required  formControlName="state">
+ @if(state.touched && state.errors)
+    {
+        <span class="alert alert-danger">State cannot be empty</span>
+    }
+<input type="text" placeholder="Role" required  formControlName="role">
+ @if(role.touched && role.errors)
+    {
+        <span class="alert alert-danger">Role cannot be empty</span>
+    }
+
+
+
+<button >Register</button>
+</form>

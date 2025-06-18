@@ -1,0 +1,12 @@
+#map {
+  height: 600px;
+  width: 80%;
+  background-color: white;
+}
+
+.leaflet-tooltip {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 3px;
+}
