@@ -1,0 +1,50 @@
+<div class="product-card-full">
+  <div class="image-section">
+    <img class="product-thumbnail" [src]="product?.thumbnail" alt="Product Image">
+    <div class="meta-info">
+      <img [src]="product?.meta?.qrCode" alt="QR Code" class="qr-code" />
+      <p><strong>SKU:</strong> {{ product?.sku }}</p>
+      <p><strong>Barcode:</strong> {{ product?.meta?.barcode }}</p>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2 class="title">{{ product?.title }}</h2>
+    <p class="brand-category">
+      <strong>Brand:</strong> {{ product?.brand }} |
+      <strong>Category:</strong> {{ product?.category }}
+    </p>
+
+    <h3 class="price">{{ product?.price | currency: 'INR' }}</h3>
+    <p class="discount">Discount: {{ product?.discountPercentage }}%</p>
+
+    <p class="description">{{ product?.description }}</p>
+
+    <div class="status">
+      <p><strong>Status:</strong> {{ product?.availabilityStatus }}</p>
+      <p><strong>Stock:</strong> {{ product?.stock }} items</p>
+      <p><strong>Minimum Order:</strong> {{ product?.minimumOrderQuantity }}</p>
+      <p><strong>Rating:</strong> ⭐ {{ product?.rating }}</p>
+    </div>
+
+    <div class="dimensions">
+      <p><strong>Dimensions:</strong> {{ product?.dimensions?.width }} x {{ product?.dimensions?.height }} x {{ product?.dimensions?.depth }} cm</p>
+      <p><strong>Weight:</strong> {{ product?.weight }} g</p>
+    </div>
+
+    <div class="tags">
+      <strong>Tags:</strong>
+      @for (tag of product?.tags; track $index) {
+      <span class="tag">{{ tag }}</span>
+      }
+    </div>
+
+    <div class="policies">
+      <p><strong>Warranty:</strong> {{ product?.warrantyInformation }}</p>
+      <p><strong>Return Policy:</strong> {{ product?.returnPolicy }}</p>
+      <p><strong>Shipping:</strong> {{ product?.shippingInformation }}</p>
+    </div>
+
+    <button class="buy-button">Buy Now</button>
+  </div>
+</div>

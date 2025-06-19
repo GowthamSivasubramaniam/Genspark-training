@@ -1,0 +1,13 @@
+<div class="search-container">
+  <input type="text" [(ngModel)]="searchQuery" (input)="handleSearch()" placeholder="Search users by name..." />
+</div>
+
+<div class="grid-container">
+  @for (item of userdata; track $index) {
+    <div class="user-card">
+      <h3>{{ item.username }}</h3>
+      <p><strong>Email:</strong> {{ item.email }}</p>
+      <p><strong>Role:</strong> {{ item.Role }}</p>
+    </div>
+  }
+</div>

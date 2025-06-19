@@ -1,0 +1,133 @@
+
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.no-product {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.btn{
+    padding: 10px;
+    color: #fafafa;
+    width: 200px;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(43, 44, 44);
+}
+.product-card {
+  width: 30rem;
+  height: 650px ;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #c8c8c8;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: popIn 1s ease-out;
+}
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    background-color: #252424;
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #c8c8c8;
+    opacity: 1;
+  }
+}
+
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.product-image {
+  padding: 5%;
+  border-radius: 30px;
+  padding-left: 0;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 16px;
+  justify-items: center;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+   text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.product-text {
+  color: #3f3e3e;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.side-heading
+{   
+     font-size: 1rem;
+    font-weight: bold;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.search-bar input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+}
+
+.search-bar input:focus {
+  border-color: #0288d1;
+  outline: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.back-to-top:hover {
+  background-color: #0056b3;
+}

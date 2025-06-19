@@ -1,0 +1,44 @@
+<form [formGroup]="registerForm" class="loginDiv" (ngSubmit)="Adduser()">
+    
+<input type="text" placeholder="UserName" required  formControlName="uname">
+@if(uname.touched && uname.errors != null)
+{
+@if( uname.errors.required)
+    {
+        <span class="alert alert-danger">Username cannot be empty</span>
+    }
+@if( uname.errors.ValueError)
+    {
+        <span class="alert alert-danger">Username Should not contain words like "admin","user"</span>
+    }
+}
+<input type="text" placeholder="Email" required  formControlName="email">
+ @if(email.touched && email.errors)
+    {
+        <span class="alert alert-danger">Email cannot be empty</span>
+    }
+
+<select formControlName="role" id="role">
+  <option value="User">User</option>
+  <option value="Admin">Admin</option>
+</select>
+
+@if(role.touched && role.errors) {
+  <span class="alert alert-danger">Role cannot be empty</span>
+}
+<input type="text" placeholder="Password" required  formControlName="password">
+ @if(password.touched && password.errors)
+    {
+        <span class="alert alert-danger">Password cannot be empty</span>
+    }
+<input type="text" placeholder="Retype password" required  formControlName="confirmPassword">
+ @if(confirmPassword.touched && registerForm.errors)
+    {
+        <span class="alert alert-danger">Password not Match</span>
+    }
+<button >Register</button>
+@if(isSuccess)
+{
+    <span class="alert-success">User Registerd Successfully</span>
+}
+</form>

@@ -1,0 +1,70 @@
+.loginDiv {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginDiv input[type="text"],
+.loginDiv input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.loginDiv input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.loginDiv .alert {
+  display: block;
+  margin-top: 4px;
+  color: #d9534f;
+  font-size: 0.875rem;
+}
+.loginDiv .alert-success {
+  display: block;
+  margin-top: 4px;
+  text-align: center;
+  color: #4fd966;
+  font-size: 0.875rem;
+}
+
+.loginDiv button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.3s;
+}
+
+.loginDiv button:hover {
+  background-color: #0056b3;
+}
+
+select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  cursor: pointer;
+  width: 400px;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
