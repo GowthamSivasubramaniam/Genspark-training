@@ -1,0 +1,14 @@
+2025-06-23 10:53:29,043 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2025-06-23 10:53:29,079 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-23 10:53:29,079 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-23 10:53:29,079 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Genspark/23-june=2025/FirstAPI
+2025-06-23 10:53:39,097 [.NET Signal Handler] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-23 10:58:06,502 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2025-06-23 10:58:06,532 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-23 10:58:06,533 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-23 10:58:06,533 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Genspark/23-june=2025/FirstAPI
+2025-06-23 11:04:44,679 [.NET Signal Handler] INFO Microsoft.Hosting.Lifetime - Application is shutting down...
+2025-06-23 11:04:56,407 [1] INFO Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5001
+2025-06-23 11:04:56,438 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-06-23 11:04:56,438 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-06-23 11:04:56,438 [1] INFO Microsoft.Hosting.Lifetime - Content root path: /Users/presidio/Desktop/Genspark/23-june=2025/FirstAPI
