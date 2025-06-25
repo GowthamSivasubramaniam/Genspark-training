@@ -1,0 +1,8 @@
+@if(recipe)
+{
+<div >
+  <h2>{{ recipe?.name }}</h2>
+  <img [src]="recipe?.image" alt="{{ recipe?.name }}" />
+  <p>Price: {{ recipe?.cookTimeMinutes }}</p>
+</div>
+}
