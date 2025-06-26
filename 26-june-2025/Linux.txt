@@ -1,0 +1,61 @@
+
+
+
+1. You have a file with permissions -rw-r--r--, and you run chmod +x file.sh. What happens?
+
+Will add the execute permissions for all like owner , group,others ,new permissions will be -rwxr-xr-x
+
+
+
+2. What is the difference between chmod 744 file.txt and chmod u=rwx,go=r file.txt
+
+No difference in effect. Both commands set the same permissions:
+ -rwxr--r– ie for owner all permissions rwx , for others and group, it is r--
+
+
+
+3. What is the sticky bit, and when should you use it?
+
+The sticky bit (+t) is used on directories to restrict deletion.
+Only the file owner (or root) can delete their files, even if others have write permission.
+
+
+
+4. You are told to give the owner full access, group only execute, and others no permissions. What symbolic command achieves this?
+
+chmod u=rwx,g=x,o= file.txt
+chmod 710 file.txt
+
+
+
+5. What is umask, and why is it important?
+
+It is used to set default permissions to a file or folder
+
+
+6. If the umask is 022, what are the default permissions for a new file and a new directory?
+
+The default permissions for file is 644 => rw-r-r-
+The default permissions for folder is 644 => rwx-r-x-r-x
+
+7. Why is umask often set to 002 in development environments but 027 or 077 in production?
+
+In development All users in the same group can edit files.
+Useful in teams where multiple developers need write access.
+secure Production
+640 for files, 750 for directories
+Only the owner and group have access; others cannot read.
+Preventing unauthorized reads from other system users.
+Highly Secure Production
+Resulting file permissions: 600 for files, 700 for directories
+Only the file owner can read/write/access — no one else.Handling secrets, SSH keys, config files, etc.
+
+8. useradd vs adduser
+
+useradd — Low-Level, Manual ,It's a built-in system command (part of passwd package),Requires manual flags for setting things like home directory, shell, etc.
+Does not create the home directory by default unless you specify -m.
+commonly used in scripts or automation.
+
+adduser — High-Level, Friendlyit's a Perl script that wraps around useradd.Interactive: asks for password, full name, room number, etc.
+Automatically handles more setup: home dir, permissions, groups.
+
