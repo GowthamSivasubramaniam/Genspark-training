@@ -1,0 +1,105 @@
+<h1 style="font-size: 2rem; font-weight: bold;">Categories</h1>
+<div class="filter-bar">
+  <input type="text" placeholder="Search Name" [(ngModel)]="filter.name">
+  <input type="number" placeholder="Min Price" [(ngModel)]="filter.minPrice">
+  <input type="number" placeholder="Max Price" [(ngModel)]="filter.maxPrice">
+  
+  <select [(ngModel)]="filter.status">
+    <option value="">All</option>
+    <option value="Active">Active</option>
+    <option value="Inactive">Inactive</option>
+  </select>
+
+  <button (click)="filter = { name: '', minPrice: null, maxPrice: null, status: '' }">Clear</button>
+</div>
+
+@if(showform)
+{
+<div class="modal-overlay">
+    <div class="modal-content ">
+        <button class="cancel"  (click)="hideform()"><i class="fa fa-x"></i></button>
+<form [formGroup]="CategoryForm" (ngSubmit)="addCategory()" class="modal-content category-form-card">
+  <h2>Add Service Category </h2>
+
+  <label>Name</label>
+  <input type="text" placeholder="Enter Category Name" formControlName="Name" />
+  @if(Name.touched && Name.errors?.['required']) {
+  <span class="error">Name is required</span>
+}
+@if(Name.touched && Name.errors?.['Error']) {
+  <span class="error"> {{ Name.errors?.['Error']}} </span>
+}
+
+
+
+  
+
+  <label>Price</label>
+  <input type="text" placeholder="Enter Price" formControlName="Price" />
+
+  @if(Price.touched && Price.errors?.['Error']) {
+    <span class="error"> {{ Price.errors?.['Error']}}</span>
+  }
+
+  <button type="submit" [disabled]="CategoryForm.invalid">Add</button>
+ 
+  
+</form>
+  
+    </div>
+    </div>
+
+}
+<button class="addbutton" (click)="clickshowform()">+</button>
+@if(showMessage)
+  {
+  <div class="toast" >
+    {{ message }}
+
+  </div>
+}
+<div class="categories-container"> 
+ @for (item of filteredCategories; track $index) 
+ {
+    <div class="card">
+      <h1>{{ item.name }}</h1>
+
+      <div class="input-group">
+        @if (!item.isEditing) {
+          <span class="amount-text">{{ item.amount|currency:'INR':'symbol':'1.2-2' }}</span>
+          <i class="fa fa-pen edit-icon" (click)="startEditing(item)"></i>
+        }
+        @if (item.isEditing) {
+          <input
+            type="number"
+            [(ngModel)]="item.amount"
+            class="amount-input"
+            placeholder="Enter new price" />
+        }
+      </div>
+
+      @if (item.isEditing) {
+        <div class="button-group">
+          <button (click)="updateCategory(item.amount, item.categoryID); stopEditing(item)">
+            Update
+          </button>
+          <button  (click)="cancelEditing(item)">
+            Cancel
+          </button>
+        </div>
+      }
+      @if(!item.isEditing && item.status =="Active")
+      {
+      <div class="button-group ">
+        <button  (click)="deleteCategory(item.categoryID)">Deactivate</button>
+      </div>
+    }
+    @else {
+       <div class="button-group ">
+        <button style="background-color: aquamarine; color: black;" (click)="deleteCategory(item.categoryID)">Activate</button>
+      </div>
+    }
+    </div>
+  }
+</div>
+

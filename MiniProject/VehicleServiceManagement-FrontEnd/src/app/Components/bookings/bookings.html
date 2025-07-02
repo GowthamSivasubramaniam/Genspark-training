@@ -1,0 +1,155 @@
+<h1>Bookings</h1>
+
+@if(showbookings && !loading)
+{
+<div class="filter-container">
+  @if(role!="Customer")
+  {
+
+    <input type="text" [(ngModel)]="filter.name" (ngModelChange)="applyFilter()" placeholder="Search Name" />
+  <input type="text" [(ngModel)]="filter.email" (ngModelChange)="applyFilter()" placeholder="Search Email" />
+  <input type="text" [(ngModel)]="filter.phone" (ngModelChange)="applyFilter()" placeholder="Search Phone" />
+  }
+  
+  
+ 
+  <div class="filter-datetime-group">
+  <label for="slotFrom">Slot From:</label>
+  <input id="slotFrom" type="datetime-local" [(ngModel)]="filter.slotFrom" (ngModelChange)="applyFilter()" />
+
+  <label for="slotTo">Slot To:</label>
+  <input id="slotTo" type="datetime-local" [(ngModel)]="filter.slotTo" (ngModelChange)="applyFilter()" />
+</div>
+
+<div class="filter-datetime-group">
+  <label for="deliveryFrom">Delivery From:</label>
+  <input id="deliveryFrom" type="datetime-local" [(ngModel)]="filter.deliveryFrom" (ngModelChange)="applyFilter()" />
+
+  <label for="deliveryTo">Delivery To:</label>
+  <input id="deliveryTo" type="datetime-local" [(ngModel)]="filter.deliveryTo" (ngModelChange)="applyFilter()" />
+</div>
+
+  <select [(ngModel)]="filter.status" (ngModelChange)="applyFilter()">
+    <option value="">All Statuses</option>
+    <option value="Booked">Booked</option>
+    <option value="Reviewed">Reviewed</option>
+    <option value="Cancelled">Cancelled</option>
+  </select>
+</div>
+<div class="booking-cards-container">
+  @for (item of filteredBookings; track $index) {
+  <div class="booking-card">
+    <div class="booking-image">
+      <img
+  [src]="'https://localhost:7176/BookingImages/' + getFileNameFromPath(item.imageurl)"
+  alt="Booking Image"
+  loading="lazy"
+/>
+
+    </div>
+    <div class="booking-details">
+      <h3 class="booking-id"><i class="fa fa-user"> </i> {{ item.customer.name }}</h3>
+      <p class="booking-email">{{ item.customer.email }}</p>
+      <div class="badges">
+
+        <span class="badge">
+          <span>
+            <i class="fa fa-phone"></i>
+            {{ item.customer.phone }}
+          </span>
+        </span>
+        <span class="badge slot-badge">
+
+          <i class="fa fa-clock"></i> {{ item.slot | date: 'dd MMM yyyy, hh:mm a' : 'UTC' }} 
+        </span>
+        <span class="badge">
+          <i class="fa fa-truck"></i>
+          {{ item.deliveryTime | date: 'dd MMM yyyy, hh:mm a'  : 'UTC' }}
+        </span>
+      </div>
+
+      <p class="status-text">Status: <strong>{{ item.status }}</strong></p>
+
+      @if (item.status !== "Cancelled" && role!=="Mechanic" && item.status !== "Reviewed") {
+      <button class="cancelBooking" (click)="cancelBooking(item.bookingID, $index)">Cancel</button>
+      }
+    </div>
+
+
+  </div>
+
+  }
+</div>
+  @if (showCancelMessage ) {
+    <div class="toast">
+      <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
+    </div>
+    }
+}
+@if (loading) {
+<div>
+  <div class="rolling-spinner"></div>
+</div>
+}
+@if(role=="Customer")
+{
+<button class="addbutton" [disabled]="isBooked" (click)="clickshowform()">+</button>
+}
+@if (showform) {
+<div class="modal-overlay">
+  <div class="modal-content booking-form-card">
+    <h2 class="modal-title">Book a Slot</h2>
+    @if(role!="Admin")
+    {
+    <p class="highlighted-id">
+      <span style="padding: 10px;"><i class="fa fa-user"></i> Customer ID: {{ id }}</span>
+    </p>
+  }
+    <div>
+      <label><i class="fa fa-clock"></i> <strong>Select a Slot:</strong></label>
+      <div class="slot-buttons">
+        @for (slot of slots; track slot) {
+        <span class="slot-badge" [class.selected]="slot === slotFormValue" (click)="selectSlot(slot)">
+          {{ slot }}
+        </span>
+        }
+      </div>
+      @if (slot?.invalid && slot?.touched) {
+      <div class="error">Slot is required</div>
+      }
+    </div>
+
+    <div class="upload-section">
+      <label for="image-upload" class="upload-label">
+        <i class="fa fa-image" style="margin-right: 6px;"></i> Upload Image
+      </label>
+      <input id="image-upload" type="file" (change)="onImageSelected($event)" hidden />
+
+      @if (image?.invalid && image?.touched) {
+      <div class="error">Image is required</div>
+      }
+
+      @if (image?.value) {
+      <p class="file-name">
+        <i class="fa fa-file"></i> Selected: {{ image?.value?.name }}
+      </p>
+      }
+    </div>
+
+    <div class="form-buttons">
+      <button class="btn-primary" (click)="book()"  >
+        <i class="fa fa-check-circle"></i> Book
+      </button>
+      <button class="btn-secondary" (click)="clickback()">
+        <i class="fa fa-times-circle"></i> Cancel
+      </button>
+    </div>
+
+    @if (showMessage || isBooked) {
+    <div class="toast">
+      <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
+    </div>
+    }
+  </div>
+</div>
+}

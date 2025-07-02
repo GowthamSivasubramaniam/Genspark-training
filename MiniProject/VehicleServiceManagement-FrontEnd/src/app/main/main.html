@@ -1,0 +1,56 @@
+<div class="grid-container">
+  <div class="sidebar">
+    
+   <i class="fa-brands fa-studiovinari" style="color: white; font-size: 70px;"></i>
+    <h2 >Wrench<span style="color: aqua; font-size: 30px; font-weight: bolder;">W</span>ise
+</h2>
+   
+
+    <ul>
+        
+      <li routerLink="/main"><i class="fa fa-home"></i> Dashboard</li>
+      
+      <li routerLink="/main/booking"><i class="fa fa-calendar-check"></i> Bookings</li>
+      <li routerLink="/main/bills"><i class="fa fa-file-invoice"></i> Bills</li>
+      @if(role === "Admin")
+      {
+      <li routerLink="/main/users"><i class="fa fa-users"></i> Users</li>
+      <li routerLink="/main/categories"><i class="fa fa-th-list"></i> Categories</li>
+      <li routerLink="/main/registrations"><i class="fa fa-clipboard"></i> Records</li>
+      }
+      @if(role ==="Mechanic")
+      {
+      <li routerLink="/main/registrations"><i class="fa fa-truck"></i> Registrations</li>
+      }
+       <li routerLink="/main/profile"><i class="fa fa-user"></i> Profile</li>
+    </ul>
+  
+ 
+  <i class="fa fa-sign-out-alt logout-button"  (click)="logout()"></i> 
+
+  </div>
+
+  <div class="outlet">
+    <router-outlet></router-outlet>
+  </div>
+    
+  <div class="bottom-nav">
+    
+       
+      <i class="fa fa-home"  routerLink="/main"></i>
+      <i routerLink="/main/booking" class="fa fa-calendar-check"></i>
+     <i routerLink="/main/bills" class="fa fa-file-invoice"></i>
+      @if(role === "Admin")
+      {
+      <i routerLink="/main/users" class="fa fa-users"></i>
+      <i routerLink="/main/categories" class="fa fa-th-list"></i>
+      <i routerLink="/main/registrations" class="fa fa-clipboard"></i> 
+      }
+      @if(role ==="Mechanic")
+      {
+      <i routerLink="/main/registrations" class="fa fa-truck"></i>
+      }
+      <i routerLink="/main/profile" class="fa fa-user"></i> 
+       <i class="fa fa-sign-out-alt logout-button"  (click)="logout()"></i> 
+  </div>
+</div>

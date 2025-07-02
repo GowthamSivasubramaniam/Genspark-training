@@ -1,0 +1,63 @@
+@if (showLayout) {
+  <section class="hero">
+    <div class="hero-content">
+       <i class="fa-brands fa-studiovinari" style="color: white; font-size: 150px;"></i>
+      <h1><span>WrenchWise</span></h1>
+      <p>Your trusted vehicle service center.</p>
+      <div class="cta-buttons">
+        <button  (click)="showregister()" class="cta-button">Register</button>
+        <button (click)="showlogin()" class="cta-button secondary">Login</button>
+        <i class="fa-solid fa-gear rotating-gear"></i>
+      </div>
+    </div>
+    <img src="assets/mechanic.png" alt="Vehicle Service" class="hero-img">
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Certified Mechanics</h3>
+      <p>Trained professionals ready to diagnose and fix your car.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-clock"></i>
+      <h3>Quick Turnaround</h3>
+      <p>Time-bound service to get you back on the road quickly.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-wallet"></i>
+      <h3>Affordable Pricing</h3>
+      <p>Transparent pricing with no hidden charges.</p>
+    </div>
+  </section>
+
+  <section class="trust">
+    <h2>Loved by Thousands</h2>
+    <p>“WrenchWise fixed my car like brand new! Hassle-free and quick.”</p>
+  </section>
+
+  <footer class="landing-footer">
+    <p>&copy; 2025 WrenchWise. All rights reserved.</p>
+    <p>support&#64;wrenchwise.com</p>
+  </footer>
+@if(showLogin || showRegister)
+{
+  <div class="modal-overlay">
+    <div class="model-content">
+      <div>
+      <button (click)="cancel()" class="cancel-btn">X</button>
+   @if(showLogin)
+   {
+     <app-login></app-login>
+   }
+   @else {
+<app-register></app-register>
+   }
+     </div>
+  </div>
+</div>
+} 
+}@else {
+ 
+  <router-outlet></router-outlet>
+}

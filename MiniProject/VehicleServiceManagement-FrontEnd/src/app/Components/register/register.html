@@ -1,0 +1,70 @@
+<div class="register-container">
+  <h2>Join WrenchWise!</h2>
+  <div class="card">
+    <div>
+      <img src="assets/register.jpg" alt="Register Illustration" />
+    </div>
+
+    <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" placeholder="Enter Name" formControlName="Name" />
+        @if(Name.touched && Name.errors?.['required']) {
+          <span class="error">Name is required</span>
+        }
+        @if(Name.touched && Name.errors?.['Error']) {
+          <span class="error">{{ Name.errors?.['Error'] }}</span>
+        }
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" formControlName="Email" />
+        @if(Email.touched && Email.errors?.['required']) {
+          <span class="error">Email is required</span>
+        }
+        @if(Email.touched && Email.errors?.['Error']) {
+          <span class="error">{{ Email.errors?.['Error'] }}</span>
+        }
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter Phone" formControlName="PhoneNumber" />
+        @if(PhoneNumber.touched && PhoneNumber.errors?.['required']) {
+          <span class="error">Phone number is required</span>
+        }
+        @if(PhoneNumber.touched && PhoneNumber.errors?.['Error']) {
+          <span class="error">{{ PhoneNumber.errors?.['Error'] }}</span>
+        }
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" formControlName="Password" />
+        @if(Password.touched && Password.errors?.['required']) {
+          <span class="error">Password is required</span>
+        }
+        @if(Password.touched && Password.errors?.['Error']) {
+          <span class="error">{{ Password.errors?.['Error'] }}</span>
+        }
+      </div>
+
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Re-enter Password" formControlName="ConfirmPassword" />
+        @if(ConfirmPassword.touched && ConfirmPassword.errors?.['required']) {
+          <span class="error">Please confirm your password</span>
+        }
+      </div>
+
+      <button type="submit" [disabled]="registerForm.invalid">Register</button>
+
+      @if(message) {
+        <div class="message">
+          {{ message }}
+        </div>
+      }
+    </form>
+  </div>
+</div>

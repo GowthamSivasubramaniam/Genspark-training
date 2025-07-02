@@ -1,0 +1,110 @@
+
+<h1>Welcome {{role}}!!</h1>
+
+<div class="filter-bar">
+    @if(role=="Admin"){
+  <input type="text" placeholder="Phone No" [(ngModel)]="phoneNo" />
+    }
+  <input type="date" [(ngModel)]="from" />
+  <input type="date" [(ngModel)]="to" />
+  <button (click)="applyFilters()">Apply Filters</button>
+</div>
+
+<div *ngIf="showMessage" class="message">{{ message }}</div>
+@if(loading)
+{<div class="rolling-spinner">
+
+</div>}
+
+
+<div class="dashboard-container" [ngClass]="role" *ngIf="dashboardData">
+
+
+
+
+
+
+
+ <div class="dashboard-stats" [ngClass]="role">
+   
+  @for (key of dashboardKeys; track $index )
+  {
+    
+    @if (role === 'Mechanic' && ($index === 5 || $index === 9 || $index === 10 || $index >= 12)) {
+      <div class="card" [ngClass]="'card-color-' + ($index + 1)">
+        <h4>{{ formatKey(key) }}</h4>
+        <h1>{{ dashboardData[key] }}</h1>
+      </div>
+    }
+
+    @if (role === 'Customer' && ($index === 5 || $index === 6 || $index === 7 || $index === 11)) {
+      <div class="card" [ngClass]="'card-color-' + ($index + 1)">
+        <h4>{{ formatKey(key) }}</h4>
+        <h1>{{ dashboardData[key] }}</h1>
+      </div>
+    }
+
+    @if (role === 'Admin') {
+      <div class="card" [ngClass]="'card-color-' + ($index + 1)">
+        <h4>{{ formatKey(key) }}</h4>
+        <h1>{{ dashboardData[key] }}</h1>
+      </div>
+    }
+
+  }
+
+
+</div>
+
+@if(role=="Customer")
+{
+    <div class="bill-container">
+    @for (item of bills; track $index) {
+    <div class="full-service-card">
+
+  <div class="card-header">
+      <p><strong>Vehicle No:</strong> <span class="status-badge">{{ item.vehicleNo }}</span></p>  
+      <p><span class="status-badge">{{item.status}}</span></p>
+  </div>
+
+  <div class="card-block service-block">
+    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Bill Info</h3>
+    <p><strong>Description:</strong> {{ item.description }}</p>
+
+    </div>
+    <p><strong>   <i class="fa-solid fa-coins"></i> Total:  <span>{{ item.totalAmount | currency:'INR':'symbol':'1.2-2'}}</span></strong></p>
+     
+    </div>
+
+
+  }
+    </div>
+}
+
+@if(role=="Mechanic")
+{
+ <div class="chart-section">
+      <h2>Mechanic Performance</h2>
+      <canvasjs-chart [options]="mechanicOptions" [styles]="{width: '100%', height:'450px'}"></canvasjs-chart>
+    </div>
+}
+
+
+@if(role=="Admin")
+{
+  <div class="charts">
+    <div class="chart-section">
+      <h2>Bookings Over Time</h2>
+      <canvasjs-chart [options]="bookingOptions" ></canvasjs-chart>
+    </div>
+
+    <div class="chart-section">
+      <h2>Services Over Time</h2>
+      <canvasjs-chart [options]="serviceOptions" ></canvasjs-chart>
+    </div>
+    <div class="chart-section">
+      <h2>Mechanic Performance</h2>
+      <canvasjs-chart [options]="mechanicOptions" ></canvasjs-chart>
+    </div>
+  </div>
+}

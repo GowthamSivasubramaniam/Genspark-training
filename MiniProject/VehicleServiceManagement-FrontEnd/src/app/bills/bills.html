@@ -1,0 +1,136 @@
+
+
+@if(role!="Customer")
+{
+<nav>
+  <h1 style="padding: 20px;">Bills</h1>
+  <div>
+    <i class="fa fa-search"></i>
+  
+    <input type="text" placeholder="Search Bills by Phone number" [(ngModel)]="query" (input)="searchBills()" />
+ 
+
+  </div>
+</nav>
+}
+@else {
+  <h1>Bills</h1>
+}
+
+
+@if(loading)
+{<div class="rolling-spinner">
+
+</div>}
+@if(!loading )
+{
+
+  <div class="filter-container">
+  <input type="text" placeholder="Vehicle No" [(ngModel)]="filters.vehicleNo" />
+  @if(role!="Mechanic")
+  {
+    <input type="text" placeholder="Mechanic Name" [(ngModel)]="filters.mechanicName" />
+  }
+  
+ @if(role!="Customer")
+  {
+    <input type="text" placeholder="Customer Name" [(ngModel)]="filters.customerName" />
+  }
+  <input type="text" placeholder="Category" [(ngModel)]="filters.category" />
+  <input type="text" placeholder="Description" [(ngModel)]="filters.description" />
+
+  <select [(ngModel)]="filters.status">
+    <option value="">All Status</option>
+    @if(role!="Customer")
+    {
+      <option value="Dispatched">Dispatched</option>
+     
+    }
+    
+    <option value="Approved">Approved</option>
+    <option value="Paid">Paid</option>
+  </select>
+
+  <input type="number" placeholder="Min Total" [(ngModel)]="filters.minAmount" />
+  <input type="number" placeholder="Max Total" [(ngModel)]="filters.maxAmount" />
+</div>
+
+<div class="service-cards-container">
+  @for (item of filteredBills; track $index) {
+ <div class="full-service-card">
+
+  <div class="card-header">
+    <h2><i class="fa-solid fa-clipboard-list"></i>  {{ item.customerName }}</h2>
+      <p><strong>Vehicle No:</strong> <span class="status-badge">{{ item.vehicleNo }}</span></p>
+  
+      @if(role=="Admin")
+      {
+       <span class="status-badge" [ngClass]="getStatusClass(item.status)">
+      
+      <select [ngModel]="item.status" (ngModelChange)="onStatusChange(item, $event)" >
+        @if(item.status!="Approved" && item.status!="Paid")
+        {
+    <option value="Dispatched">Dispatched</option>
+     <option value="Decline">Decline</option>
+    <option value="Approved">Approved</option>
+        }
+        @if(item.status=="Approved")
+        {
+          <option value="Approved">Approved</option>
+         <option value="Paid">Paid</option>
+        }
+        @if(item.status=="Paid")
+        {
+          <option value="Paid">Paid</option>
+        }
+       
+  </select>
+  
+       </span>
+      }
+      @else
+      {
+       <span class="status-badge"  [ngClass]="getStatusClass(item.status)">{{item.status}}</span>
+      }
+      @if(role!=="Mechanic")
+      {
+      <i class="fa-solid fa-download" (click)="downloadBills(item.billID)"></i>
+      }
+  </div>
+
+ 
+  <div class="card-block customer-block">
+    <h3><i class="fa-solid fa-user"></i> Customer Info</h3>
+  
+    <p><i class="fa-solid fa-phone-volume"></i> {{ item.customer_PhoneNo }}</p>
+  </div>
+
+ 
+  <div class="card-block mechanic-block">
+    <h3><i class="fa-solid fa-gears"></i> Mechanic Info</h3>
+    <p><i class="fa-solid fa-circle-user"></i> {{ item.mechanicName }}</p>
+    <p><i class="fa-solid fa-phone-volume"></i> {{ item.mechanic_PhoneNo }}</p>
+  </div>
+
+  
+  <div class="card-block service-block">
+    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Bill Info</h3>
+    <p><strong>Description:</strong> {{ item.description }}</p>
+  
+    
+  
+  <div class="chips">
+     @for (item of item.categoryAmounts; track $index) {
+      <span>{{ item.categoryName }} : {{ item.amount | currency:'INR':'symbol':'1.2-2' }}
+</span>
+     }
+     
+    </div>
+    <p><strong>   <i class="fa-solid fa-coins"></i> Total:  <span>{{ item.totalAmount | currency:'INR':'symbol':'1.2-2'}}</span></strong></p>
+     
+    </div>
+   
+</div>
+  }
+</div>
+}

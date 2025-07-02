@@ -1,0 +1,319 @@
+<nav>
+  <button (click)="setview(true)">Vehicle</button>
+  <button (click)="setview(false)">Service</button>
+  <div>
+    <i class="fa fa-search"></i>
+    @if(isVehicle)
+    {
+    <input type="text" placeholder="Search vehicles by Number" [(ngModel)]="vehicleQuery" (input)="searchVehicles()" />
+  }
+  @else {
+      <input type="text" placeholder="Search services by PhoneNumber" [(ngModel)]="serviceQuery" (input)="searchServices()" />
+
+    }
+  </div>
+</nav>
+
+
+
+
+
+ @if(showform)
+{
+<div class="modal-overlay">
+  <div class="modal-content ">
+    <button class="cancel" (click)="hideform()"><i class="fa fa-x"></i></button>
+    <form [formGroup]="vehicleAddForm" (ngSubmit)="addVehicle()" class="category-form-card">
+      <h2>Add a Vehicle </h2>
+
+      <label>VehicleNo</label>
+      <input type="text" placeholder="Enter VehicleNo" formControlName="No" />
+      @if(No.touched && No.errors?.['required']) {
+      <span class="error">VehicleNo is required</span>
+      }
+      @if(No.touched && No.errors?.['Error']) {
+      <span class="error">{{No.errors?.['Error']}}</span>
+      }
+
+
+      <label>VehicleType</label>
+
+  <select  placeholder="Enter Price" formControlName="Type">
+    <option value="2 Wheeler">Two Wheeler</option>
+    <option value="4 Wheeler">Four Wheeler</option>
+    <option value="Heavy Vehicle">Heavy Vehicle</option>
+  </select>
+
+      @if(Type.touched && Type.errors?.['required']) {
+      <span class="error">Type is required</span>
+      }
+      <label>Manufacturer</label>
+      <input type="text" placeholder="Enter Price" formControlName="Manufacturer" />
+      @if(Manufacturer.touched && Manufacturer.errors?.['required']) {
+      <span class="error">Manufacturer is required</span>
+      }
+      <label>Model</label>
+      <input type="text" placeholder="Enter Price" formControlName="Model" />
+      @if(Model.touched && Model.errors?.['required']) {
+      <span class="error">Model is required</span>
+      }
+
+      <button type="submit" [disabled]="vehicleAddForm.invalid">Add</button>
+
+
+    </form>
+
+  </div>
+</div>
+
+} 
+@if(loading)
+{<div class="rolling-spinner">
+
+</div>}
+
+@if(isVehicle)
+{
+<button class="addbutton" (click)="clickshowform()">+</button>
+}
+@else
+{
+  <button class="addbutton" (click)="clickshowServiceform()">+</button>
+}
+
+@if(showMessage)
+{
+<div class="toast">
+  {{ message }}
+
+</div>
+}
+
+@if(isVehicle){
+<h1>Vehicles</h1>
+<div class="filter-container">
+ 
+  <select [(ngModel)]="filters.vehicleType">
+    <option value="">All Types</option>
+    <option value="2 Wheeler">2 Wheeler</option>
+    <option value="4 Wheeler">4 Wheeler</option>
+    <option value="Heavy Vehicle">Heavy Vehicle</option>
+  </select>
+
+ 
+  <input type="text" placeholder="Search Manufacturer" [(ngModel)]="filters.manufacturer" />
+
+  
+  <input type="text" placeholder="Search Model" [(ngModel)]="filters.model" />
+</div>
+@if(!loading)
+{
+
+<div class="vehicle-cards-container">
+  @for (item of filteredVehicles; track $index) {
+  <div class="vehicle-card">
+
+    <div class="vehicle-details">
+      <h3 style="margin-bottom: 10px;"class="vehicle-id"><i class="fa-solid fa-hashtag"></i> {{ item.vehicleNo }}</h3>
+
+      <div class="badges">
+
+        <span class="badge">
+          <span>
+            <i class="fa-solid fa-sitemap"></i> {{item.vehicleType}}
+          </span>
+        </span>
+        <span class="badge slot-badge">
+
+          <i class="fa-solid fa-industry"></i> {{ item.vechicleManufacturer }}
+        </span>
+      </div>
+
+      <p class="status-text">Model: <strong>{{ item.vehicleModel}}</strong></p>
+
+
+    </div>
+  </div>
+
+
+
+  }
+</div>
+}
+
+}
+@else {
+
+<h1>Services</h1>
+<div class="filter-container">
+  <input type="text" placeholder="Search Vehicle No" [(ngModel)]="filter.vehicleNo" />
+  <input type="text" placeholder="Search Customer Name" [(ngModel)]="filter.customerName" />
+  <input type="text" placeholder="Search Customer Email" [(ngModel)]="filter.email" />
+  @if(role!="Mechanic")
+  {
+  <input type="text" placeholder="Search Mechanic Name" [(ngModel)]="filter.mechanicName"  />
+  <input type="text" placeholder="Search Mechanic Email" [(ngModel)]="filter.mechanicEmail" />
+  }
+  <input type="text" placeholder="Search Category" [(ngModel)]="filter.category" />
+
+  <select [(ngModel)]="filter.status">
+    <option value="">All Statuses</option>
+    <option value="Active">Active</option>
+    <option value="Completed">Completed</option>
+    <option value="Aborted">Aborted</option>
+  </select>
+</div>
+
+@if(!loading)
+{
+<div class="service-cards-container">
+
+
+  @for (item of filteredRecords; track $index) {
+ <div class="full-service-card">
+
+  <div class="card-header">
+    <h2><i class="fa-solid fa-clipboard-list"></i>  {{ item.customerName }}</h2>
+      <p ><strong>Vehicle No:</strong> <span class="badge">{{ item.vehicleNo }}</span></p>
+  
+    <span class="status-badge" [ngClass]="getStatusClass(item.status)">
+
+      <select [ngModel]="item.status" (ngModelChange)="onStatusChange(item, $event,item.serviceRecordID)" >
+        @if(item.status=="Completed")
+        {
+            <option value="Completed">Completed</option>
+        }
+        @else {
+ <option value="Active">Active</option>
+    <option value="Completed">Completed</option>
+    <option value="Aborted">Aborted</option>
+        }
+   
+  </select>
+    </span>
+  </div>
+
+ 
+  <div class="card-block customer-block">
+    <h3><i class="fa-solid fa-user"></i> Customer Info</h3>
+  
+    <p><i class="fa-solid fa-envelope"></i> {{ item.customer_Email }}</p>
+    <p><i class="fa-solid fa-phone-volume"></i> {{ item.customer_PhoneNo }}</p>
+  </div>
+
+ 
+  <div class="card-block mechanic-block">
+    <h3><i class="fa-solid fa-gears"></i> Mechanic Info</h3>
+    <p><i class="fa-solid fa-circle-user"></i> {{ item.mechanicName }}</p>
+    <p> <i class="fa-solid fa-envelope"></i> {{ item.mechanic_Email }}</p>
+    <p><i class="fa-solid fa-phone-volume"></i> {{ item.mechanic_PhoneNo }}</p>
+  </div>
+
+  
+  <div class="card-block service-block">
+    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Service Info</h3>
+    <p><strong>Description:</strong> {{ item.description }}</p>
+  
+    
+  
+  <div class="chips">
+      <span class="chip" *ngFor="let category of item.categories">{{ category }}</span>
+    </div>
+    </div>
+</div>
+
+  
+
+@if(showBillForm)
+{
+  <div class="modal-overlay">
+  <div class="modal-content ">
+    <form [formGroup]="billForm" (submit)="addBill()" class="category-form-card">
+      <h2>Create Bill </h2>
+      <label>Description</label>
+      <input type="text" placeholder="Enter Description" formControlName="billDescription" />
+      @if(billDescription.touched && billDescription.errors?.['required']) {
+      <span class="error">BillDescription is required</span>
+      }
+      
+      <label>Amount</label>
+      <input type="number" placeholder="Enter Misc Amount" formControlName="Amount" />
+      @if(Amount.touched && Amount.errors?.['required']) {
+      <span class="error">Amount is required</span>
+      }
+      @if(Amount.touched && Amount.errors?.['Error']) {
+      <span class="error">{{Amount.errors?.['Error']}}</span>
+      }
+
+      <button type="submit"[disabled]="billForm.invalid">Add</button>
+    </form>
+  </div>
+</div>
+}
+ 
+
+  }
+</div>
+}
+}
+
+
+
+@if(showServiceform)
+{
+<div class="modal-overlay">
+  <div class="modal-content ">
+    <button class="cancel" (click)="hideform()" ><i class="fa fa-x"></i></button>
+    <form [formGroup]="ServiceAddForm" (submit)="addService()" class="category-form-card">
+      <h2>Add a Service </h2>
+        
+
+
+      <label>VehicleNo</label>
+      <input type="text" placeholder="Enter VehicleNo" formControlName="VehicleNo" />
+      @if(VehicleNo.touched && VehicleNo.errors?.['required']) {
+      <span class="error">VehicleNo is required</span>
+      }
+      @if(VehicleNo.touched && VehicleNo.errors?.['Error']) {
+      <span class="error">{{ VehicleNo.errors?.['Error']}}</span>
+      }
+      <label>Description</label>
+      <input type="text" placeholder="Enter Description" formControlName="Description" />
+      @if(Description.touched && Description.errors?.['required']) {
+      <span class="error">Description is required</span>
+      }
+      <label>Phone No</label>
+      <input type="text" placeholder="Enter Customer's Phone No" formControlName="Customer_Phno" />
+      @if(Customer_Phno.touched && Customer_Phno.errors?.['required']) {
+      <span class="error">Phone No is required</span>
+      }
+      @if(Customer_Phno.touched && Customer_Phno.errors?.['Error']) {
+      <span class="error">{{Customer_Phno.errors?.['Error']}}</span>
+      }
+
+
+
+
+      <div class="category-selector">
+        <input type="text" placeholder="Search and add category" formControlName="categorySearch"
+          (input)="filterCategories()" (keydown.enter)="addCategory(categorySearch)" />
+
+        <div class="category-options">
+          <div *ngFor="let option of filteredCategories" (click)="addCategory(option)" class="category-option">
+            {{ option }}
+          </div>
+        </div>
+
+        <div class="selected-chips">
+          <span class="chip" *ngFor="let selected of ServiceAddForm.value.Categories">
+            {{ selected }}
+            <button type="button" (click)="removeCategory(selected)">x</button>
+          </span>
+        </div>
+      </div>
+
+      <button type="submit"[disabled]="ServiceAddForm.invalid">Add</button>
+    </form>
+  </div>
+</div>
+}

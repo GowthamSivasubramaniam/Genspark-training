@@ -1,0 +1,215 @@
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hero {
+  display: flex;
+ 
+ 
+  background: linear-gradient(-45deg, #001233, #004aad, #38013a, #001233);
+  background-size: 300% 300%;
+  color: white;
+  padding: 60px 10%;
+  padding-bottom: 0px;
+  width: 100%;
+  flex-wrap: wrap;
+  animation: gradientShift 10s ease infinite, floatPulse 4s ease-in-out infinite;
+}
+
+
+
+.hero-content {
+  max-width: 400px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #ffc107;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.cta-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ffc107;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffb100;
+}
+
+.cta-button.secondary {
+  background-color: white;
+  color: #001233;
+  border: 2px solid #001233;
+}
+
+.hero-img {
+ width: 100%;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+  background-color:transparent;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  color: black;
+  text-align: center;
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: #001233;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.trust {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #001233;
+  color: white;
+}
+
+.trust h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.trust p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.landing-footer {
+  background-color: #f0f0f0;
+  color: #444;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+.cancel-btn {
+  
+  
+        font-weight: 900;
+        margin-left: 90%;
+    
+ 
+  font-size: 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: rgb(229, 54, 54);
+  cursor: pointer;
+}
+.features-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 60px 10%;
+  background-color: #f5f5f5;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.feature-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  min-width: 100%;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInSlide 1s forwards;
+}
+
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes spinGear {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-gear {
+  font-size: 40px; /* Adjust size as needed */
+  color: #ffc107;
+ 
+  animation: spinGear 3s linear infinite;
+  display: inline-block;
+}
+
+@media (max-width:840px) {
+    .hero img
+    {
+        width: 600px;
+        margin-left: -250px;
+    }
+    .cancel-btn
+    {
+        font-weight: 900;
+        margin-left: 300px;
+    }
+}

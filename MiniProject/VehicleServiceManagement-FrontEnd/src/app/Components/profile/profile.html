@@ -1,0 +1,32 @@
+<div class="profile-container">
+  <div class="profile-card">
+    <div class="profile-header">
+      <img src="assets/user.jpg" alt="User Image" class="profile-img" />
+      <div class="profile-welcome">
+        <h2>Welcome, {{ data?.name }}</h2>
+     
+      </div>
+    </div>
+     
+    <div class="profile-body">
+      <label>Name</label>
+      <input [(ngModel)]="data.name" (ngModelChange)="onEdit()" />
+
+      <label>Email</label>
+      <p>{{ data?.email }}</p>
+
+      <label>Phone</label>
+      <input [(ngModel)]="data.phone" (ngModelChange)="onEdit()" />
+
+      @if (isEdited) {
+        <button (click)="updateProfile()">Update</button>
+      }
+    </div>
+  </div>
+</div>
+@if(showMessage)
+{
+  <div class="toast">
+      <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
+    </div>
+  }

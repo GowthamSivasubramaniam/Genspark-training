@@ -1,0 +1,82 @@
+
+
+
+@if(showForm){
+  <div class="model-overlay">
+   <button class="cancel" (click)="hideform()" ><i class="fa fa-x"></i></button>
+<app-register 
+  [isChild]="true" 
+  (formSubmitted)="registerMechanic($event)">
+</app-register>
+</div>
+}
+@else
+{
+<button class="addbutton" (click)="clickshowform()">+</button>
+
+<div class="radio-badge-group">
+  <label class="badge-radio">
+    <input type="radio" name="Select" value="Mechanic" [(ngModel)]="selectedRole" (change)="changeView()" checked />
+    <i class="fa-solid fa-gears"></i>Mechanic
+  </label>
+
+  <label class="badge-radio">
+    <input type="radio" name="Select" value="Customers" [(ngModel)]="selectedRole" (change)="changeView()" />
+   <i class="fa-solid fa-user-tie"></i> Customer
+  </label>
+</div>
+<div class="filter-bar">
+  <input type="text" placeholder="Search Name" [(ngModel)]="filter.name" />
+  <input type="text" placeholder="Search Email" [(ngModel)]="filter.email" />
+  <input type="text" placeholder="Search Phone" [(ngModel)]="filter.phone" />
+  <select [(ngModel)]="filter.status">
+    <option value="">All</option>
+    <option value="Active">Active</option>
+    <option value="Inactive">Inactive</option>
+  </select>
+  <button (click)="filter = { name: '', email: '', phone: '', status: '' }">Clear</button>
+</div>
+
+@if(showMech)
+{
+    <div class="customer-card-container">
+  @for (item of filteredMechanics; track $index) {
+   <div class="customer-card">
+  <h3> <i class="fa-solid fa-gears"></i>{{ item.name }}</h3>
+  <span class="badge email">{{ item.email }}</span>
+  <p><i class="fa fa-phone"></i> {{ item.phone }}</p>
+  @if(item.status=="Active"){
+  <button class="deact-btn" (click)="deactivateMechanic(item)">Deactivate</button>
+  }
+  @else {
+     <button class="act-btn" (click)="deactivateMechanic(item)">Activate</button>
+  }
+</div>
+
+  }
+</div>
+}
+@else
+{  
+  
+<div class="customer-card-container">
+  @for (item of filteredCustomers; track $index) {
+   <div class="customer-card">
+  <h3><i class="fa-solid fa-user-tie"></i>{{ item.name }}</h3>
+  <span class="badge email">{{ item.email }}</span>
+  <!-- <p><strong>ID:</strong> {{ item.customerId || item.mechanicId }}</p> -->
+  <p><i class="fa fa-phone"></i> {{ item.phone }}</p>
+</div>
+
+  }
+</div>
+
+}
+
+}
+@if(showMessage)
+{
+  <div class="toast">
+      <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
+    </div>
+  }

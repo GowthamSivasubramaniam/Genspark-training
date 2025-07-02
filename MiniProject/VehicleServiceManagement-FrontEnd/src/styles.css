@@ -1,0 +1,151 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+*
+{
+    font-family: 'nunito sans';
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.rolling-spinner {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ccc;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  z-index: 1000;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  font-weight: 500;
+  animation: slideIn 0.3s ease, fadeOut 0.5s ease 2.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+    from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 500px;
+  max-width: 95%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.addbutton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.addbutton:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width:840px) {
+  .addbutton {
+    width: 50px;
+    height: 50px;
+     bottom: 100px;
+  right: 30px;
+  }
+  
+.rolling-spinner {
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ccc;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  z-index: 1000;
+}
+
+}
+
+
+
