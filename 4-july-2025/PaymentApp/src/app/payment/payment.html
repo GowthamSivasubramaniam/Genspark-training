@@ -1,0 +1,88 @@
+<div>
+  <h2>
+    Razorpay Payment Form
+  </h2>
+
+  <form [formGroup]="paymentForm" (ngSubmit)="payNow()" novalidate>
+   
+   
+
+    
+    <div>
+      <label>Customer Name</label>
+      <input
+        type="text"
+        formControlName="name"
+        placeholder="Your full name"
+      />
+      @if (paymentForm.get('name')?.invalid && paymentForm.get('name')?.touched) {
+        <p class="error">Name is required</p>
+      }
+    </div>
+
+   
+    <div>
+      <label>Email</label>
+      <input
+        type="email"
+        formControlName="email"
+        placeholder="you@example.com"
+      />
+      @if (paymentForm.get('email')?.invalid && paymentForm.get('email')?.touched) {
+        <p class="error">A valid email is required</p>
+      }
+    </div>
+
+
+    <div>
+      <label>Contact Number</label>
+      <input
+        type="text"
+        formControlName="contact"
+        placeholder="10-digit phone number"
+      />
+      @if (paymentForm.get('contact')?.invalid && paymentForm.get('contact')?.touched) {
+        <p class="error">Contact number must be 10 digits</p>
+      }
+    </div>
+     <div>
+      <label>Amount (₹)</label>
+      <input
+        type="number"
+        formControlName="amount"
+        placeholder="Enter amount"
+      />
+      @if (paymentForm.get('amount')?.invalid && paymentForm.get('amount')?.touched) {
+        <p class="error">Amount must be greater than 0</p>
+      }
+    </div>
+  @if(showsuccess)
+  {
+   <p style="height: 3vh; background-color: rgb(225, 225, 248); width: 100%; border-radius: 10px; align-content: center; justify-content: center; text-align: center;">
+    {{paymentStatus}}
+   </p>
+  }
+    <button type="submit">
+      Pay Now
+    </button>
+  </form>
+
+
+  
+</div>
+
+<div class="history-container">
+  <h2 class="history-title">Payment History</h2>
+  <div class="history-list">
+    @for (item of history; track $index) {
+      <div class="history-card">
+        <p><strong>Amount:</strong> ₹{{ item.amount }}</p>
+        <p><strong>Name:</strong> {{ item.name }}</p>
+        <p><strong>Email:</strong> {{ item.email }}</p>
+        <p><strong>Contact:</strong> {{ item.contact }}</p>
+        <p><strong>Status:</strong> {{ item.staus }}</p>
+      </div>
+    }
+  </div>
+</div>
+
