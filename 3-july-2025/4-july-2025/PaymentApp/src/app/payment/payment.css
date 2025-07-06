@@ -1,0 +1,140 @@
+
+form {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e2e2;
+  font-family: Arial, sans-serif;
+}
+
+h2
+{
+    text-align: center;
+}
+form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.5);
+}
+
+
+form .text-red-500,
+form .text-red-600 {
+  color: #e53935;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #19d291;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1565c0;
+}
+
+
+.payment-status {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.payment-success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.payment-failure {
+  background-color: #ffebee;
+  color: #c62828;
+}
+.error
+{
+     color: #c62828;
+}
+
+.history-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background-color: #fafafa;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #333;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-card {
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.history-card p {
+  margin: 4px 0;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #444;
+}
