@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Azuredbconnect")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c427484b31705d1e12fa726881f49e606712f86")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af90fda17157f92c9951c99475a35e6442055eb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Azuredbconnect")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Azuredbconnect")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
