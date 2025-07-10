@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "w3Zu5lBuiMk=",
+  "success": true,
+  "projectFilePath": "/Users/presidio/Desktop/Genspark/9-july-2025/weatherapi/weatherapi.csproj",
+  "expectedPackageFiles": [
+    "/Users/presidio/.nuget/packages/microsoft.aspnetcore.openapi/9.0.5/microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
+    "/Users/presidio/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
