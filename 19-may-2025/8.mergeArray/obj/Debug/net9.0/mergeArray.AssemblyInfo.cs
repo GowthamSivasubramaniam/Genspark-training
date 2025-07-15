@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mergeArray")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+708ade02f28c7016fe1578da09af8d1b17f3c5fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a517ea6a5e9f69f6411ad4e99c6b489c1272b323")]
 [assembly: System.Reflection.AssemblyProductAttribute("mergeArray")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mergeArray")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
