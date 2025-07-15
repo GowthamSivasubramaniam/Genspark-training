@@ -75,7 +75,7 @@ describe('Login Component', () => {
 
     component.loginUser();
     tick();
-
+     tick(1000);
     expect(component.showMessage).toBeTrue();
     expect(component.message).toBe('Invalid credentials');
     expect(mockRouter.navigate).not.toHaveBeenCalled();

@@ -37,6 +37,10 @@
   </select>
 </div>
 <div class="booking-cards-container">
+  @if(filteredBookings.length==0)
+  {
+   <h1 style="color: grey;">No items found</h1>
+  }
   @for (item of filteredBookings; track $index) {
   <div class="booking-card">
     <div class="booking-image">
@@ -81,7 +85,7 @@
   }
 </div>
   @if (showCancelMessage ) {
-    <div class="toast">
+    <div class="toast" [ngClass]="toast">
       <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
     </div>
     }
@@ -93,7 +97,7 @@
 }
 @if(role=="Customer")
 {
-<button class="addbutton" [disabled]="isBooked" (click)="clickshowform()">+</button>
+<button class="addbutton" (click)="clickshowform()">+</button>
 }
 @if (showform) {
 <div class="modal-overlay">
@@ -123,7 +127,7 @@
       <label for="image-upload" class="upload-label">
         <i class="fa fa-image" style="margin-right: 6px;"></i> Upload Image
       </label>
-      <input id="image-upload" type="file" (change)="onImageSelected($event)" hidden />
+      <input id="image-upload" #fileInput type="file" (change)="onImageSelected($event)" hidden />
 
       @if (image?.invalid && image?.touched) {
       <div class="error">Image is required</div>
@@ -145,11 +149,12 @@
       </button>
     </div>
 
-    @if (showMessage || isBooked) {
-    <div class="toast">
-      <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
-    </div>
-    }
+   
   </div>
 </div>
 }
+ @if (showMessage) {
+     <div class="toast" [ngClass]="toast">
+      <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
+    </div>
+    }

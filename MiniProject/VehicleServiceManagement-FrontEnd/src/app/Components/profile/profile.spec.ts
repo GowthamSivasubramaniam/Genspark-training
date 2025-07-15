@@ -63,7 +63,7 @@ beforeEach(() => {
     userServiceSpy.updateProfile.and.returnValue(of({}));
 
     component.updateProfile();
-    tick();
+    tick(1000);
 
     expect(userServiceSpy.updateProfile).toHaveBeenCalledWith(
       { name: 'Jane', phone: '0987654321' },
@@ -83,7 +83,7 @@ beforeEach(() => {
     spyOn(console, 'error');
 
     component.updateProfile();
-    tick();
+    tick(1000);
 
     expect(component.isEdited).toBeFalse();
     expect(component.showMessage).toBeTrue();

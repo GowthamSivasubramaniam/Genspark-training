@@ -9,6 +9,7 @@ namespace VSM.Models
     public string Name { get; set; } = string.Empty;
     [Range(0, double.MaxValue, ErrorMessage = "Amount must be positive.")]
     public float Amount { get; set; } 
+    public string Status { get; set; }
     public ICollection<Service> Services { get; set; } = new List<Service>();
     }
 }

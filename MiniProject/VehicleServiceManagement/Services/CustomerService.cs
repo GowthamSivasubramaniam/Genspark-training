@@ -43,6 +43,10 @@ namespace VSM.Services
 
                 if (await _urepo.Get(dto.Email) != null)
                     throw new Exception("User already exists");
+                var existingCustomers = await _repo.GetAll(1, 100);
+                existingCustomers = existingCustomers.Where(c => c.Phone == dto.Phone);
+                if (existingCustomers.Count() != 0)
+                    throw new Exception("Phone number already registered");
 
                 await _urepo.Add(user);
                 var addedCustomer = await _repo.Add(customer) ?? throw new Exception("Cannot add customer");
@@ -59,7 +63,7 @@ namespace VSM.Services
 
         public async Task<bool> DeleteCustomer(string email)
         {
-            var customers = await _repo.GetAll(1,100);
+            var customers = await _repo.GetAll(1, 100);
             var customer = customers.FirstOrDefault(c => c.Email == email && c.Status != "Deleted");
             if (customer == null) throw new Exception($"Customer with email '{email}' not found");
 
@@ -77,7 +81,7 @@ namespace VSM.Services
 
         public async Task<CustomerDisplayDto?> GetByEmail(string email)
         {
-            var customers = await _repo.GetAll(1,100);
+            var customers = await _repo.GetAll(1, 100);
             var customer = customers.FirstOrDefault(c => c.Email == email && c.Status != "Deleted");
             if (customer == null) throw new Exception($"Customer with email '{email}' not found");
 
@@ -86,7 +90,7 @@ namespace VSM.Services
 
         public async Task<IEnumerable<CustomerDisplayDto>> GetByName(string name)
         {
-            var customers = await _repo.GetAll(1,100);
+            var customers = await _repo.GetAll(1, 100);
             var filtered = customers.Where(c => c.Name.Contains(name, StringComparison.OrdinalIgnoreCase) && c.Status != "Deleted");
             if (!filtered.Any()) throw new Exception($"No customers found with name containing '{name}'");
 
@@ -95,7 +99,7 @@ namespace VSM.Services
 
         public async Task<IEnumerable<CustomerDisplayDto>> GetAll()
         {
-            var customers = await _repo.GetAll(1,100);
+            var customers = await _repo.GetAll(1, 100);
             var filtered = customers.Where(c => c.Status != "Deleted");
             if (!filtered.Any()) throw new Exception("No customers found");
 
@@ -104,10 +108,22 @@ namespace VSM.Services
 
         public async Task<CustomerDisplayDto?> UpdateCustomer(string email, CustomerUpdateDto dto)
         {
-            var customers = await _repo.GetAll(1,100);
-            var customer = customers.FirstOrDefault(c => c.Email == email && c.Status != "Deleted");
-            if (customer == null) throw new Exception($"Customer with email '{email}' not found");
+            var customers = await _repo.GetAll(1, 100);
 
+           
+            var customer = customers.FirstOrDefault(c => c.Email == email && c.Status != "Deleted");
+             
+
+            if (customer == null) throw new Exception($"Customer with email '{email}' not found");
+            if (customer.Phone != dto.Phone)
+            {
+                var existingCustomers = await _repo.GetAll(1, 100);
+                existingCustomers = existingCustomers.Where(c => c.Phone == dto.Phone);
+                if (existingCustomers.Count() != 0)
+                    throw new Exception("Phone number already registered");
+            }
+            if(dto.Name.Length <=3)
+             throw new Exception("Name cannothave lessthan 3 characters ");
             customer.Name = dto.Name;
             customer.Phone = dto.Phone;
 
@@ -115,6 +131,6 @@ namespace VSM.Services
             return _mapper.MapCustomerToDisplayDto(updated);
         }
 
-       
+
     }
 }

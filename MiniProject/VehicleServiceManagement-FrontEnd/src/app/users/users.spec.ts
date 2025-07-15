@@ -73,42 +73,44 @@ describe('Users Component', () => {
   });
 
   describe('registerMechanic', () => {
-    it('should show success message on successful registration', () => {
+    it('should show success message on successful registration', fakeAsync(() => {
       userServiceSpy.registerMechanic.and.returnValue(of({}));
       component.registerMechanic({ name: 'NewMech' });
+      tick(1000);
       expect(userServiceSpy.registerMechanic).toHaveBeenCalled();
       expect(component.showMessage).toBeTrue();
       expect(component.message).toBe('Registration successfull');
-    });
+    }));
 
-    it('should show failure message on registration error', () => {
+    it('should show failure message on registration error', fakeAsync(() => {
       userServiceSpy.registerMechanic.and.returnValue(throwError(() => new Error('fail')));
       component.registerMechanic({ name: 'NewMech' });
+      tick(1000);
       expect(component.showMessage).toBeTrue();
       expect(component.message).toBe('Registration Failed');
-    });
+    }));
   });
 
   describe('deactivateMechanic', () => {
-    it('should update status and show success message on successful deactivation', () => {
+    it('should update status and show success message on successful deactivation', fakeAsync(() => {
       const mech = { email: 'mech@test.com', status: 'Active' };
       userServiceSpy.deactivateProfile.and.returnValue(of({ status: 'Inactive' }));
       component.deactivateMechanic(mech);
-
+      tick(1000)
       expect(userServiceSpy.deactivateProfile).toHaveBeenCalledWith(mech, mech.email);
       expect(mech.status).toBe('Inactive');
       expect(component.showMessage).toBeTrue();
       expect(component.message).toBe('Updation successfull');
-    });
+    }));
 
-    it('should show failure message on deactivation error', () => {
+    it('should show failure message on deactivation error', fakeAsync(() => {
       const mech = { email: 'mech@test.com', status: 'Active' };
       userServiceSpy.deactivateProfile.and.returnValue(throwError(() => new Error('fail')));
       component.deactivateMechanic(mech);
-
+       tick(1000)
       expect(component.showMessage).toBeTrue();
       expect(component.message).toBe('Updation failed');
-    });
+    }));
   });
 
   describe('filteredMechanics getter', () => {

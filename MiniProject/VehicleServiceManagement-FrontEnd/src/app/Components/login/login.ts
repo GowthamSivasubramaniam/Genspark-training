@@ -48,8 +48,11 @@ export class Login {
         this.router.navigate(["/main"])
       },
       error: (err: any) => {
-        this.showMessage = true;
+       this.showMessage = false; 
+  setTimeout(() => {
+             this.showMessage = true; 
         this.message = err.error.message;
+  },1000)
         console.error(err);
       }
     });

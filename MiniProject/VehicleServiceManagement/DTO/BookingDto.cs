@@ -22,5 +22,7 @@ namespace VSM.DTO
         public DateTime DeliveryTime { get; set; }
         public string Status { get; set; } = string.Empty;
         public string? ImageUrl { get; set; }
+            
+
     }
 }

@@ -95,3 +95,26 @@ export function priceValidator(): ValidatorFn {
     return null;
   };
 }
+
+
+
+
+
+
+export function manufacturerValidator(): ValidatorFn {
+  return (control: AbstractControl): ValidationErrors | null => {
+    const value = control.value;
+    if (!value) return null;
+    const regex = /^[A-Za-z\s]{3,20}$/;
+    return regex.test(value) ? null : { invalidManufacturer: true };
+  };
+}
+
+export function modelYearValidator(): ValidatorFn {
+  return (control: AbstractControl): ValidationErrors | null => {
+    const value = Number(control.value);
+    const currentYear = new Date().getFullYear();
+    if (!value || isNaN(value)) return { invalidModel: true };
+    return (value >= 1980 && value <= currentYear) ? null : { invalidModel: true };
+  };
+}

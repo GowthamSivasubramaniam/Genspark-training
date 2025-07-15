@@ -37,7 +37,7 @@ namespace VSM.Repositories
         public abstract Task<T> Get(K key);
 
 
-        public abstract Task<IEnumerable<T>> GetAll(int pageNumber, int pageSize);
+        public abstract Task<IEnumerable<T>> GetAll(int pageNumber, int pageSize,string? search=null);
 
 
         public async Task<T> Update(K key, T item)

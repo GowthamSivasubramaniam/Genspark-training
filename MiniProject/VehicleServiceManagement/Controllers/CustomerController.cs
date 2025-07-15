@@ -26,12 +26,14 @@ namespace VSM.Controllers
         {
             try
             {
+               
                 var customer = await _customerService.AddCustomer(dto);
                 _logger.LogData($"Customer Registered {customer.Email}");
                 return Ok(customer);
             }
             catch (Exception ex)
             {
+                Console.WriteLine(dto);
                 _logger.LogError("Error Registering Customer", ex);
                 return BadRequest(new { message = ex.Message });
             }

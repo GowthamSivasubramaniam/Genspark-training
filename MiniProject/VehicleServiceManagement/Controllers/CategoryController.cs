@@ -43,7 +43,7 @@ namespace VSM.Controllers
             {
                 await _categoryService.DeleteCategory(id);
                 _logger.LogData($"Category Deleted {id}");
-                return Ok("Successfully Deleted");
+                return Ok(new { message= "Successfully Deleted"});
             }
             catch (Exception ex)
             {
@@ -59,7 +59,7 @@ namespace VSM.Controllers
             {
                 await _categoryService.UpdateCategory(id,Amount);
                 _logger.LogData($"Updated Deleted {id}");
-                return Ok("Successfully Updated");
+                return Ok(new { message= "Successfully Updated"});
             }
             catch (Exception ex)
             {
@@ -67,7 +67,7 @@ namespace VSM.Controllers
                 return NotFound(new { message = ex.Message });
             }
         }
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Mechanic")]
         [HttpGet]
        public async Task<ActionResult<IEnumerable<ServiceCategory>>> GetAll()
         {

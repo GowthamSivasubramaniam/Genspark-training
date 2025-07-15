@@ -36,7 +36,7 @@ namespace VSM.Controllers
         {
             try
             {
-                var response = await _authService.RefreshToken(request.Email, request.RefreshToken);
+                var response = await _authService.RefreshToken(request.Email);
                 return Ok(response);
             }
             catch (Exception ex)

@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "User ID=presidio;Password=Presidio@123;Host=postgres;Port=5432;Database=VehicleServiceManagement;"
+      Keys__JwtTokenKey: "SuperSecretKey1234567890asqdewqrw"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: presidio
+      POSTGRES_PASSWORD: Presidio@123
+      POSTGRES_DB: VehicleServiceManagement
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

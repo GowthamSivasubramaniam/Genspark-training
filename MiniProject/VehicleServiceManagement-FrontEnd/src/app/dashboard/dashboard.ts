@@ -6,11 +6,12 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 import { FormsModule } from '@angular/forms';
 import { UserService } from '../Services/UserServices';
 import { billService } from '../Services/BillService';
+import { Notifications } from '../Components/notifications/notifications';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, FormsModule, CanvasJSAngularChartsModule],
+  imports: [CommonModule, FormsModule, CanvasJSAngularChartsModule,Notifications],
   templateUrl: './dashboard.html',
   styleUrls: ['./dashboard.css']
 })
@@ -43,6 +44,16 @@ export class Dashboard {
           {
           this.phoneNo=data.phone
           console.log(this.phoneNo)
+          this.bService.showAllBills(this.phoneNo,1,10).subscribe(
+    {
+   next:(data:any)=>
+   {
+      this.bills=data
+      this.bills=this.bills.filter(b=>b.status=="Approved")
+   }
+    }
+    )
+     this.searchSubject.next({ phoneNo: this.phoneNo, from: this.from, to: this.to });
            this.applyFilters();
           }
         }
@@ -73,7 +84,7 @@ export class Dashboard {
     });
 
     this.applyFilters();
-
+      
   
   }
   
@@ -82,16 +93,9 @@ export class Dashboard {
   applyFilters() {
     this.showMessage = false;
     this.message = '';
+  
     this.searchSubject.next({ phoneNo: this.phoneNo, from: this.from, to: this.to });
-      this.bService.showAllBills(this.phoneNo,1,10).subscribe(
-    {
-   next:(data:any)=>
-   {
-      this.bills=data
-      this.bills=this.bills.filter(b=>b.status=="Approved")
-   }
-    }
-    )
+     
   }
 
   private updateDashboardKeys() {

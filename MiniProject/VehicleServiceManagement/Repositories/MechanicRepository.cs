@@ -17,11 +17,9 @@ namespace VSM.Repositories
             
         }
 
-        public override async Task<IEnumerable<Mechanic>> GetAll(int pageNumber,int pageSize)
+        public override async Task<IEnumerable<Mechanic>> GetAll(int pageNumber,int pageSize,string? search=null)
         {
-            return await _context.Mechanics.Skip((pageNumber - 1) * pageSize)
-           .Take(pageSize)
-           .ToListAsync();
+            return await _context.Mechanics .ToListAsync();
         }
     }
 }

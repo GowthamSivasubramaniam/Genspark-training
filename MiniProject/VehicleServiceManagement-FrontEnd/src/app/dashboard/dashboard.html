@@ -8,6 +8,10 @@
   <input type="date" [(ngModel)]="from" />
   <input type="date" [(ngModel)]="to" />
   <button (click)="applyFilters()">Apply Filters</button>
+  @if(role!="Customer")
+  {
+  <app-notifications></app-notifications>
+  }
 </div>
 
 <div *ngIf="showMessage" class="message">{{ message }}</div>

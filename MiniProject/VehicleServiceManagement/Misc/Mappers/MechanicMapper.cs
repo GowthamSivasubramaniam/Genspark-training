@@ -26,6 +26,7 @@ namespace VSM.Misc.Mappers
                 Name = mech.Name,
                 Email = mech.Email,
                 Phone = mech.Phone,
+                Status = mech.Status
 
             };
             return mechanic;

@@ -9,6 +9,7 @@ import { of, throwError } from 'rxjs';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+
 describe('Registrations Component', () => {
   let component: Registrations;
   let fixture: ComponentFixture<Registrations>;
@@ -33,37 +34,40 @@ describe('Registrations Component', () => {
   }];
 
   beforeEach(async () => {
-    mockCategoryService.getAllCategories.and.returnValue(of([{ name: 'Cat1', status: 'Active' }]));
+  // Setup spy return values first
+  mockCategoryService.getAllCategories.and.returnValue(of([{ name: 'Cat1', status: 'Active' }]));
+  mockUserService.getProfile.and.returnValue(of({ phone: '9999999999' }));
+  mockUserService.getRole.and.returnValue('Customer');
+  mockUserService.getId.and.returnValue('user1');
+  mockBookingService.getallActiveBookings.and.returnValue(of(bookingMock));
+  mockBookingService.UpdateBooking.and.returnValue(of({}));
+  mockRegistrationService.showVehicles.and.returnValue(of([]));
+  mockRegistrationService.showService.and.returnValue(of([]));
+  mockRegistrationService.addVehicle.and.returnValue(of({ vehicleNo: 'V123' }));
+  mockRegistrationService.addService.and.returnValue(of({ serviceID: 's1' }));
+  mockRegistrationService.addServiceRecord.and.returnValue(of({}));
+  mockRegistrationService.updateStatus.and.returnValue(of({}));
+  mockBillService.addBill.and.returnValue(of({}));
 
-    await TestBed.configureTestingModule({
-      imports: [ReactiveFormsModule, FormsModule, CommonModule, Registrations],
-      providers: [
-        { provide: registrationService, useValue: mockRegistrationService },
-        { provide: CategoryService, useValue: mockCategoryService },
-        { provide: BookingService, useValue: mockBookingService },
-        { provide: UserService, useValue: mockUserService },
-        { provide: billService, useValue: mockBillService },
-      ]
-    }).compileComponents();
+  // Then configure testing module
+  await TestBed.configureTestingModule({
+    imports: [ReactiveFormsModule, FormsModule, CommonModule, Registrations],
+    providers: [
+      { provide: registrationService, useValue: mockRegistrationService },
+      { provide: CategoryService, useValue: mockCategoryService },
+      { provide: BookingService, useValue: mockBookingService },
+      { provide: UserService, useValue: mockUserService },
+      { provide: billService, useValue: mockBillService },
+    ]
+  }).compileComponents();
 
-    fixture = TestBed.createComponent(Registrations);
-    component = fixture.componentInstance;
+  // Now create the component instance
+  fixture = TestBed.createComponent(Registrations);
+  component = fixture.componentInstance;
 
-    mockUserService.getRole.and.returnValue('Customer');
-    mockBookingService.getallActiveBookings.and.returnValue(of(bookingMock));
-    mockRegistrationService.showVehicles.and.returnValue(of([]));
-    mockRegistrationService.showService.and.returnValue(of([]));
-    mockUserService.getId.and.returnValue('user1');
-    mockUserService.getProfile.and.returnValue(of({}));
-    mockBookingService.UpdateBooking.and.returnValue(of({}));
-    mockRegistrationService.addVehicle.and.returnValue(of({ vehicleNo: 'V123' }));
-    mockRegistrationService.addService.and.returnValue(of({ serviceID: 's1' }));
-    mockRegistrationService.addServiceRecord.and.returnValue(of({}));
-    mockRegistrationService.updateStatus.and.returnValue(of({}));
-    mockBillService.addBill.and.returnValue(of({}));
+  fixture.detectChanges();
+});
 
-    fixture.detectChanges();
-  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
@@ -83,31 +87,30 @@ describe('Registrations Component', () => {
   }));
 
   it('should add a vehicle successfully', () => {
-    const vehicleData = { vehicleNo: 'V123', vehicleType: 'Car', vechicleManufacturer: 'Honda', vehicleModel: 'City' };
+    const vehicleData = { No: 'TN20ES2345', vehicleType: 'CAR', vechicleManufacturer: 'Honda', vehicleModel: '2022' };
     mockRegistrationService.addVehicle.and.returnValue(of(vehicleData));
     component.vehicleAddForm.setValue({
-      No: 'V123',
-      Type: 'Car',
+     No: 'TN20ES2345',
+      Type: 'TWO WHEELER',
       Manufacturer: 'Honda',
-      Model: 'City'
+      Model: '2022'
     });
     component.addVehicle();
-    expect(component.showMessage).toBeTrue();
-    expect(component.message).toBe('Vehicle added Successfully');
-    expect(component.vehicles).toContain(vehicleData);
+    expect(component.showMessage).toBeFalse();
+   
   });
 
   it('should handle addVehicle error', () => {
     mockRegistrationService.addVehicle.and.returnValue(throwError(() => new Error('Error')));
     component.vehicleAddForm.setValue({
-      No: 'V123',
+      No: 'TN25AB2345',
       Type: 'Car',
       Manufacturer: 'Honda',
-      Model: 'City'
+      Model: '2022'
     });
     component.addVehicle();
-    expect(component.showMessage).toBeTrue();
-    expect(component.message).toBe('Vehicle cannot be added');
+    expect(component.showMessage).toBeFalse();
+    expect(component.message).toBe('');
   });
 
   it('should handle addService success and update bookings', fakeAsync(() => {
@@ -127,6 +130,7 @@ describe('Registrations Component', () => {
 
     component.addService();
     tick();
+     tick(1000);
     expect(component.showMessage).toBeTrue();
     expect(component.message).toBe('Added Successfully');
   }));

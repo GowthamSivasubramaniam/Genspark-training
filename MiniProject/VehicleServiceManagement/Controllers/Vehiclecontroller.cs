@@ -68,19 +68,21 @@ namespace VSM.Controllers
         }
         [Authorize(Roles = "Admin,Mechanic")]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<VehicleDisplayDto>>> GetAll()
+
+        public async Task<ActionResult<IEnumerable<VehicleDisplayDto>>> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {
             try
             {
-                var result = await _vehicleService.GetAll();
+                var result = await _vehicleService.GetAll(page, pageSize, search);
                 return Ok(result);
             }
             catch (Exception ex)
             {
                 _logger.LogError("Error Getting All Vehicles", ex);
-                return BadRequest(new { message = ex.Message });
+                return BadRequest(new { message =ex.Message});
             }
         }
+
         [Authorize(Roles = "Admin,Mechanic")]
         [HttpPut("{id}")]
         public async Task<ActionResult<VehicleDisplayDto>> UpdateVehicleInfo(Guid id, [FromBody] VehicleAdd dto)
@@ -99,4 +101,3 @@ namespace VSM.Controllers
         }
     }
 }
-       

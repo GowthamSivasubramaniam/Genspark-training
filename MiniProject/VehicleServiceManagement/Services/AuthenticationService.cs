@@ -26,7 +26,7 @@ namespace VSM.Services
         public async Task<UserLoginResponse> Login(UserLoginRequest user)
         {
             var dbUser = await _userRepository.Get(user.Email);
-            if (dbUser == null)
+            if (dbUser == null || !dbUser.IsActive)
             {
                 _logger.LogCritical("User not found");
                 throw new Exception("No such user");
@@ -62,13 +62,13 @@ namespace VSM.Services
             };
         }
 
-        public async Task<UserLoginResponse> RefreshToken(string email, string refreshToken)
+        public async Task<UserLoginResponse> RefreshToken(string email)
         {
             var dbUser = await _userRepository.Get(email);
             if (dbUser == null || dbUser.IsActive == false)
                 throw new Exception("No such user");
 
-
+            
             if (dbUser.TTL < DateTime.UtcNow)
                 throw new Exception("Refresh token expired, please login again");
 

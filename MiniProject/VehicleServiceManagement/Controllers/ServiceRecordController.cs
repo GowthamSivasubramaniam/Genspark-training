@@ -32,7 +32,7 @@ namespace VSM.Controllers
             catch (Exception ex)
             {
                 _logger.LogError("Error Adding ServiceRecord", ex);
-                return BadRequest(new { message = ex.Message });
+                 return BadRequest(new { message =ex.Message});
             }
         }
         [Authorize(Roles = "Admin,Mechanic")]
@@ -70,11 +70,11 @@ namespace VSM.Controllers
         }
         [Authorize(Roles = "Admin,Mechanic")]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ServiceRecordDisplayDto>>> GetAll()
+        public async Task<ActionResult<IEnumerable<ServiceRecordDisplayDto>>> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {
             try
             {
-                var result = await _serviceRecordService.GetAll();
+                var result = await _serviceRecordService.GetAll(page,pageSize,search);
                 return Ok(result);
             }
             catch (Exception ex)

@@ -1,0 +1,26 @@
+<div class="notification-bell">
+  <button (click)="toggleDropdown()" class="bell-btn">
+    🔔
+
+    @if (notifications.length > 0) {
+      <span class="badge">
+        {{ notifications.length }}
+      </span>
+    }
+  </button>
+
+  @if (dropdownVisible) {
+    <div class="dropdown">
+      <div class="dropdown-header">
+        Notifications
+        <button (click)="clearAll()">Clear</button>
+      </div>
+
+      <ul>
+      @for (item of notifications; track $index) {
+          <li >{{ item }}</li>
+        }
+      </ul>
+    </div>
+  }
+</div>

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using VSM.Interfaces;
 using VSM.DTO;
+using VSM.Models;
 using VSM.Misc;
 using Microsoft.AspNetCore.Authorization;
 using Serilog;
@@ -21,7 +22,7 @@ namespace VSM.Controllers
             _billService = billService;
              _logger = logger;
         }
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles ="Admin,Mechanic")]
         [HttpPost]
         public async Task<ActionResult<BillDisplayDto>> Add([FromBody] BillAddDto dto)
         {
@@ -48,11 +49,20 @@ namespace VSM.Controllers
             return Ok(result);
         }
         [Authorize(Roles ="Admin")]
+        [HttpDelete("{billId}")]
+        public async Task<ActionResult<Bill>> Delete(Guid billId)
+        {
+            var result = await _billService.Delete(billId);
+            if (result == null)
+                return NotFound(new { message = "Bill cannot be deleted" });
+            return Ok(result);
+        }
+        [Authorize(Roles ="Admin,Mechanic,Customer")]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<BillDisplayDto>>> GetAll()
+        public async Task<ActionResult<IEnumerable<BillDisplayDto>>> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {try
             {
-                var result = await _billService.GetAll();
+                var result = await _billService.GetAll(page,pageSize,search);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -75,6 +85,24 @@ namespace VSM.Controllers
                   return BadRequest(new { message = ex.Message });
             }
         }
+        [HttpPut("{id}")]
+         [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<BookingDisplayDto>> UpdateBill(Guid id,string status)
+        {
+            try
+            {
+                var updated = await _billService.Update(id,status);
+                _logger.LogData($"Status Updated {id}");
+                return Ok(updated);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Error Updating Status", ex);
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+
         [Authorize(Roles = "Admin,Customer")]
         [HttpGet("{billId}/download-pdf")]
         public async Task<IActionResult> DownloadBillPdf(Guid billId)

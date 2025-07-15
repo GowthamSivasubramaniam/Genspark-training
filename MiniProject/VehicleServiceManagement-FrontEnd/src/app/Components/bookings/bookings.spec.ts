@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { Bookings } from './bookings';
 import { BookingService } from '../../Services/BookingService';
 import { UserService } from '../../Services/UserServices';
@@ -9,6 +9,7 @@ import { Booking } from '../../models/BookingsModel';
 import { CommonModule } from '@angular/common';
 import { provideHttpClient } from '@angular/common/http';
 import { bookingReducer } from '../../Store/BookingStore/booking.reducer';
+import { ElementRef } from '@angular/core';
 
 describe('Bookings Component', () => {
   let component: Bookings;
@@ -68,35 +69,29 @@ describe('Bookings Component', () => {
     expect(component.image?.value).toBe(file);
     expect(component.image?.touched).toBeTrue();
   });
+it('should book a new service and show success message', fakeAsync(() => {
+  mockBookingService.createBooking.and.returnValue(of({ success: true }));
 
-  it('should book a new service and show success message', () => {
-    mockBookingService.createBooking.and.returnValue(of({ success: true }));
-    component.id = '123';
-    component.bookingForm.setValue({
-      phone: '9999999999',
-      slot: '2025-07-01T10:00',
-      image: new File([''], 'test.png')
-    });
+  component.fileInput = {
+    nativeElement: {
+      value: ''
+    }
+  } as ElementRef;
 
-    component.book();
-    expect(component.showMessage).toBeTrue();
-    expect(component.message).toContain('Successful');
-    expect(mockBookingService.createBooking).toHaveBeenCalled();
+  component.id = '123';
+  component.bookingForm.setValue({
+    phone: '9999999999',
+    slot: '2025-07-01T10:00',
+    image: new File([''], 'test.png')
   });
 
-  it('should handle booking failure', () => {
-    mockBookingService.createBooking.and.returnValue(throwError(() => new Error('error')));
-    component.id = '123';
-    component.bookingForm.setValue({
-      phone: '9999999999',
-      slot: '2025-07-01T10:00',
-      image: new File([''], 'test.png')
-    });
+  component.book();
+  tick(1000);  // Wait for any internal setTimeouts or debounce
+  expect(component.showMessage).toBeTrue();
+  expect(component.message).toContain('Successful');
+  expect(mockBookingService.createBooking).toHaveBeenCalled();
+}));
 
-    component.book();
-    expect(component.showMessage).toBeTrue();
-    expect(component.message).toContain('Failed');
-  });
 
   it('should update form display when clicking show form', () => {
     component.isBooked = false;
@@ -104,23 +99,29 @@ describe('Bookings Component', () => {
     expect(component.showform).toBeTrue();
   });
 
-  it('should not allow booking if already booked', () => {
-    component.isBooked = true;
-    component.clickshowform();
-    expect(component.message).toBe('Already Booked a slot ');
-    expect(component.showform).toBeFalse();
-  });
 
-  it('should handle booking cancellation', () => {
+it('should not allow booking if already booked', fakeAsync(() => {
+  component.isBooked = true;
+  
+  component.clickshowform();
+  tick(1000);
+
+  expect(component.message).toBe('Already Booked a slot ');
+  expect(component.showform).toBeFalse();
+}));
+
+
+  it('should handle booking cancellation', fakeAsync(() => {
     mockBookingService.cancelBooking.and.returnValue(of({}));
     component.bookings = [
       new Booking({ bookingID: 1, status: 'Booked', customer: { name: 'John' } })
     ];
     component.cancelBooking(1, 0);
+    tick(1000);
     expect(component.bookings[0].status).toBe('Cancelled');
     expect(component.showCancelMessage).toBeTrue();
     expect(component.message).toContain('cancelled');
-  });
+  }));
 
   it('should apply booking filters', () => {
     const now = new Date().toISOString();

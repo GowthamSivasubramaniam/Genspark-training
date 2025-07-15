@@ -104,7 +104,7 @@ describe('Dashboard Component', () => {
     ]));
     component.applyFilters();
     tick();
-    expect(component.bills.length).toBe(2);
+    expect(component.bills.length).toBe(1);
     expect(component.bills.every(b => b.status === 'Approved')).toBeTrue();
   }));
 });

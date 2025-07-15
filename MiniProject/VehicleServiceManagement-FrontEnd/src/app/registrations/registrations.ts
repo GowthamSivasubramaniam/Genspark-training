@@ -7,7 +7,7 @@ import { CategoryService } from '../Services/CategoryService';
 import { BookingService } from '../Services/BookingService';
 import { UserService } from '../Services/UserServices';
 import { billService } from '../Services/BillService';
-import { phoneValidator, priceValidator, vehicleNoValidator } from '../Misc/Validations';
+import { manufacturerValidator, modelYearValidator, phoneValidator, priceValidator, vehicleNoValidator } from '../Misc/Validations';
 
 @Component({
   selector: 'app-registrations',
@@ -16,7 +16,7 @@ import { phoneValidator, priceValidator, vehicleNoValidator } from '../Misc/Vali
   styleUrl: './registrations.css'
 })
 export class Registrations {
-vehicles: any[] = []
+  vehicles: any[] = []
   services: any[] = []
   vehicleAddForm: FormGroup
   ServiceAddForm: FormGroup
@@ -24,57 +24,74 @@ vehicles: any[] = []
   showform: boolean = false
   message: string = ""
   showMessage: boolean = false
+  toast: string = ""; // Add this variable at the top with other properties
   searchSubject = new Subject<string>();
   ServiceSubject = new Subject<string>();
   loading: boolean = true;
   page = 1;
-  role=""
+  role = ""
   pageSize = 100;
   showBackToTop = false
   isVehicle = true
   vehicleQuery: string = ""
   serviceQuery: string = ""
   allcategories: string[] = []
-  categories:any[]=[]
-  constructor(private service: registrationService, private categoryService: CategoryService, private bookingService: BookingService, private userService: UserService,private BillService:billService) {
-    
-    this.role=this.userService.getRole();
+  categories: any[] = []
+  noitems = false
+  phoneNo:string=""
+  expandedItem:any=null
+  email:string=localStorage.getItem("email")||""
+  constructor(private service: registrationService, private categoryService: CategoryService, private bookingService: BookingService, private userService: UserService, private BillService: billService) {
+
+    this.role = this.userService.getRole();
     this.categoryService.getAllCategories().subscribe(
       {
         next: (data: any) => {
           data.forEach((element: any) => {
-            if(element.status =="Active")
-            this.allcategories.push(element.name)
+            if (element.status == "Active")
+              this.allcategories.push(element.name)
           });
-
+            
           console.log(this.allcategories)
         }
       })
-
+      
+       this.userService.getProfile(this.email).subscribe(
+      {
+        next:(data:any)=>
+        {
+          if(this.role=="Customer" || this.role=="Mechanic")
+          {
+          this.phoneNo=data.phone
+          console.log(this.phoneNo)
+          this.ServiceSubject.next(data.phone);
+          }
+        }
+      });
 
     this.vehicleAddForm = new FormGroup(
       {
-        No: new FormControl(null, [Validators.required,vehicleNoValidator()]),
-        Type: new FormControl(null, [Validators.required]),
-        Manufacturer: new FormControl(null, [Validators.required]),
-        Model: new FormControl(null, [Validators.required]),
+        No: new FormControl(null, [Validators.required, vehicleNoValidator()]),
+        Type: new FormControl("Two Wheeler", [Validators.required]),
+        Manufacturer: new FormControl(null, [Validators.required,manufacturerValidator()]),
+        Model: new FormControl(null, [Validators.required,modelYearValidator()])
       })
     this.ServiceAddForm = new FormGroup(
       {
-        VehicleNo: new FormControl(null, [Validators.required,vehicleNoValidator()]),
-        Description: new FormControl(null, [Validators.required]),
-        Customer_Phno: new FormControl(null, [Validators.required,phoneValidator()]),
-        categorySearch:new FormControl(null),
+        VehicleNo: new FormControl(null, [Validators.required, vehicleNoValidator()]),
+        Description: new FormControl(null, [Validators.required, Validators.minLength(4)]),
+        Customer_Phno: new FormControl(null, [Validators.required, phoneValidator()]),
+        categorySearch: new FormControl(null),
         Categories: new FormControl([], [
-  Validators.required,
-  Validators.minLength(1) 
-])
+          Validators.required,
+          Validators.minLength(1)
+        ])
 
       })
 
     this.billForm = new FormGroup(
       {
-        Amount: new FormControl(null, [Validators.required,priceValidator()]),
+        Amount: new FormControl(null, [Validators.required, priceValidator()]),
 
         billDescription: new FormControl(null, [Validators.required])
 
@@ -94,7 +111,7 @@ vehicles: any[] = []
           })
         )
       ),
-     
+
       tap(() => (this.loading = false))
 
     ).subscribe(
@@ -123,16 +140,20 @@ vehicles: any[] = []
           })
         )
       ),
-     
+
       tap(() => (this.loading = false))
 
     ).subscribe(
       {
         next: (data: any) => {
-         
+
           this.page = 1
           console.log(data)
           this.services = data
+          if(this.role=="Mechanic")
+          {
+            this.services=this.services.filter(s=>s.mechanic_PhoneNo == this.phoneNo)
+          }
         },
         error: (err: any) => {
           this.showMessage = true
@@ -141,10 +162,10 @@ vehicles: any[] = []
       }
     )
 
-   this.searchSubject.next("");   
-  this.ServiceSubject.next("");  
+    this.searchSubject.next("");
+    this.ServiceSubject.next("");
 
-    
+
   }
 
 
@@ -175,7 +196,7 @@ vehicles: any[] = []
   public get categorySearch(): any {
     return this.ServiceAddForm.get("categorySearch");
   }
-  
+
   public get billDescription(): any {
     return this.billForm.get("billDescription");
   }
@@ -187,14 +208,14 @@ vehicles: any[] = []
 
 
 
-
   clickshowform() {
     this.showform = true
 
   }
+
   hideform() {
     this.showform = false
-    this.showServiceform=false
+    this.showServiceform = false
 
   }
 
@@ -205,22 +226,28 @@ vehicles: any[] = []
       vehicleType: this.Type.value,
       vechicleManufacturer: this.Manufacturer.value,
       vehicleModel: this.Model.value
-
     }
 
     this.service.addVehicle(vehicle).subscribe(
       {
         next: (data: any) => {
-          this.showMessage = true;
-          this.message = 'Vehicle added Successfully';
+          this.toast = "success";
+          this.showMessage = false;
+          setTimeout(() => {
+            this.showMessage = true;
+            this.message = 'Vehicle added Successfully';
+          }, 1000);
           this.vehicles = [...this.vehicles, data];
-
           this.vehicleAddForm.reset();
         },
         error: (err: any) => {
-          this.showMessage = true;
+          this.toast = "error";
           console.log(err)
-          this.message = "Vehicle cannot be added";
+          this.showMessage = false;
+          setTimeout(() => {
+            this.showMessage = true;
+            this.message = err.error.message || "Vehicle cannot be added";
+          }, 1000)
         }
       }
     )
@@ -238,44 +265,57 @@ vehicles: any[] = []
 
 
   loadMore() {
-   
-    if(this.isVehicle)
-    {
-       this.page += 1;
-    this.service.showVehicles(this.vehicleQuery, this.page, this.pageSize).subscribe
-      (
+    if (this.isVehicle) {
+      this.page += 1;
+      this.service.showVehicles(this.vehicleQuery, this.page, this.pageSize).subscribe(
         {
           next: (data: any) => {
-
+            this.toast = "success";
+            this.showMessage = false;
+            setTimeout(() => {
+              this.showMessage = true;
+              this.message = "More vehicles loaded";
+            }, 1000);
             this.vehicles.push(...data);
           },
           error: (err: any) => {
+            this.toast = "error";
             this.page = 1
-            this.showMessage = true
-            this.message = err.error.message
+            this.showMessage = false;
+            setTimeout(() => {
+              this.showMessage = true;
+              this.message = err.error.message;
+            }, 1000);
           }
         }
       )
-  }
-  else
-  {
-     this.page += 1;
-    this.service.showService(this.serviceQuery, this.page, this.pageSize).subscribe
-      (
+    }
+    else {
+      this.page += 1;
+      this.service.showService(this.serviceQuery, this.page, this.pageSize).subscribe(
         {
           next: (data: any) => {
-
+            this.toast = "success";
+            this.showMessage = false;
+            setTimeout(() => {
+              this.showMessage = true;
+              this.message = "More services loaded";
+            }, 1000);
             this.services.push(...data);
           },
           error: (err: any) => {
+            this.toast = "error";
             this.page = 1
-            this.showMessage = true
-            this.message = err.error.message
+            this.showMessage = false;
+            setTimeout(() => {
+              this.showMessage = true;
+              this.message = err.error.message;
+            }, 1000);
           }
         }
       )
+    }
   }
-}
 
   @HostListener('window:scroll', [])
   onScroll(): void {
@@ -285,7 +325,7 @@ vehicles: any[] = []
     console.log(scrollPosition)
     const threshold = document.body.offsetHeight;
     console.log(threshold)
-    if (scrollPosition >= threshold+30) {
+    if (scrollPosition >= threshold) {
       this.loadMore();
 
     }
@@ -331,7 +371,7 @@ vehicles: any[] = []
 
 
   booking: any[] = []
-  bookingId:string=""
+  bookingId: string = ""
   addService() {
 
     this.showMessage = false;
@@ -342,28 +382,25 @@ vehicles: any[] = []
     this.bookingService.getallActiveBookings().pipe(
       switchMap((bookings: any[]) => {
         const filtered = bookings.filter(b =>
-          b.customer.phone === this.Customer_Phno.value 
-          // && b.slot.slice(0, 13) === nowHourString
+          b.customer.phone === this.Customer_Phno.value
         );
 
         if (filtered.length === 0) return throwError(() => new Error("No matching bookings found"));
 
         const BookingID = filtered[0].bookingID;
-        this.bookingId=BookingID
+        this.bookingId = BookingID
         const CustomerID = filtered[0].customerID;
 
         return this.service.showVehicles(this.VehicleNo.value, this.page, this.pageSize).pipe(
           switchMap((vehicles: any[]) => {
             if (vehicles.length === 0) return throwError(() => new Error("No vehicles found"));
-            if(vehicles.length >1) return throwError(() => new Error("Multiple Vehicles Found with the no , Kindly type the full number"));
+            if (vehicles.length > 1) return throwError(() => new Error("Multiple Vehicles Found with the no , Kindly type the full number"));
 
             const VehicleID = vehicles[0].vehicleID;
 
             const serviceData = {
               vehicleID: VehicleID,
               description: this.Description.value,
-
-
               categoryNames: this.ServiceAddForm.value.Categories
             };
 
@@ -383,8 +420,7 @@ vehicles: any[] = []
                     };
                     console.log(serviceRecordData)
 
-                    return this.service.addServiceRecord(serviceRecordData)
-                      ;
+                    return this.service.addServiceRecord(serviceRecordData);
                   })
                 );
               })
@@ -393,30 +429,35 @@ vehicles: any[] = []
         );
       })
     ).subscribe({
-      next: (data:any) => {
+      next: (data: any) => {
+        this.toast = "success";
+        this.showMessage = false;
+        setTimeout(() => {
+          this.showMessage = true;
+          this.message = "Added Successfully";
+        }, 1000);
         this.services = [...this.services, data];
-         this.bookingService.UpdateBooking(this.bookingId).subscribe(
+        this.bookingService.UpdateBooking(this.bookingId).subscribe(
           {
-            next:(data:any)=>
-            {
-              console.log("Reviewed")
+            next: (data: any) => {
+              this.toast = "success";
+              
             },
-            error:(err:any)=>
-            {
-              console.log(err)
+            error: (err: any) => {
+              this.toast = "error";
+              
             }
           }
-         )
-        this.showMessage = true;
-        this.message = "Added Successfully";
-        
-         this.ServiceAddForm.reset();
+        )
+        this.ServiceAddForm.reset();
       },
       error: (err: any) => {
-
-        this.showMessage = true;
-        console.error("Service record creation failed:", err);
-        this.message = err.error?.message || err?.message || "Something went wrong";
+        this.toast = "error";
+        this.showMessage = false;
+        setTimeout(() => {
+          this.showMessage = true;
+          this.message = err.error?.message || err?.message || "Something went wrong";
+        }, 1000)
       }
     });
 
@@ -424,134 +465,134 @@ vehicles: any[] = []
 
   }
 
-showServiceform=false
-  clickshowServiceform()
-  {
-    this.showServiceform=true;
+  showServiceform = false
+  clickshowServiceform() {
+    this.showServiceform = true;
   }
 
-  setview(value:boolean)
-  {
-    this.isVehicle=value
-    if(!this.isVehicle)
-    {
+  setview(value: boolean) {
+    this.isVehicle = value
+    if (!this.isVehicle) {
       this.ServiceSubject.next(this.serviceQuery)
     }
-    else
-    {
+    else {
       this.searchSubject.next(this.vehicleQuery)
     }
 
   }
-  showBillForm =false
-  item:any
-   serviceRecordId:string=""
-  onStatusChange(item: any, newStatus: string,id:string) {
-    if(newStatus== "Completed")
-    {
-      this.serviceRecordId=id
-      this.item=item
-      this.showBillForm =true
-      
+  showBillForm = false
+  item: any
+  serviceRecordId: string = ""
+  onStatusChange(item: any, newStatus: string, id: string) {
+    if (newStatus == "Completed") {
+      this.serviceRecordId = id
+      this.item = item
+      this.showBillForm = true
+
     }
-    else
-    {
-    this.service.updateStatus(item.serviceRecordID,newStatus).subscribe
-    (
-      {
-        next:(data:any)=>
-        {
-             item.status = newStatus;
-        },
-        error:(err:any)=>
-        {
-                   this.showMessage = true;
-        this.message = err.error?.message || err?.message || "Something went wrong";
-        }
-      }
-    )
-  }
-  
-  
+    else {
+      this.service.updateStatus(item.serviceRecordID, newStatus).subscribe
+        (
+          {
+            next: (data: any) => {
+              this.toast = "success";
+              item.status = newStatus;
+            },
+            error: (err: any) => {
+              this.toast = "error";
+              this.showMessage = true;
+              this.message = err.error?.message || err?.message || "Something went wrong";
+            }
+          }
+        )
+    }
+
+
   }
   getStatusClass(status: string): string {
-  switch (status) {
-    case 'Active': return 'active';
-    case 'Completed': return 'completed';
-    case 'Aborted': return 'aborted';
-    default: return 'active';
+    switch (status) {
+      case 'Active': return 'active';
+      case 'Completed': return 'completed';
+      case 'Aborted': return 'aborted';
+      default: return 'active';
+    }
   }
-}
 
 
-addBill()
-{
-  const data =
+  addBill() {
+    const data =
     {
-  "serviceRecordID":  this.serviceRecordId,
-  "miscAmount": this.Amount.value,
-  "description": this.billDescription.value
-}
-this.BillService.addBill(data).subscribe
-({
-  next:(data:any)=>
-  {
-    console.log(data)
-    this.message="Bill Dispatched Successfully"
-    this.billForm.reset();
-    this.showMessage=true;
-     this.service.updateStatus(this.serviceRecordId,"Completed").subscribe
-    (
-      {
-        next:(data:any)=>
-        {
-             this.item.status = "Completed";
+      "serviceRecordID": this.serviceRecordId,
+      "miscAmount": this.Amount.value,
+      "description": this.billDescription.value
+    }
+    this.BillService.addBill(data).subscribe
+      ({
+        next: (data: any) => {
+          this.toast = "success";
+          this.showMessage = false;
+          setTimeout(() => {
+            this.showMessage = true;
+            this.message = "Bill Dispatched Successfully";
+          }, 1000);
+          this.billForm.reset();
+          this.service.updateStatus(this.serviceRecordId, "Completed").subscribe(
+            {
+              next: (data: any) => {
+                this.toast = "success";
+                this.item.status = "Completed";
+              },
+              error: (err: any) => {
+                this.toast = "error";
+                this.showMessage = true;
+                this.message = err.error?.message || err?.message || "Something went wrong";
+              }
+            }
+          )
+          this.showBillForm = false
         },
-        error:(err:any)=>
-        {
-                   this.showMessage = true;
-        this.message = err.error?.message || err?.message || "Something went wrong";
+        error: (err: any) => {
+          this.toast = "error";
+          this.showMessage = false;
+          setTimeout(() => {
+            this.message = "Bill for this service is already available";
+            this.showMessage = true;
+          }, 1000);
+          console.error(err)
         }
       }
-    )
-    this.showBillForm=false
-  },
-  error:(err:any)=>
-  {
-    this.showMessage=true;
-    console.error(err)
-    this.message=err.error.message || err.message || "Something went Wrong";
-
-}}
-)
-}
+      )
+  }
 
 
-filters = {
-  vehicleType: '',
-  manufacturer: '',
-  model: ''
-};
+  filters = {
+    vehicleType: '',
+    manufacturer: '',
+    model: ''
+  };
 
-get filteredVehicles() {
-  return this.vehicles.filter(vehicle =>
-    (!this.filters.vehicleType || vehicle.vehicleType === this.filters.vehicleType) &&
-    (!this.filters.manufacturer || vehicle.vechicleManufacturer.toLowerCase().includes(this.filters.manufacturer.toLowerCase())) &&
-    (!this.filters.model || vehicle.vehicleModel.toLowerCase().includes(this.filters.model.toLowerCase()))
-  );
-}
-filter = {
-  vehicleNo: '',
-  customerName: '',
-  email: '',
-  mechanicName: '',
-  mechanicEmail: this.role=="Mechanic"? localStorage.getItem("email"):'' ,
-  category: '',
-  status: ''
-};
+  get filteredVehicles() {
 
-get filteredRecords() {
-  return this.services.filter(item =>
+    return this.vehicles.filter(vehicle =>
+      (!this.filters.vehicleType || vehicle.vehicleType === this.filters.vehicleType) &&
+      (!this.filters.manufacturer || vehicle.vechicleManufacturer.toLowerCase().includes(this.filters.manufacturer.toLowerCase())) &&
+      (!this.filters.model || vehicle.vehicleModel.toLowerCase().includes(this.filters.model.toLowerCase()))
+    );
+  }
+  filter = {
+    vehicleNo: '',
+    customerName: '',
+    email: '',
+    mechanicName: '',
+    mechanicEmail: this.role == "Mechanic" ? localStorage.getItem("email") : '',
+    category: '',
+    status: ''
+  };
+
+  get filteredRecords() {
+     console.log(this.filter.mechanicEmail )
+    return this.services
+  .filter(item =>
     (!this.filter.vehicleNo || item.vehicleNo.toLowerCase().includes(this.filter.vehicleNo.toLowerCase())) &&
     (!this.filter.customerName || item.customerName.toLowerCase().includes(this.filter.customerName.toLowerCase())) &&
     (!this.filter.email || item.customer_Email.toLowerCase().includes(this.filter.email.toLowerCase())) &&
@@ -561,9 +602,26 @@ get filteredRecords() {
     (!this.filter.category || item.categories.some((cat: string) =>
       cat.toLowerCase().includes(this.filter.category.toLowerCase())
     ))
-  );
-}
+  )
+  .sort((a, b) => {
+  const order = {
+    'active': 0,
+    'completed': 1,
+    'aborted': 2
+  };
 
+  const aStatus = a.status?.toLowerCase() as keyof typeof order;
+  const bStatus = b.status?.toLowerCase() as keyof typeof order;
+  const aPriority = order[aStatus] ?? 99;
+  const bPriority = order[bStatus] ?? 99;
+
+  return aPriority - bPriority;
+});
+
+  }
+  toggleCard(item: any) {
+    this.expandedItem = this.expandedItem == item ? null : item;
+  }
 }
 
 

@@ -77,7 +77,7 @@ describe('Register Component', () => {
     component.ConfirmPassword.setValue('Pass1234!');
 
     component.registerUser();
-    tick();
+    tick(1000);
 
     expect(userServiceSpy.registerUser).toHaveBeenCalledWith({
       name: 'User',
@@ -99,9 +99,9 @@ describe('Register Component', () => {
     component.ConfirmPassword.setValue('Pass1234!');
 
     component.registerUser();
-    tick();
+    tick(1000);
 
     expect(component.showMessage).toBeTrue();
-    expect(component.message).toBe('Registration Failed, Try again.');
+    expect(component.message).toBe('Registration failed. Please try again.');
   }));
 });

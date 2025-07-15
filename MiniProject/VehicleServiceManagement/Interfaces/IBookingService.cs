@@ -8,8 +8,9 @@ namespace VSM.Interfaces
         Task<BookingDisplayDto> CreateBooking(BookingAddDto dto);
         Task<List<string>> DisplaySlots();
         Task<BookingDisplayDto> GetById(Guid id);
-        Task<IEnumerable<BookingDisplayDto>> GetAll();
-        Task<BookingDisplayDto?> UpdateBooking(Guid id, DateTime slot);
+        Task<IEnumerable<Booking>> GetAll();
+        Task<IEnumerable<Booking>> GetAllBookings();
+        Task<BookingDisplayDto?> UpdateBooking(Guid id);
         Task<BookingDisplayDto?> CancelBooking(Guid id);
     }
 }

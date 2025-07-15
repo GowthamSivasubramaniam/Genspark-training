@@ -14,14 +14,17 @@ using VSM.Misc;
 using System.Threading.RateLimiting;
 using Serilog;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.SignalR;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
-        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
         options.JsonSerializerOptions.WriteIndented = true;
     });
+
 
 builder.Services.AddControllers();
 builder.Services.AddHttpsRedirection(options =>
@@ -97,10 +100,19 @@ builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IServiceService, ServiceService>();
 builder.Services.AddTransient<IServiceRecordService, ServiceRecordService>();
 builder.Services.AddTransient<IBillService, BillService>();
+builder.Services.AddSingleton<AzureBlobService>();
+
 #endregion
 
 #region misc
-builder.Services.AddSingleton<IFileLogger, FileLogger>();
+// builder.Services.AddSingleton<IFileLogger, FileLogger>();
+builder.Services.AddSingleton<IFileLogger>(provider =>
+{
+    var config = provider.GetRequiredService<IConfiguration>();
+    var connectionString = config["AzureStorage:ConnectionString"];
+    return new BlobLogger(connectionString);
+});
+
 #endregion
 
 
@@ -119,7 +131,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 
-
+builder.Services.AddSignalR();
 builder.Services.AddRateLimiter(options =>
 {
     options.AddPolicy("PerUserPolicy", context =>
@@ -146,6 +158,18 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Host.UseSerilog();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") 
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
+
+
 
 var app = builder.Build();
 
@@ -157,7 +181,17 @@ if (app.Environment.IsDevelopment())
 }
 app.UseRateLimiter();
 app.UseHttpsRedirection();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "BookingImages")),
+    RequestPath = "/BookingImages"
+});
+
+
+app.MapHub<NotificationHub>("/notificationHub");
+
 
 app.MapControllers().RequireRateLimiting("PerUserPolicy");;
-
+app.UseCors("AllowAll");
 app.Run();

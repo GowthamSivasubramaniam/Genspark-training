@@ -84,13 +84,19 @@ it('should handle searchBills()', fakeAsync(() => {
     expect(bill.status).toBe('Approved');
   });
 
-  it('should handle updateStatus error', () => {
-    mockBillService.updateStatus.and.returnValue(throwError(() => new Error('Fail')));
-    const bill = { billID: '1', status: 'Pending' };
-    component.onStatusChange(bill, 'Declined');
-    expect(component.showMessage).toBeTrue();
-    expect(component.message).toBe('Fail');
-  });
+it('should handle updateStatus error', fakeAsync(() => {
+  mockBillService.updateStatus.and.returnValue(throwError(() => new Error('Fail')));
+
+  const bill = { billID: '1', status: 'Pending' };
+
+  component.onStatusChange(bill, 'Declined');  // <- Call it first
+
+  tick(1000); // <- Then simulate the timeout used inside
+
+  expect(component.showMessage).toBeTrue();
+  expect(component.message).toBe('Fail');
+}));
+
 
   it('should filter bills correctly with filteredBills getter', () => {
     component.filters.vehicleNo = 'TN01';

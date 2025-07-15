@@ -13,6 +13,8 @@
   <button (click)="filter = { name: '', minPrice: null, maxPrice: null, status: '' }">Clear</button>
 </div>
 
+
+
 @if(showform)
 {
 <div class="modal-overlay">
@@ -53,7 +55,7 @@
 <button class="addbutton" (click)="clickshowform()">+</button>
 @if(showMessage)
   {
-  <div class="toast" >
+    <div class="toast" [ngClass]="toast">
     {{ message }}
 
   </div>

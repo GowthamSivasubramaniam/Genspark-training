@@ -2,6 +2,9 @@ using VSM.Interfaces;
 using VSM.Models;
 using VSM.DTO;
 using VSM.Misc.Mappers;
+using Microsoft.AspNetCore.SignalR;
+using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 
 namespace VSM.Services
 {
@@ -10,14 +13,18 @@ namespace VSM.Services
         private readonly IRepository<Guid, Booking> _bookingRepo;
         private readonly IRepository<Guid, Customer> _cRepo;
         private readonly BookingMapper _mapper;
+        private readonly IHubContext<NotificationHub> _hub;
+        private readonly AzureBlobService _blobService;
 
-        public BookingService(IRepository<Guid, Booking> bookingRepo, IRepository<Guid, Customer> cRepo)
+        public BookingService(IRepository<Guid, Booking> bookingRepo, IRepository<Guid, Customer> cRepo, IHubContext<NotificationHub> notificationHub, AzureBlobService blobService)
         {
             _bookingRepo = bookingRepo;
             _cRepo = cRepo;
             _mapper = new BookingMapper();
+            _hub = notificationHub;
+             _blobService = blobService;
         }
-        
+
 
         public async Task<BookingDisplayDto> CreateBooking(BookingAddDto dto)
         {
@@ -35,7 +42,7 @@ namespace VSM.Services
                 throw new Exception("Invalid time slot. Please use format like '10/06/2025 09:00'.");
             }
 
-           
+
             var allowedDateTimes = allowedSlots
             .Select(slot => DateTime.ParseExact(slot, slotFormat, null))
             .ToList();
@@ -47,7 +54,8 @@ namespace VSM.Services
             string? imagePath = null;
             if (dto.Image != null && dto.Image.Length > 0)
             {
-                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "BookingImages");
+                // imagePath = await _blobService.UploadAsync(dto.Image);
+                  var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "BookingImages");
                 Directory.CreateDirectory(uploadsFolder);
                 var fileName = $"{Guid.NewGuid()}_{dto.Image.FileName}";
                 imagePath = Path.Combine(uploadsFolder, fileName);
@@ -79,12 +87,13 @@ namespace VSM.Services
             var booking = _mapper.MapBooking(new BookingAddDto { Slot = dto.Slot, CustomerID = dto.CustomerID }, imagePath);
 
             var added = await _bookingRepo.Add(booking) ?? throw new Exception("Booking creation failed");
+            await NotifyBooking(dto.Slot);
             return _mapper.MapToDisplayDto(added);
         }
 
         public async Task<List<string>> DisplaySlots()
         {
-            var bookings = await _bookingRepo.GetAll(1,100);
+            var bookings = await _bookingRepo.GetAll(1, 100);
 
             var startDate = DateTime.UtcNow.Date;
             var endDate = startDate.AddDays(2);
@@ -117,24 +126,27 @@ namespace VSM.Services
             return _mapper.MapToDisplayDto(booking);
         }
 
-        public async Task<IEnumerable<BookingDisplayDto>> GetAll()
+        public async Task<IEnumerable<Booking>> GetAll()
         {
-            var bookings = await _bookingRepo.GetAll(1,100);
+            var bookings = await _bookingRepo.GetAll(1, 100);
             var filtered = bookings.Where(b => !b.IsDeleted);
-            if(filtered.Count()==0) throw new Exception("No Bookings Found");
-            return _mapper.MapToDisplayDtos(filtered);
+            if (filtered.Count() == 0) throw new Exception("No Bookings Found");
+            return filtered;
+        }
+        public async Task<IEnumerable<Booking>> GetAllBookings()
+        {
+            var bookings = await _bookingRepo.GetAll(1, 1000);
+            var filtered = bookings.Where(b => b.Status == "Booked");
+            if (filtered.Count() == 0) throw new Exception("No Bookings Found");
+            return filtered;
         }
 
-        public async Task<BookingDisplayDto?> UpdateBooking(Guid id, DateTime slot)
+        public async Task<BookingDisplayDto?> UpdateBooking(Guid id)
         {
-            
-            var booking = await _bookingRepo.Get(id) ?? throw new Exception("Booking not found");
-            if(booking.Status =="cancelled")
-            slot = DateTime.SpecifyKind(slot, DateTimeKind.Utc);
 
-            booking.Slot = slot;
-            booking.DeliveryTime = slot.AddDays(5);
-            booking.Status = "Rescheduled";
+            var booking = await _bookingRepo.Get(id) ?? throw new Exception("Booking not found");
+
+            booking.Status = "Reviewed";
 
             var updated = await _bookingRepo.Update(id, booking);
             return _mapper.MapToDisplayDto(updated);
@@ -147,6 +159,11 @@ namespace VSM.Services
             var updated = await _bookingRepo.Update(id, booking);
             return _mapper.MapToDisplayDto(updated);
         }
+        public async Task NotifyBooking(string message)
+    {
+        await _hub.Clients.All.SendAsync("ReceiveNotification", message);
+    }
+        
 
 
     }

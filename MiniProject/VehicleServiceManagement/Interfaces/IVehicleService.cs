@@ -12,7 +12,7 @@ namespace VSM.Interfaces
         Task<VehicleDisplayDto?> GetById(Guid Id);
 
 
-        Task<IEnumerable<VehicleDisplayDto>> GetAll();
+        Task<IEnumerable<VehicleDisplayDto>> GetAll(int page, int pageSize, string? search = null);
 
         Task<VehicleDisplayDto?> UpdateVehicleInfo(Guid id, VehicleAdd dto);
     }

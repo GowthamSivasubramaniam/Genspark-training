@@ -18,9 +18,10 @@ namespace VSM.Repositories
             return service;
         }
 
-        public override async Task<IEnumerable<Service>> GetAll(int pageNumber, int pageSize)
+        public override async Task<IEnumerable<Service>> GetAll(int pageNumber, int pageSize,string? search=null)
         {
             return await _context.Services
+                .Include(s => s.Vehicle)
                 .Include(s => s.ServiceCategories)
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)

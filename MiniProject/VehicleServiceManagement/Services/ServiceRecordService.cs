@@ -30,7 +30,7 @@ namespace VSM.Services
 
         public async Task<ServiceRecordDisplayDto> Add(ServiceRecordAddDto dto)
         {
-            
+             Console.WriteLine("hii");
             var customer = await _customerRepo.Get(dto.CustomerID);
             if (customer == null || customer.Status =="Deleted") throw new Exception("Customer not found");
             var mechanic = await _mechanicRepo.Get(dto.MechanicId);
@@ -40,7 +40,13 @@ namespace VSM.Services
             var booking = await _bookingRepo.Get(dto.BookingID);
             if(booking.IsDeleted || booking.Status == "Cancelled") throw new Exception("Booking Was Deleted or Cancelled");
             if (booking == null) throw new Exception("Booking not found");
+            var allRecords = await _repo.GetAll(1,100);
+            var rec = allRecords.FirstOrDefault(rec => rec.BookingID == dto.BookingID);
 
+
+             if (rec !=null)
+                throw new Exception("Service already created for this booking");
+           
             var record = _mapper.MapAddDto(dto);
             var added = await _repo.Add(record) ?? throw new Exception("Unable to add service record");
             return _mapper.MapToDisplayDto(added);
@@ -62,9 +68,9 @@ namespace VSM.Services
             return _mapper.MapToDisplayDto(record);
         }
 
-        public async Task<IEnumerable<ServiceRecordDisplayDto>> GetAll()
+        public async Task<IEnumerable<ServiceRecordDisplayDto>> GetAll(int page, int pageSize, string? search)
         {
-            var records = await _repo.GetAll(1,100);
+            var records = await _repo.GetAll(page,pageSize,search);
              if (records.Count() == 0) throw new Exception("No service records found");
             return _mapper.MapToDisplayDtos(records);
         }

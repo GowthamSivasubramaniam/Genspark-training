@@ -3,10 +3,12 @@ import { inject, Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Booking } from "../models/BookingsModel";
 
+
 @Injectable({
   providedIn: 'root',
 })
 export class BookingService {
+  
     private http = inject(HttpClient);
     createBooking(booking: FormData) {
         return this.http.post('https://localhost:7176/api/v1/Booking', booking,{

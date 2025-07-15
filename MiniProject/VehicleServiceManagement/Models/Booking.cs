@@ -14,7 +14,7 @@ namespace VSM.Models
         public string Status { get; set; } = string.Empty;
         public bool IsDeleted { get; set; } = false;
         public ServiceRecord? ServiceRecord { get; set; }
-        public Customer? Customer { get; set; }
+        public Customer Customer { get; set; }
         
     }
 }

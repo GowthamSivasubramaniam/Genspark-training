@@ -46,41 +46,47 @@ export class Register {
     return this.registerForm.get("ConfirmPassword");
   }
 
-  showMessage:boolean=false
-  message:string=""
+  showMessage: boolean = false
+  message: string = ""
+  toast: string = ""; // 
 
   registerUser()
   {
-this.data =  
-{
- name:this.Name.value,
- email:this.Email.value,
- phone:this.PhoneNumber.value,
- password:this.Password.value
-}
-if (this.isChild) {
-     
-      this.formSubmitted.emit(this.data);
-      return;
-    }
-  this.service.registerUser(this.data).subscribe({
-  next: (res) => {
-    this.showMessage = true;
-    this.message = "Registration Successful";
-  },
-  error: (err) => {
-    this.showMessage = true;
-    this.message = "Registration Failed, Try again.";
-    console.error(err);
+  this.data =  
+  {
+    name: this.Name.value,
+    email: this.Email.value,
+    phone: this.PhoneNumber.value,
+    password: this.Password.value
   }
-});
-
-  
+  if (this.isChild) {
+    this.formSubmitted.emit(this.data);
+    return;
+  }
+  this.service.registerUser(this.data).subscribe({
+    next: (res) => {
+      this.toast = "success";
+      this.showMessage = false;
+      setTimeout(() => {
+        this.showMessage = true;
+        this.message = "Registration Successful";
+      }, 1000);
+    },
+    error: (err) => {
+      this.toast = "error";
+      this.showMessage = false; 
+      setTimeout(() => {
+        this.showMessage = true; 
+        this.message = err?.error?.message|| "Registration failed. Please try again.";
+      }, 1000)
+      console.error(err);
+    }
+  });
 }
 
 
 }
-  
+
 
 
 

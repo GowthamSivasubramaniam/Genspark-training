@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj": {}
+    "/Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj": {}
   },
   "projects": {
-    "/Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj": {
+    "/Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj",
+        "projectUniqueName": "/Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj",
         "projectName": "VehicleServiceManagement",
-        "projectPath": "/Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj",
-        "packagesPath": "/Users/gowtham/.nuget/packages/",
-        "outputPath": "/Users/gowtham/Desktop/Genspark/MiniProject/VehicleServiceManagement/obj/",
+        "projectPath": "/Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/VehicleServiceManagement.csproj",
+        "packagesPath": "/Users/presidio/.nuget/packages/",
+        "outputPath": "/Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gowtham/.nuget/NuGet/NuGet.Config"
+          "/Users/presidio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -47,6 +47,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[14.0.0, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.24.1, )"
             },
             "Google.Apis.Auth": {
               "target": "Package",
@@ -138,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,7 +12,12 @@ export class registrationService {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             })
-        })
+        }).pipe(
+    catchError((error) => {
+      console.error('Vehicle POST failed', error);
+      return throwError(() => error);
+    })
+  );
     }
 
     showVehicles(query: any | "", page: number = 1, size: number = 20){

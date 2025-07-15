@@ -16,7 +16,11 @@
 @else {
   <h1>Bills</h1>
 }
-
+  @if (showMessage ) {
+    <div class="toast" [ngClass]="toast">
+      <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
+    </div>
+    }
 
 @if(loading)
 {<div class="rolling-spinner">
@@ -56,6 +60,10 @@
 </div>
 
 <div class="service-cards-container">
+   @if(filteredBills.length==0)
+ {
+  <h1 style="color: grey;"> No Items Found</h1>
+ }
   @for (item of filteredBills; track $index) {
  <div class="full-service-card">
 

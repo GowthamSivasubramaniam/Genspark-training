@@ -7,7 +7,7 @@ namespace VSM.Interfaces
         Task<ServiceRecordDisplayDto> Add(ServiceRecordAddDto dto);
         Task<ServiceRecordDisplayDto> UpdateStatus(ServiceRecordStatusUpdateDto dto);
         Task<ServiceRecordDisplayDto?> Get(Guid serviceRecordId);
-        Task<IEnumerable<ServiceRecordDisplayDto>> GetAll();
+        Task<IEnumerable<ServiceRecordDisplayDto>> GetAll(int page, int pageSize, string? search = null);
         Task<IEnumerable<ServiceRecordDisplayDto>> GetByCustomerId(Guid customerId);
         Task<IEnumerable<ServiceRecordDisplayDto>> GetByMechanicId(Guid mechanicId);
     }

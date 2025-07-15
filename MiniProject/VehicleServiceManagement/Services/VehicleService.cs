@@ -24,14 +24,12 @@ namespace VSM.Services
             var model = dto.VehicleModel.Trim().ToUpperInvariant();
 
 
-            var allVehicles = await _vehicleRepo.GetAll(1, 100);
+            var allVehicles = await _vehicleRepo.GetAll(1, 100,vehicleNo);
 
 
             var existing = allVehicles.FirstOrDefault(v =>
-                v.VehicleNo.Trim().ToUpperInvariant() == vehicleNo &&
-                v.VehicleType.Trim().ToUpperInvariant() == vehicleType &&
-                v.VechicleManufacturer.Trim().ToUpperInvariant() == manufacturer &&
-                v.VehicleModel.Trim().ToUpperInvariant() == model &&
+                v.VehicleNo.Trim().ToUpperInvariant() == vehicleNo 
+                &&
                 !v.IsDeleted
             );
 
@@ -67,14 +65,17 @@ namespace VSM.Services
             return vehicle == null ? null : _mapper.MapToDisplayDto(vehicle);
         }
 
-        public async Task<IEnumerable<VehicleDisplayDto>> GetAll()
-        {
-            var vehicles = await _vehicleRepo.GetAll(1, 100);
-            var filteredvehicles = vehicles.Where(v => v.IsDeleted == false);
-            if (filteredvehicles.Count() == 0)
-                throw new Exception("Vehicles not Found");
-            return _mapper.MapToDisplayDtos(filteredvehicles);
-        }
+       public async Task<IEnumerable<VehicleDisplayDto>> GetAll(int page, int pageSize, string? search)
+{
+    var vehicles = await _vehicleRepo.GetAll(page, pageSize, search);
+    var filteredvehicles = vehicles.Where(v => v.IsDeleted == false);
+
+    if (filteredvehicles==null)
+        throw new Exception("Vehicles not Found");
+
+    return _mapper.MapToDisplayDtos(filteredvehicles);
+}
+
 
         public async Task<VehicleDisplayDto?> UpdateVehicleInfo(Guid id, VehicleAdd dto)
         {

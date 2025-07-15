@@ -32,6 +32,10 @@ namespace VSM.Services
             try
             {
                 var mechanic = mapper.MapMechanic(dto);
+                var existingmechanics = await _repo.GetAll(1, 100);
+                existingmechanics = existingmechanics.Where(c => c.Phone == dto.Phone);
+                if (existingmechanics.Count() != 0)
+                    throw new Exception("Phone number already registered");
                 var encryptedData = await _encryptionService.EncryptData(new EncryptModel
                 {
                     Data = dto.Password
@@ -136,14 +140,37 @@ namespace VSM.Services
             var mechanics = await _repo.GetAll(1,100);
             var mechanic = mechanics.FirstOrDefault(m => m.Email == email && m.Status != "Deleted");
 
+
+
             if (mechanic == null)
             {
                 throw new Exception($"UpdateMechanic: Mechanic with email '{email}' not found.");
             }
+            if (mechanic.Phone != dto.Phone)
+            {
+                var existingmechanics = await _repo.GetAll(1, 100);
+                existingmechanics = existingmechanics.Where(c => c.Phone == dto.Phone);
+                if (existingmechanics.Count() != 0)
+                    throw new Exception("Phone number already registered");
+            }
 
             mechanic.Name = dto.Name;
+             if(dto.Name.Length <=3)
+             throw new Exception("Name cannot have lessthan 3 characters ");
             mechanic.Phone = dto.Phone;
-
+            mechanic.Status = dto.Status;
+            if (dto.Status == "InActive")
+            {
+                var existinguser = await _urepo.Get(email);
+                existinguser.IsActive = false;
+                await _urepo.Update(email, existinguser);
+            }
+            if (dto.Status == "Active")
+            {
+                var existinguser = await _urepo.Get(email);
+                existinguser.IsActive = true;
+                await _urepo.Update(email, existinguser);
+            }
             var newmechanic = await _repo.Update(mechanic.MechanicId, mechanic);
              var mech = mapper.MapMechanicToDisplayDto(newmechanic);
              return mech;

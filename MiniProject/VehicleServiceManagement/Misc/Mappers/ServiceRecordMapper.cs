@@ -18,8 +18,9 @@ namespace VSM.Misc.Mappers
         }
 
         public ServiceRecordDisplayDto MapToDisplayDto(ServiceRecord record)
-        {
-            return new ServiceRecordDisplayDto
+{
+    
+    return new ServiceRecordDisplayDto
             {
                 ServiceRecordID = record.ServiceRecordID,
                 MechanicId = record.MechanicId,
@@ -27,9 +28,26 @@ namespace VSM.Misc.Mappers
                 ServiceID = record.ServiceID,
                 BookingID = record.BookingID,
                 Status = record.Status,
-                
+
+                // Customer details
+                CustomerName = record.Customer?.Name ?? "",
+                Customer_Email = record.Customer?.Email ?? "",
+                Customer_PhoneNo = record.Customer?.Phone ?? "",
+
+
+                MechanicName = record.Mechanic?.Name ?? "",
+                Mechanic_Email = record.Mechanic?.Email ?? "",
+                Mechanic_PhoneNo = record.Mechanic?.Phone ?? "",
+
+
+                Description = record.Service?.Description ?? "",
+                Categories = record.Service?.ServiceCategories?.Select(c => c.Name).ToArray() ?? new string[0],
+
+
+                VehicleNo = record.Service?.Vehicle?.VehicleNo ?? ""
             };
-        }
+}
+
 
         public IEnumerable<ServiceRecordDisplayDto> MapToDisplayDtos(IEnumerable<ServiceRecord> records)
         {

@@ -20,7 +20,7 @@ namespace VSM.Services
         }
 
         public async Task<BillDisplayDto> Add(BillAddDto dto)
-        {
+        {          
             var serviceRecord = await _serviceRecordRepo.Get(dto.ServiceRecordID);
             if (serviceRecord == null) throw new Exception("Service record not found");
 
@@ -30,6 +30,7 @@ namespace VSM.Services
             {
                 ServiceRecordID = dto.ServiceRecordID,
                 Description = dto.Description,
+                Status="Dispatched",
                 CategoryDetails = new List<BillCategoryDetail>()
             };
 
@@ -69,10 +70,32 @@ namespace VSM.Services
             }
             return bill != null ? _mapper.MapToDisplayDto(bill) : null;
         }
-
-        public async Task<IEnumerable<BillDisplayDto>> GetAll()
+        public async Task<Bill?> Delete(Guid billId)
         {
-            var bills = await _repo.GetAll(1, 100);
+            var bill = await _repo.Get(billId);
+            if (bill == null)
+            {
+                throw new Exception("No Bills found");
+            }
+            bill = await _repo.Delete(billId);
+            return bill != null ? bill : null;
+            
+        }
+        public async Task<BillDisplayDto?> Update(Guid billId,string status)
+        {
+            var bill = await _repo.Get(billId);
+             if (bill == null)
+            {
+                throw new Exception("No Bills found");
+            }
+            bill.Status = status;
+            bill = await _repo.Update(billId,bill);
+            return bill != null ? _mapper.MapToDisplayDto(bill) : null;
+        }
+
+        public async Task<IEnumerable<BillDisplayDto>> GetAll(int page, int pageSize, string? search)
+        {
+            var bills = await _repo.GetAll(page,pageSize,search);
              if (bills.Count()==0)
             {
                 throw new Exception("No Bills found");

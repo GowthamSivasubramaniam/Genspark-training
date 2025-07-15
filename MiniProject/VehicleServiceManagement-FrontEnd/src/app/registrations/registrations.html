@@ -38,9 +38,9 @@
 
       <label>VehicleType</label>
 
-  <select  placeholder="Enter Price" formControlName="Type">
-    <option value="2 Wheeler">Two Wheeler</option>
-    <option value="4 Wheeler">Four Wheeler</option>
+  <select   formControlName="Type">
+    <option value="Two Wheeler">Two Wheeler</option>
+    <option value="Four Wheeler">Four Wheeler</option>
     <option value="Heavy Vehicle">Heavy Vehicle</option>
   </select>
 
@@ -48,14 +48,20 @@
       <span class="error">Type is required</span>
       }
       <label>Manufacturer</label>
-      <input type="text" placeholder="Enter Price" formControlName="Manufacturer" />
+      <input type="text" placeholder="Enter Manufacturer" formControlName="Manufacturer" />
       @if(Manufacturer.touched && Manufacturer.errors?.['required']) {
       <span class="error">Manufacturer is required</span>
       }
+      @if(Manufacturer.touched && Manufacturer?.errors?.invalidManufacturer) {
+      <span class="error">Manufacturer length should be between 3 and 20 characters</span>
+      }
       <label>Model</label>
-      <input type="text" placeholder="Enter Price" formControlName="Model" />
+      <input type="text" placeholder="Enter Model" formControlName="Model" />
       @if(Model.touched && Model.errors?.['required']) {
       <span class="error">Model is required</span>
+      }
+      @if(Model.touched && Model?.errors?.invalidModel) {
+      <span class="error">Invalid Model Year</span>
       }
 
       <button type="submit" [disabled]="vehicleAddForm.invalid">Add</button>
@@ -83,7 +89,7 @@
 
 @if(showMessage)
 {
-<div class="toast">
+  <div class="toast" [ngClass]="toast">
   {{ message }}
 
 </div>
@@ -110,6 +116,10 @@
 {
 
 <div class="vehicle-cards-container">
+   @if(filteredVehicles.length==0)
+ {
+  <h1 style="color: grey;"> No Items Found</h1>
+ }
   @for (item of filteredVehicles; track $index) {
   <div class="vehicle-card">
 
@@ -166,14 +176,17 @@
 
 @if(!loading)
 {
-<div class="service-cards-container">
+<div class="service-cards-container" (scroll)="onScroll()">
 
-
+ @if(filteredRecords.length==0)
+ {
+   <h1 style="color: grey;"> No Items Found</h1>
+ }
   @for (item of filteredRecords; track $index) {
- <div class="full-service-card">
+ <div class="full-service-card" [ngClass]="'column' + ($index % 2)">
 
   <div class="card-header">
-    <h2><i class="fa-solid fa-clipboard-list"></i>  {{ item.customerName }}</h2>
+    <h2   (click)="toggleCard(item)"><i class="fa-solid fa-clipboard-list"></i>  {{ item.customerName }}</h2>
       <p ><strong>Vehicle No:</strong> <span class="badge">{{ item.vehicleNo }}</span></p>
   
     <span class="status-badge" [ngClass]="getStatusClass(item.status)">
@@ -183,17 +196,24 @@
         {
             <option value="Completed">Completed</option>
         }
+        @else if (item.status=="Aborted") {
+          <option value="Aborted">Aborted</option>
+        }
         @else {
  <option value="Active">Active</option>
     <option value="Completed">Completed</option>
+    @if(role=="admin")
+    {
     <option value="Aborted">Aborted</option>
+    }
+
         }
    
   </select>
     </span>
   </div>
 
- 
+ <div *ngIf="expandedItem === item" class="full-service-card-model" >
   <div class="card-block customer-block">
     <h3><i class="fa-solid fa-user"></i> Customer Info</h3>
   
@@ -220,6 +240,8 @@
       <span class="chip" *ngFor="let category of item.categories">{{ category }}</span>
     </div>
     </div>
+
+  </div>
 </div>
 
   

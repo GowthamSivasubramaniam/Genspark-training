@@ -6,7 +6,7 @@ namespace VSM.Interfaces
     {
         public Task<T> Add(T item);
         public Task<T> Get(K key);
-        public Task<IEnumerable<T>> GetAll(int pageNumber, int pageSize);
+        public Task<IEnumerable<T>> GetAll(int pageNumber, int pageSize, string? search = null);
         public Task<T> Update(K key, T item);
         public Task<T> Delete(K key);
         public IDbContextTransaction BeginTransaction();

@@ -2,12 +2,12 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CategoryService } from '../../Services/CategoryService';
 import { delay, switchMap } from 'rxjs';
-import { CurrencyPipe } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { nameValidator, priceValidator } from '../../Misc/Validations';
 
 @Component({
   selector: 'app-categories',
-  imports: [ReactiveFormsModule,FormsModule,CurrencyPipe],
+  imports: [ReactiveFormsModule,FormsModule,CurrencyPipe,CommonModule],
   templateUrl: './categories.html',
   styleUrl: './categories.css'
 })
@@ -18,6 +18,7 @@ export class Categories {
   message:string=""
   showCategories: boolean=true;
   categories:any[]=[]
+  toast: string = ""; // Add this variable at the top with other properties
  constructor(private service:CategoryService,private cdr: ChangeDetectorRef)
  {
   this.CategoryForm = new FormGroup({
@@ -52,73 +53,82 @@ export class Categories {
   }, 3000); 
 }
   
- addCategory()
- {
-   const data =
-   {
-    "name":this.Name.value,
-    "price":this.Price.value
-   }
-   this.service.addcategory(data).subscribe(
-   {
-     next:  (data:any)=>
-     {
-     this.categories=[...this.categories,data]
-       this.displayToast("Category added successfully");
-      
-        
-        
-  this.categories = [...this.categories, data];
-
-        
-      
-     },
-     error: (err:any)=>
-     {
-      console.log(err)
-      this.displayToast(err.error.message)
-     }
-     
-   })
-
- }
- updateCategory(price:number,id:string)
- {
-    this.service.updateCategory(price,id).subscribe({
-    next:(data:any)=>
+ addCategory() {
+  const data =
+  {
+    "name": this.Name.value,
+    "price": this.Price.value
+  }
+  this.service.addcategory(data).subscribe(
     {
-      this.displayToast("Updated Successfully")
-    },
-    error:(err:any)=>
-    {
-      this.displayToast(err.error.message)
-    }
- })
-}
- deleteCategory(id:string)
- {
- 
-
-   this.service.deleteCategory(id).subscribe({
-     complete: () => {
- this.service.getAllCategories().subscribe(
-      {
-        next:(data: any )=>
-        {
-        
-  this.categories=data
-        }
+      next: (data: any) => {
+        this.toast = "success";
+        this.showMessage = false;
+        setTimeout(() => {
+          this.showMessage = true;
+          this.displayToast("Category added successfully");
+        }, 1000);
+        this.categories = [...this.categories, data]
+      },
+      error: (err: any) => {
+        this.toast = "error";
+        this.showMessage = false;
+        setTimeout(() => {
+          this.showMessage = true;
+          this.displayToast(err.error.message)
+        }, 1000);
+        console.log(err)
       }
-    )
-     
-      this.displayToast("Category updated successfully");
-    },
-    error:(err:any)=>
-    {
-      this.displayToast(err.error.message)
-    }
+    })
+}
 
-   })
+ updateCategory(price: number, id: string) {
+  this.service.updateCategory(price, id).subscribe({
+    next: (data: any) => {
+      this.toast = "success";
+      this.showMessage = false;
+      setTimeout(() => {
+        this.showMessage = true;
+        this.displayToast("Updated Successfully")
+      }, 1000);
+    },
+    error: (err: any) => {
+      this.toast = "error";
+      this.showMessage = false;
+      setTimeout(() => {
+        this.showMessage = true;
+        this.displayToast(err.error.message)
+      }, 1000);
+    }
+  })
+}
+
+ deleteCategory(id: string) {
+  this.service.deleteCategory(id).subscribe({
+    complete: () => {
+      this.toast = "success";
+      this.showMessage = false;
+      setTimeout(() => {
+        this.showMessage = true;
+        this.displayToast("Category updated successfully");
+      }, 1000);
+      this.service.getAllCategories().subscribe(
+        {
+          next: (data: any) => {
+            this.categories = data
+          }
+        }
+      )
+    },
+    error: (err: any) => {
+      this.toast = "error";
+      this.showMessage = false;
+      setTimeout(() => {
+        this.showMessage = true;
+        this.displayToast(err.error.message)
+      }, 1000);
+    }
+  })
  }
 
 

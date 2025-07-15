@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { UserService } from '../Services/UserServices';
 import { Register } from "../Components/register/register";
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-users',
-  imports: [Register,FormsModule],
+  imports: [Register,FormsModule,CommonModule],
   templateUrl: './users.html',
   styleUrl: './users.css'
 })
@@ -17,14 +18,27 @@ export class Users {
    MechanicData:any[]=[]
     showMessage = false;
   message = '';
+  toast: string = ""; 
   constructor(private service: UserService) {
 
     this.service.getAllCustomers().subscribe(
       {
         next:(data:any)=>
         {
+          this.toast = "success";
+         
+         
           console.log(data)
             this.CustomerData=data
+        },
+        error: (err) => {
+          this.toast = "error";
+          this.showMessage = false;
+          setTimeout(() => {
+            this.showMessage = true;
+            this.message = "Failed to load customers";
+          }, 1000);
+          console.error(err);
         }
       }
     )
@@ -32,8 +46,19 @@ export class Users {
       {
         next:(data:any)=>
         {
+          this.toast = "success";
+        
           console.log(data)
             this.MechanicData=data
+        },
+        error: (err) => {
+          this.toast = "error";
+          this.showMessage = false;
+          setTimeout(() => {
+            this.showMessage = true;
+            this.message = "Failed to load mechanics";
+          }, 1000);
+          console.error(err);
         }
       }
     )
@@ -51,30 +76,43 @@ export class Users {
     console.log("Mechanic Data Received:", data);
     this.service.registerMechanic(data).subscribe({
       next: () => {
-       this.showMessage=true
-       this.message="Registration successfull"
+        this.toast = "success";
+        this.showMessage = false; 
+        setTimeout(() => {
+          this.showMessage = true; 
+          this.message="Registration successfull"
+        },1000)
       },
       error: () => {
-        this.showMessage=true
-       this.message="Registration Failed"
+        this.toast = "error";
+        this.showMessage = false; 
+        setTimeout(() => {
+          this.showMessage = true; 
+          this.message="Registration Failed"
+        },1000)
       }
     });
   }
   deactivateMechanic(data:any)
   {
-   
     this.service.deactivateProfile(data,data.email).subscribe(
     {
        next: (val:any) => {
+        this.toast = "success";
         data.status=val.status
-        
-         this.showMessage=true
-     this.message="Updation successfull"
-       
-      },
+        this.showMessage = false; 
+        setTimeout(() => {
+          this.showMessage = true; 
+          this.message="Updation successfull"
+        },1000)
+       },
       error: () => {
-        this.showMessage=true
-       this.message="Updation failed"
+        this.toast = "error";
+        this.showMessage = false; 
+        setTimeout(() => {
+          this.showMessage = true; 
+          this.message="Updation failed"
+        },1000)
       }
     })
   }

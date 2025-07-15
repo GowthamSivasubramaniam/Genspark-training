@@ -76,7 +76,7 @@
 }
 @if(showMessage)
 {
-  <div class="toast">
+    <div class="toast" [ngClass]="toast">
       <i class="fa fa-info-circle" style="margin-right: 6px;"></i> {{ message }}
     </div>
   }

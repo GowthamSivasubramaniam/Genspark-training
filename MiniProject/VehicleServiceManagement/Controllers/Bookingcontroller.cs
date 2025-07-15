@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using VSM.DTO;
 using VSM.Interfaces;
 using VSM.Misc;
+using VSM.Models;
 
 namespace VSM.Controllers
 {
@@ -53,7 +54,7 @@ namespace VSM.Controllers
         }
          [Authorize(Roles = "Admin,Customer")]
           [HttpGet("{id}")]
-        public async Task<ActionResult<BookingDisplayDto>> GetById(Guid id)
+        public async Task<ActionResult<Booking>> GetById(Guid id)
         {
             try
             {
@@ -66,7 +67,7 @@ namespace VSM.Controllers
                 return NotFound(new { message = ex.Message });
             }
         }
-        [Authorize(Roles = "Admin,Mechanic")]
+        [Authorize(Roles = "Admin,Mechanic,Customer")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookingDisplayDto>>> GetAll()
         {
@@ -81,23 +82,38 @@ namespace VSM.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+        [Authorize(Roles = "Admin,Mechanic,Customer")]
+        [HttpGet("Booked")]
+        public async Task<ActionResult<IEnumerable<BookingDisplayDto>>> GetAllBookings()
+        {
+            try
+            {
+                var bookings = await _bookingService.GetAllBookings();
+                return Ok(bookings);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Error Getting All Bookings", ex);
+                return BadRequest(new { message = ex.Message });
+            }
+        }
 
-        //  [HttpPut("{id}")]
-        //  [Authorize(Roles = "Admin,Customer")]
-        // public async Task<ActionResult<BookingDisplayDto>> UpdateBooking(Guid id, [FromQuery] DateTime slot)
-        // {
-        //     try
-        //     {
-        //         var updated = await _bookingService.UpdateBooking(id, slot);
-        //         _logger.LogData($"Booking Updated {id}");
-        //         return Ok(updated);
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         _logger.LogError("Error Updating Booking", ex);
-        //         return BadRequest(new { message = ex.Message });
-        //     }
-        // }
+         [HttpPut("{id}")]
+         [Authorize(Roles = "Admin,Mechanic")]
+        public async Task<ActionResult<BookingDisplayDto>> UpdateBooking(Guid id)
+        {
+            try
+            {
+                var updated = await _bookingService.UpdateBooking(id);
+                _logger.LogData($"Booking Updated {id}");
+                return Ok(updated);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Error Updating Booking", ex);
+                return BadRequest(new { message = ex.Message });
+            }
+        }
          [HttpPut("/Cancel/{id}")]
          [Authorize(Roles = "Admin,Customer")]
         public async Task<ActionResult<BookingDisplayDto>> CancelBooking(Guid id)
