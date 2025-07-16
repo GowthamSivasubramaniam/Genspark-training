@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "_16_july_2025": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7291",
+      "launchBrowser": false
+    }
+  }
+}
