@@ -1,0 +1,80 @@
+<div style="text-align: center; "><h1 style="font-size: 30px;">Video Gallery</h1></div>
+
+<button class="addbutton" (click)="isshowform()">+</button>
+<div style=" display: flex; align-items: center; justify-content: center; width: 100%;">
+<input type="text"  [(ngModel)]="query" placeholder="Type to search" style="width: 400px;" (input)="search()"/>
+</div>
+@if (showform) {
+<div class="modal-overlay">
+  <div class="modal-content booking-form-card">
+    <h2 class="modal-title">Upload New Video</h2>
+    <button class="cancel-button" (click)="ishideform()">x</button>
+    <form [formGroup]="videoaddform" (ngSubmit)="upload()" class="modal-content category-form-card">
+    <input type="text" placeholder="Enter Video Title" formControlName="Name" />
+
+      @if (Name?.invalid && Name?.touched) {
+      <p class="error">Title is required</p>
+      }
+    <input type="text" placeholder="Enter Video Description" formControlName="Description" />
+      
+      @if (Description?.invalid && Description?.touched) {
+      <p class="error">Description is required</p>
+      }
+    <div class="upload-section">
+      <label for="image-upload" class="upload-label">
+        <i class="fa fa-image" style="margin-right: 6px;"></i> Upload Video
+      </label>
+      <input id="image-upload" #fileInput type="file" (change)="onVideoSelected($event)" hidden />
+
+      @if (Video?.invalid && Video?.touched) {
+      <div class="error">Video is required</div>
+      }
+
+      @if (Video?.value) {
+      <p class="file-name">
+        <i class="fa fa-file"></i> Selected: {{ Video?.value?.name }}
+      </p>
+      }
+    </div>
+
+    <div class="form-buttons">
+     <button type="submit" [disabled]="videoaddform.invalid">Add</button>
+    
+      
+    </div>
+   </form>
+   
+   <div>
+    @if (loading) {
+        <div class="rolling-spinner">
+
+        </div>
+    }
+   </div>
+   
+  </div>
+</div>
+}
+
+<div class="video-grid">
+  @for (item of videos; track $index) {
+    <div class="video-card" (click)="openVideoModal(item)">
+      <video [src]="item.url" muted></video>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+    </div>
+  }
+</div>
+
+
+@if (selectedVideo) {
+  <div class="video-modal-overlay" (click)="closeVideoModal()">
+    <div class="video-modal-content" (click)="$event.stopPropagation()">
+      <video [src]="selectedVideo.url" controls autoplay ></video>
+      <h2>{{ selectedVideo.name }}</h2>
+      <p>{{ selectedVideo.description }}</p>
+      <button class="close-btn" (click)="closeVideoModal()">Close</button>
+    </div>
+  </div>
+}
+

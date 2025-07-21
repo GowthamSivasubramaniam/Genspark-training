@@ -1,0 +1,9 @@
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/gowthamweatherforcast
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/appsettings.Development.json
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/appsettings.json
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/gowthamweatherforcast.dll
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/gowthamweatherforcast.deps.json
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/gowthamweatherforcast.runtimeconfig.json
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/gowthamweatherforcast.pdb
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/presidio/Desktop/Genspark/21-july-2025/gowthamweatherforcast/bin/Release/net9.0/publish/Microsoft.OpenApi.dll
