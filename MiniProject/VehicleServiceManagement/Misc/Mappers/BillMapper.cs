@@ -7,7 +7,7 @@ namespace VSM.Misc.Mappers
 {
     public class BillMapper
     {
-        public BillDisplayDto MapToDisplayDto(Bill bill)
+public BillDisplayDto MapToDisplayDto(Bill bill)
 {
     return new BillDisplayDto
     {

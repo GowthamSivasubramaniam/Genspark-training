@@ -8803,3 +8803,8 @@ System.Exception: Customer already has a booking for this slot.
    at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 65
    at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 30
 
+2025-07-15 11:06:10Z [ERROR] Error Creating Booking
+System.Exception: Customer already has a booking for this slot.
+   at VSM.Services.BookingService.CreateBooking(BookingAddDto dto) in /Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/Services/BookingService.cs:line 74
+   at VSM.Controllers.BookingController.CreateBooking(BookingAddDto dto) in /Users/presidio/Desktop/Genspark/MiniProject/VehicleServiceManagement/Controllers/Bookingcontroller.cs:line 30
+

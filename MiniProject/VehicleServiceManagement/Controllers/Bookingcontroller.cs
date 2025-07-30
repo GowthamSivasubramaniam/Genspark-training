@@ -37,7 +37,7 @@ namespace VSM.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
-         [Authorize(Roles = "Admin,Customer")]
+         [Authorize(Roles = "Admin,Customer,Mechanic")]
         [HttpGet("slots")]
         public async Task<ActionResult<List<string>>> GetAvailableSlots()
         {

@@ -105,13 +105,13 @@ builder.Services.AddSingleton<AzureBlobService>();
 #endregion
 
 #region misc
-// builder.Services.AddSingleton<IFileLogger, FileLogger>();
-builder.Services.AddSingleton<IFileLogger>(provider =>
-{
-    var config = provider.GetRequiredService<IConfiguration>();
-    var connectionString = config["AzureStorage:ConnectionString"];
-    return new BlobLogger(connectionString);
-});
+builder.Services.AddSingleton<IFileLogger, FileLogger>();
+// builder.Services.AddSingleton<IFileLogger>(provider =>
+// {
+//     var config = provider.GetRequiredService<IConfiguration>();
+//     var connectionString = config["AzureStorage:ConnectionString"];
+//     return new BlobLogger(connectionString);
+// });
 
 #endregion
 
@@ -195,3 +195,8 @@ app.MapHub<NotificationHub>("/notificationHub");
 app.MapControllers().RequireRateLimiting("PerUserPolicy");;
 app.UseCors("AllowAll");
 app.Run();
+
+
+
+
+

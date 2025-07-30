@@ -90,6 +90,7 @@ export class Bookings {
 
     this.service.getslots().subscribe({
       next: (data: any) => {
+        
 
 
         this.slots = data.filter((slot: string) => {

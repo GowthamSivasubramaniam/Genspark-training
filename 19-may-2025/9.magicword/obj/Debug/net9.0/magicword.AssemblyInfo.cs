@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("magicword")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a517ea6a5e9f69f6411ad4e99c6b489c1272b323")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4c147e35d551dd78f44caa9cb722fca17b40cff")]
 [assembly: System.Reflection.AssemblyProductAttribute("magicword")]
 [assembly: System.Reflection.AssemblyTitleAttribute("magicword")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

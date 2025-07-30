@@ -596,3 +596,26 @@
 2025-07-07 15:21:12Z [DATA] Bill Downloaded 1ee4c64d-3364-41e0-b8f7-df129cdd66ac
 2025-07-11 11:34:41Z [DATA] Booking Created fb99156e-14d7-4589-a80a-de4de986c9be
 2025-07-11 11:48:30Z [DATA] Booking Created 2bab4c39-d0b4-43e2-8877-56f20d295777
+2025-07-15 10:58:00Z [DATA] Booking Cancelled fb99156e-14d7-4589-a80a-de4de986c9be
+2025-07-15 10:58:02Z [DATA] Booking Cancelled 2bab4c39-d0b4-43e2-8877-56f20d295777
+2025-07-15 11:03:44Z [DATA] Booking Cancelled 8724958a-3e29-4765-934a-504965202508
+2025-07-15 11:05:14Z [DATA] Booking Created bcec27c6-3456-468c-b616-08ccb0f610c9
+2025-07-15 11:05:53Z [DATA] Booking Cancelled bcec27c6-3456-468c-b616-08ccb0f610c9
+2025-07-15 11:06:27Z [DATA] Booking Created 748d7485-f469-4c84-b69e-4a4b53901939
+2025-07-15 11:06:53Z [DATA] Bill Downloaded 613fd22d-df04-4b54-986e-95644fe78b30
+2025-07-15 11:12:51Z [DATA] Vehicle Added f741a527-87c9-43f5-b53b-a7c913dbec6f
+2025-07-15 11:15:58Z [DATA] Service Added e9456c43-ff80-4922-a30c-9eec534557e8
+2025-07-15 11:15:58Z [DATA] ServiceRecord Added 523f6eb5-5b15-4e5d-ab19-7161aade6ed8
+2025-07-15 11:15:58Z [DATA] Booking Updated 748d7485-f469-4c84-b69e-4a4b53901939
+2025-07-15 11:18:50Z [DATA] Bill Added VSM.DTO.BillDisplayDto
+2025-07-15 11:18:50Z [DATA] ServiceRecord Status Updated 523f6eb5-5b15-4e5d-ab19-7161aade6ed8
+2025-07-15 11:23:45Z [DATA] ServiceRecord Status Updated 523f6eb5-5b15-4e5d-ab19-7161aade6ed8
+2025-07-15 11:24:32Z [DATA] Bill Added VSM.DTO.BillDisplayDto
+2025-07-15 11:24:32Z [DATA] ServiceRecord Status Updated 523f6eb5-5b15-4e5d-ab19-7161aade6ed8
+2025-07-15 11:24:48Z [DATA] Status Updated ae99fc0e-6a46-486f-970a-93bbd49192df
+2025-07-15 11:29:23Z [DATA] Mechanic Updated Mechanic@gmail.com
+2025-07-15 11:29:27Z [DATA] Mechanic Updated Mechanic@gmail.com
+2025-07-15 11:37:05Z [DATA] Category Deleted 8fe9963f-37fe-4fc2-a728-bed69b760bcb
+2025-07-15 11:37:21Z [DATA] Category Deleted 8fe9963f-37fe-4fc2-a728-bed69b760bcb
+2025-07-15 11:37:36Z [DATA] Updated Deleted 9ea4b2d2-58cb-4332-8780-e3eed4edd750
+2025-07-18 10:56:10Z [DATA] Bill Downloaded 1ee4c64d-3364-41e0-b8f7-df129cdd66ac

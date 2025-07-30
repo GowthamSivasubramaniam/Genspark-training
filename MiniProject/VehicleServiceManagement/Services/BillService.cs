@@ -54,7 +54,7 @@ namespace VSM.Services
 
             // Calculate total
             bill.Amount = bill.CategoryDetails.Sum(c => c.Amount);
-
+            
             var added = await _repo.Add(bill) ?? throw new Exception("Unable to add bill");
 
             // Use the mapper for consistency
