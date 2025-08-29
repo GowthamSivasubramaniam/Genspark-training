@@ -62,27 +62,25 @@
 
 @if(role=="Customer")
 {
-    <div class="bill-container">
-    @for (item of bills; track $index) {
-    <div class="full-service-card">
-
-  <div class="card-header">
-      <p><strong>Vehicle No:</strong> <span class="status-badge">{{ item.vehicleNo }}</span></p>  
-      <p><span class="status-badge">{{item.status}}</span></p>
-  </div>
-
-  <div class="card-block service-block">
-    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Bill Info</h3>
-    <p><strong>Description:</strong> {{ item.description }}</p>
-
+<h1 style="padding: 40px;">Recent Bills</h1>
+<div class="bill-container">
+  @for (item of bills; track $index) {
+    <div class="bill-card">
+      <div class="card-header">
+        <p style="padding: 10px;"><strong>Vehicle No</strong> <span style="margin-left: 10px;" class="badge">{{ item.vehicleNo }}</span></p>
+        <div class="status-total">
+          <span  class="status-badge">{{ item.status }}</span>
+          <span class="amount-badge">{{ item.totalAmount | currency:'INR':'symbol':'1.2-2' }}</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p><strong>Description:</strong> {{ item.description }}</p>
+      </div>
     </div>
-    <p><strong>   <i class="fa-solid fa-coins"></i> Total:  <span>{{ item.totalAmount | currency:'INR':'symbol':'1.2-2'}}</span></strong></p>
-     
-    </div>
-
-
   }
-    </div>
+</div>
+
+
 }
 
 @if(role=="Mechanic")
@@ -112,3 +110,4 @@
     </div>
   </div>
 }
+

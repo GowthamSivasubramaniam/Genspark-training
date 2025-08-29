@@ -1,0 +1,64 @@
+import psycopg2
+# import pandas as pd
+
+
+table_name = "suppliers"
+csv_file = f"/Users/presidio/Downloads/{table_name}.csv"
+# df = pd.read_csv(csv_file)
+
+
+conn = psycopg2.connect(
+    host="siriusxm-db.cwxesagy8e4m.us-east-1.rds.amazonaws.com",
+    dbname="postgres",
+    user="postgres",
+    password="Changeme!123",
+    port=5432
+)
+
+cur = conn.cursor()
+
+
+conn.commit()
+
+display_suppliers = """SELECT * FROM "Team-3".suppliers"""
+
+cur.execute(display_suppliers)
+row = cur.fetchall()
+for r in row:
+    print(r)
+cur.close()
+conn.close()
+
+print(f" CSV uploaded successfully into Team-3.{table_name}!")
+import psycopg2
+# import pandas as pd
+
+
+table_name = "suppliers"
+csv_file = f"/Users/presidio/Downloads/{table_name}.csv"
+# df = pd.read_csv(csv_file)
+
+
+conn = psycopg2.connect(
+    host="siriusxm-db.cwxesagy8e4m.us-east-1.rds.amazonaws.com",
+    dbname="postgres",
+    user="postgres",
+    password="Changeme!123",
+    port=5432
+)
+
+cur = conn.cursor()
+
+
+conn.commit()
+
+display_suppliers = """SELECT * FROM "Team-3".suppliers"""
+
+cur.execute(display_suppliers)
+row = cur.fetchall()
+for r in row:
+    print(r)
+cur.close()
+conn.close()
+
+print(f" CSV uploaded successfully into Team-3.{table_name}!")

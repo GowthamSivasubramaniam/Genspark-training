@@ -4152,11 +4152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/presidio/Desktop/Migration Project/ShoppingApp/ShoppingApp.csproj",
+      "projectUniqueName": "/Users/presidio/Desktop/Genspark/Migration Project/ShoppingApp/ShoppingApp.csproj",
       "projectName": "ShoppingApp",
-      "projectPath": "/Users/presidio/Desktop/Migration Project/ShoppingApp/ShoppingApp.csproj",
+      "projectPath": "/Users/presidio/Desktop/Genspark/Migration Project/ShoppingApp/ShoppingApp.csproj",
       "packagesPath": "/Users/presidio/.nuget/packages/",
-      "outputPath": "/Users/presidio/Desktop/Migration Project/ShoppingApp/obj/",
+      "outputPath": "/Users/presidio/Desktop/Genspark/Migration Project/ShoppingApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/presidio/.nuget/NuGet/NuGet.Config"

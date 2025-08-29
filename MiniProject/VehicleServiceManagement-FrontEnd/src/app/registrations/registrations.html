@@ -9,7 +9,6 @@
   }
   @else {
       <input type="text" placeholder="Search services by PhoneNumber" [(ngModel)]="serviceQuery" (input)="searchServices()" />
-
     }
   </div>
 </nav>
@@ -202,7 +201,7 @@
         @else {
  <option value="Active">Active</option>
     <option value="Completed">Completed</option>
-    @if(role=="admin")
+    @if(role=="Admin")
     {
     <option value="Aborted">Aborted</option>
     }

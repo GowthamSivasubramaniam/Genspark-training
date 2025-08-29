@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iAp31gGBKuE=",
+  "dgSpecHash": "aBJitDiqids=",
   "success": true,
-  "projectFilePath": "/Users/presidio/Desktop/Migration Project/ShoppingApp/ShoppingApp.csproj",
+  "projectFilePath": "/Users/presidio/Desktop/Genspark/Migration Project/ShoppingApp/ShoppingApp.csproj",
   "expectedPackageFiles": [
     "/Users/presidio/.nuget/packages/bouncycastle.cryptography/2.6.1/bouncycastle.cryptography.2.6.1.nupkg.sha512",
     "/Users/presidio/.nuget/packages/epplus/8.0.8/epplus.8.0.8.nupkg.sha512",

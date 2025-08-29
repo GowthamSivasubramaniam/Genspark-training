@@ -1,0 +1,1264 @@
+2025-08-07 14:03:13 [Debug] Connection id ""0HNEJSG3V4EQE"" accepted.
+2025-08-07 14:03:13 [Debug] Connection id ""0HNEJSG3V4EQE"" started.
+2025-08-07 14:03:13 [Debug] Connection id ""0HNEJSG3V4EQF"" accepted.
+2025-08-07 14:03:13 [Debug] Connection id ""0HNEJSG3V4EQF"" started.
+2025-08-07 14:03:13 [Debug] Connection "0HNEJSG3V4EQE" established using the following protocol: Tls12
+2025-08-07 14:03:13 [Debug] Connection "0HNEJSG3V4EQF" established using the following protocol: Tls12
+2025-08-07 14:03:13 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - null null
+2025-08-07 14:03:13 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - null null
+2025-08-07 14:03:13 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:03:13 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:03:13 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:03:13 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:03:13 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:03:13 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:13 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - null null
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Information] CORS policy execution successful.
+2025-08-07 14:03:13 [Debug] 1 candidate(s) found for the request path '"/api/v1/Customer/email/Customer1@gmail.com"'
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] The request is a preflight request.
+2025-08-07 14:03:13 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:03:13 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:13 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:03:13 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - 204 null null 1.0999ms
+2025-08-07 14:03:13 [Information] CORS policy execution successful.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] The request is a preflight request.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - 204 null null 1.2476ms
+2025-08-07 14:03:13 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:13 [Information] CORS policy execution successful.
+2025-08-07 14:03:13 [Debug] The request is a preflight request.
+2025-08-07 14:03:13 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - 204 null null 0.7184ms
+2025-08-07 14:03:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - "application/json" null
+2025-08-07 14:03:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - "application/json" null
+2025-08-07 14:03:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - "application/json" null
+2025-08-07 14:03:13 [Debug] 1 candidate(s) found for the request path '"/api/v1/Customer/email/Customer1@gmail.com"'
+2025-08-07 14:03:13 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:03:13 [Debug] Endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Customer/email/{email}"' is valid for the request path '"/api/v1/Customer/email/Customer1@gmail.com"'
+2025-08-07 14:03:13 [Debug] Endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Booking"' is valid for the request path '"/api/v1/Booking"'
+2025-08-07 14:03:13 [Debug] Request matched endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Debug] Request matched endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:03:13 [Debug] Endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Booking"' is valid for the request path '"/api/v1/Booking"'
+2025-08-07 14:03:13 [Debug] Request matched endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Debug] Successfully validated the token.
+2025-08-07 14:03:13 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:03:13 [Debug] Successfully validated the token.
+2025-08-07 14:03:13 [Debug] Authorization was successful.
+2025-08-07 14:03:13 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] Authorization was successful.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Information] CORS policy execution successful.
+2025-08-07 14:03:13 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:13 [Information] Executing endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Information] CORS policy execution successful.
+2025-08-07 14:03:13 [Information] Route matched with "{action = \"GetAll\", controller = \"Booking\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.BookingDisplayDto]]] GetAll()" on controller "VSM.Controllers.BookingController" ("VehicleServiceManagement").
+2025-08-07 14:03:13 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:13 [Information] Executing endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:13 [Information] Route matched with "{action = \"GetAll\", controller = \"Booking\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.BookingDisplayDto]]] GetAll()" on controller "VSM.Controllers.BookingController" ("VehicleServiceManagement").
+2025-08-07 14:03:13 [Debug] Executing controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:03:13 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:13 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:13 [Debug] Executing controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:03:13 [Debug] Successfully validated the token.
+2025-08-07 14:03:13 [Debug] Executed controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:03:13 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:03:13 [Debug] Executed controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:03:13 [Debug] Authorization was successful.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:13 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:13 [Information] CORS policy execution successful.
+2025-08-07 14:03:13 [Information] Executing endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Information] Route matched with "{action = \"GetByEmail\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[VSM.DTO.CustomerDisplayDto]] GetByEmail(System.String)" on controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement").
+2025-08-07 14:03:13 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:13 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:03:13 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:13 [Debug] Executing controller factory for controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement")
+2025-08-07 14:03:13 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:03:13 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:03:13 [Debug] Creating DbConnection.
+2025-08-07 14:03:13 [Debug] Creating DbConnection.
+2025-08-07 14:03:13 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:03:13 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:03:13 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Executed controller factory for controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement")
+2025-08-07 14:03:13 [Debug] Attempting to bind parameter '"email"' of type '"System.String"' ...
+2025-08-07 14:03:13 [Debug] Attempting to bind parameter '"email"' of type '"System.String"' using the name '"email"' in request data ...
+2025-08-07 14:03:13 [Debug] Done attempting to bind parameter '"email"' of type '"System.String"'.
+2025-08-07 14:03:13 [Debug] Done attempting to bind parameter '"email"' of type '"System.String"'.
+2025-08-07 14:03:13 [Debug] Attempting to validate the bound parameter '"email"' of type '"System.String"' ...
+2025-08-07 14:03:13 [Debug] Done attempting to validate the bound parameter '"email"' of type '"System.String"'.
+2025-08-07 14:03:13 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:03:13 [Debug] Creating DbConnection.
+2025-08-07 14:03:13 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:03:13 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:03:13 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:13 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:13 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:03:13 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:03:13 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:13 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:13 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Customers\" AS c"
+2025-08-07 14:03:13 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Customers\" AS c"
+2025-08-07 14:03:13 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:13 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-08-07 14:03:13 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:13 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:03:13 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:03:13 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:03:13 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:03:13 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:03:13 [Information] Executing "OkObjectResult", writing value of type '"VSM.DTO.CustomerDisplayDto"'.
+2025-08-07 14:03:13 [Information] Executed action "VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)" in 7.2414ms
+2025-08-07 14:03:13 [Information] Executed endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:03:13 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - 200 null "application/json; charset=utf-8" 8.3385ms
+2025-08-07 14:03:13 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:03:13 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 1ms reading results.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListWhereIterator`1[[VSM.Models.Booking, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:13 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 1ms reading results.
+2025-08-07 14:03:13 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:13 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:03:13 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:03:13 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:03:13 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:03:13 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:03:13 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListWhereIterator`1[[VSM.Models.Booking, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-08-07 14:03:13 [Information] Executed action "VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)" in 15.1666ms
+2025-08-07 14:03:13 [Information] Executed endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:03:13 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - 200 null "application/json; charset=utf-8" 16.038ms
+2025-08-07 14:03:13 [Information] Executed action "VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)" in 19.5557ms
+2025-08-07 14:03:13 [Information] Executed endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:13 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:03:13 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:13 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - 200 null "application/json; charset=utf-8" 20.8271ms
+2025-08-07 14:03:16 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - null null
+2025-08-07 14:03:16 [Debug] 1 candidate(s) found for the request path '"/api/v1/Bill"'
+2025-08-07 14:03:16 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:03:16 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:03:16 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:16 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:16 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:16 [Information] CORS policy execution successful.
+2025-08-07 14:03:16 [Debug] The request is a preflight request.
+2025-08-07 14:03:16 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - 204 null null 0.3552ms
+2025-08-07 14:03:16 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - "application/json" null
+2025-08-07 14:03:16 [Debug] 1 candidate(s) found for the request path '"/api/v1/Bill"'
+2025-08-07 14:03:16 [Debug] Endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Bill"' is valid for the request path '"/api/v1/Bill"'
+2025-08-07 14:03:16 [Debug] Request matched endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:16 [Debug] Successfully validated the token.
+2025-08-07 14:03:16 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:03:16 [Debug] Authorization was successful.
+2025-08-07 14:03:16 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:16 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:03:16 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:03:16 [Information] CORS policy execution successful.
+2025-08-07 14:03:16 [Information] Executing endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:16 [Information] Route matched with "{action = \"GetAll\", controller = \"Bill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.BillDisplayDto]]] GetAll(Int32, Int32, System.String)" on controller "VSM.Controllers.BillController" ("VehicleServiceManagement").
+2025-08-07 14:03:16 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:03:16 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:03:16 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:16 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:03:16 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:03:16 [Debug] Executing controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-08-07 14:03:16 [Debug] Executed controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-08-07 14:03:16 [Debug] Attempting to bind parameter '"page"' of type '"System.Int32"' ...
+2025-08-07 14:03:16 [Debug] Attempting to bind parameter '"page"' of type '"System.Int32"' using the name '"page"' in request data ...
+2025-08-07 14:03:16 [Debug] Done attempting to bind parameter '"page"' of type '"System.Int32"'.
+2025-08-07 14:03:16 [Debug] Done attempting to bind parameter '"page"' of type '"System.Int32"'.
+2025-08-07 14:03:16 [Debug] Attempting to validate the bound parameter '"page"' of type '"System.Int32"' ...
+2025-08-07 14:03:16 [Debug] Done attempting to validate the bound parameter '"page"' of type '"System.Int32"'.
+2025-08-07 14:03:16 [Debug] Attempting to bind parameter '"pageSize"' of type '"System.Int32"' ...
+2025-08-07 14:03:16 [Debug] Attempting to bind parameter '"pageSize"' of type '"System.Int32"' using the name '"pageSize"' in request data ...
+2025-08-07 14:03:16 [Debug] Done attempting to bind parameter '"pageSize"' of type '"System.Int32"'.
+2025-08-07 14:03:16 [Debug] Done attempting to bind parameter '"pageSize"' of type '"System.Int32"'.
+2025-08-07 14:03:16 [Debug] Attempting to validate the bound parameter '"pageSize"' of type '"System.Int32"' ...
+2025-08-07 14:03:16 [Debug] Done attempting to validate the bound parameter '"pageSize"' of type '"System.Int32"'.
+2025-08-07 14:03:16 [Debug] Attempting to bind parameter '"search"' of type '"System.String"' ...
+2025-08-07 14:03:16 [Debug] Attempting to bind parameter '"search"' of type '"System.String"' using the name '""' in request data ...
+2025-08-07 14:03:16 [Debug] Could not find a value in the request with name '""' for binding parameter '"search"' of type '"System.String"'.
+2025-08-07 14:03:16 [Debug] Done attempting to bind parameter '"search"' of type '"System.String"'.
+2025-08-07 14:03:16 [Debug] Done attempting to bind parameter '"search"' of type '"System.String"'.
+2025-08-07 14:03:16 [Debug] Attempting to validate the bound parameter '"search"' of type '"System.String"' ...
+2025-08-07 14:03:16 [Debug] Done attempting to validate the bound parameter '"search"' of type '"System.String"'.
+2025-08-07 14:03:16 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:03:16 [Debug] Creating DbConnection.
+2025-08-07 14:03:16 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:03:16 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:16 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:16 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:03:16 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:16 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:03:16 [Debug] Executing DbCommand [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT b0.\"BillID\", b0.\"Amount\", b0.\"Description\", b0.\"ServiceRecordID\", b0.\"Status\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", b1.\"Amount\", b1.\"BillId\", b1.\"CategoryName\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"Description\", s0.\"IsDeleted\", s0.\"VehicleID\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\", s3.\"CategoryID\", s3.\"Amount\", s3.\"Name\", s3.\"Status\", v.\"IsDeleted\", v.\"VechicleManufacturer\", v.\"VehicleModel\", v.\"VehicleNo\", v.\"VehicleType\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\", m.\"Email\", m.\"Name\", m.\"Phone\", m.\"Status\"
+FROM (
+    SELECT b.\"BillID\", b.\"Amount\", b.\"Description\", b.\"ServiceRecordID\", b.\"Status\"
+    FROM \"Bills\" AS b
+    LIMIT @__p_1 OFFSET @__p_0
+) AS b0
+INNER JOIN \"serviceRecords\" AS s ON b0.\"ServiceRecordID\" = s.\"ServiceRecordID\"
+INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+INNER JOIN \"Vehicles\" AS v ON s0.\"VehicleID\" = v.\"VehicleID\"
+INNER JOIN \"Customers\" AS c ON s.\"CustomerID\" = c.\"CustomerID\"
+INNER JOIN \"Mechanics\" AS m ON s.\"MechanicId\" = m.\"MechanicId\"
+LEFT JOIN \"BillCategoryDetail\" AS b1 ON b0.\"BillID\" = b1.\"BillId\"
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\", s2.\"Status\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s3 ON s0.\"ServiceID\" = s3.\"ServicesServiceID\"
+ORDER BY b0.\"BillID\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\""
+2025-08-07 14:03:16 [Information] Executed DbCommand ("10"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT b0.\"BillID\", b0.\"Amount\", b0.\"Description\", b0.\"ServiceRecordID\", b0.\"Status\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", b1.\"Amount\", b1.\"BillId\", b1.\"CategoryName\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"Description\", s0.\"IsDeleted\", s0.\"VehicleID\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\", s3.\"CategoryID\", s3.\"Amount\", s3.\"Name\", s3.\"Status\", v.\"IsDeleted\", v.\"VechicleManufacturer\", v.\"VehicleModel\", v.\"VehicleNo\", v.\"VehicleType\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\", m.\"Email\", m.\"Name\", m.\"Phone\", m.\"Status\"
+FROM (
+    SELECT b.\"BillID\", b.\"Amount\", b.\"Description\", b.\"ServiceRecordID\", b.\"Status\"
+    FROM \"Bills\" AS b
+    LIMIT @__p_1 OFFSET @__p_0
+) AS b0
+INNER JOIN \"serviceRecords\" AS s ON b0.\"ServiceRecordID\" = s.\"ServiceRecordID\"
+INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+INNER JOIN \"Vehicles\" AS v ON s0.\"VehicleID\" = v.\"VehicleID\"
+INNER JOIN \"Customers\" AS c ON s.\"CustomerID\" = c.\"CustomerID\"
+INNER JOIN \"Mechanics\" AS m ON s.\"MechanicId\" = m.\"MechanicId\"
+LEFT JOIN \"BillCategoryDetail\" AS b1 ON b0.\"BillID\" = b1.\"BillId\"
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\", s2.\"Status\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s3 ON s0.\"ServiceID\" = s3.\"ServicesServiceID\"
+ORDER BY b0.\"BillID\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\""
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Mechanic"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Mechanic"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Mechanic"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:03:16 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:16 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 22ms reading results.
+2025-08-07 14:03:16 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:16 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:16 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:03:16 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:03:16 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:03:16 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:03:16 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:03:16 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListSelectIterator`2[[VSM.Models.Bill, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[VSM.DTO.BillDisplayDto, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-08-07 14:03:16 [Information] Executed action "VSM.Controllers.BillController.GetAll (VehicleServiceManagement)" in 39.7089ms
+2025-08-07 14:03:16 [Information] Executed endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:03:16 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:03:16 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:03:16 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:03:16 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - 200 null "application/json; charset=utf-8" 41.2115ms
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQF"" received FIN.
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQE"" received FIN.
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQF"" is closed. The last processed stream ID was 7.
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQE"" is closed. The last processed stream ID was 7.
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQE"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQF"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-08-07 14:04:27 [Debug] The connection queue processing loop for "0HNEJSG3V4EQF" completed.
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQF"" stopped.
+2025-08-07 14:04:27 [Debug] The connection queue processing loop for "0HNEJSG3V4EQE" completed.
+2025-08-07 14:04:27 [Debug] Connection id ""0HNEJSG3V4EQE"" stopped.
+2025-08-07 14:24:24 [Debug] Connection id ""0HNEJSG3V4EQG"" accepted.
+2025-08-07 14:24:24 [Debug] Connection id ""0HNEJSG3V4EQG"" started.
+2025-08-07 14:24:24 [Debug] Connection "0HNEJSG3V4EQG" established using the following protocol: Tls12
+2025-08-07 14:24:24 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - null null
+2025-08-07 14:24:24 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:24:24 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:24:24 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:24:24 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - null null
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] 1 candidate(s) found for the request path '"/api/v1/Customer/email/Customer1@gmail.com"'
+2025-08-07 14:24:24 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:24:24 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:24 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:24:24 [Information] CORS policy execution successful.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] The request is a preflight request.
+2025-08-07 14:24:24 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:24 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - 204 null null 0.7086ms
+2025-08-07 14:24:24 [Information] CORS policy execution successful.
+2025-08-07 14:24:24 [Debug] The request is a preflight request.
+2025-08-07 14:24:24 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - 204 null null 0.561ms
+2025-08-07 14:24:24 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - "application/json" null
+2025-08-07 14:24:24 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:24:24 [Debug] Endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Booking"' is valid for the request path '"/api/v1/Booking"'
+2025-08-07 14:24:24 [Debug] Request matched endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Debug] Successfully validated the token.
+2025-08-07 14:24:24 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:24:24 [Debug] Authorization was successful.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:24 [Information] CORS policy execution successful.
+2025-08-07 14:24:24 [Information] Executing endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Information] Route matched with "{action = \"GetAll\", controller = \"Booking\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.BookingDisplayDto]]] GetAll()" on controller "VSM.Controllers.BookingController" ("VehicleServiceManagement").
+2025-08-07 14:24:24 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:24 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:24 [Debug] Executing controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:24:24 [Debug] Executed controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:24:24 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:24:24 [Debug] Creating DbConnection.
+2025-08-07 14:24:24 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:24:24 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:24:24 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:24 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:24 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:24:24 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - "application/json" null
+2025-08-07 14:24:24 [Debug] 1 candidate(s) found for the request path '"/api/v1/Customer/email/Customer1@gmail.com"'
+2025-08-07 14:24:24 [Debug] Endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Customer/email/{email}"' is valid for the request path '"/api/v1/Customer/email/Customer1@gmail.com"'
+2025-08-07 14:24:24 [Debug] Request matched endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Debug] Successfully validated the token.
+2025-08-07 14:24:24 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:24:24 [Debug] Authorization was successful.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:24 [Information] CORS policy execution successful.
+2025-08-07 14:24:24 [Information] Executing endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Information] Route matched with "{action = \"GetByEmail\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[VSM.DTO.CustomerDisplayDto]] GetByEmail(System.String)" on controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement").
+2025-08-07 14:24:24 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:24 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:24 [Debug] Executing controller factory for controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement")
+2025-08-07 14:24:24 [Debug] Executed controller factory for controller "VSM.Controllers.CustomerController" ("VehicleServiceManagement")
+2025-08-07 14:24:24 [Debug] Attempting to bind parameter '"email"' of type '"System.String"' ...
+2025-08-07 14:24:24 [Debug] Attempting to bind parameter '"email"' of type '"System.String"' using the name '"email"' in request data ...
+2025-08-07 14:24:24 [Debug] Done attempting to bind parameter '"email"' of type '"System.String"'.
+2025-08-07 14:24:24 [Debug] Done attempting to bind parameter '"email"' of type '"System.String"'.
+2025-08-07 14:24:24 [Debug] Attempting to validate the bound parameter '"email"' of type '"System.String"' ...
+2025-08-07 14:24:24 [Debug] Done attempting to validate the bound parameter '"email"' of type '"System.String"'.
+2025-08-07 14:24:24 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:24:24 [Debug] Creating DbConnection.
+2025-08-07 14:24:24 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:24:24 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:24:24 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:24 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:24 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Customers\" AS c"
+2025-08-07 14:24:24 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Customers\" AS c"
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 0ms reading results.
+2025-08-07 14:24:24 [Information] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:24:24 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:24:24 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:24:24 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:24:24 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Information] Executing "OkObjectResult", writing value of type '"VSM.DTO.CustomerDisplayDto"'.
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Information] Executed action "VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)" in 12.6794ms
+2025-08-07 14:24:24 [Information] Executed endpoint '"VSM.Controllers.CustomerController.GetByEmail (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:24 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Customer/email/Customer1@gmail.com""" - 200 null "application/json; charset=utf-8" 14.6366ms
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 4ms reading results.
+2025-08-07 14:24:24 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:24 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:24:24 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:24:24 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:24:24 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:24:24 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:24:24 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListWhereIterator`1[[VSM.Models.Booking, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-08-07 14:24:24 [Information] Executed action "VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)" in 30.6947ms
+2025-08-07 14:24:24 [Information] Executed endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:24:24 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:24 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - 200 null "application/json; charset=utf-8" 33.8889ms
+2025-08-07 14:24:24 [Debug] Connection id ""0HNEJSG3V4EQH"" accepted.
+2025-08-07 14:24:24 [Debug] Connection id ""0HNEJSG3V4EQH"" started.
+2025-08-07 14:24:24 [Debug] Connection "0HNEJSG3V4EQH" established using the following protocol: Tls12
+2025-08-07 14:24:24 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - null null
+2025-08-07 14:24:24 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:24:24 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:24:24 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:24 [Information] CORS policy execution successful.
+2025-08-07 14:24:24 [Debug] The request is a preflight request.
+2025-08-07 14:24:24 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Booking""" - 204 null null 0.9542ms
+2025-08-07 14:24:24 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - "application/json" null
+2025-08-07 14:24:24 [Debug] 1 candidate(s) found for the request path '"/api/v1/Booking"'
+2025-08-07 14:24:24 [Debug] Endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Booking"' is valid for the request path '"/api/v1/Booking"'
+2025-08-07 14:24:24 [Debug] Request matched endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Debug] Successfully validated the token.
+2025-08-07 14:24:24 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:24:24 [Debug] Authorization was successful.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:24 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:24 [Information] CORS policy execution successful.
+2025-08-07 14:24:24 [Information] Executing endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Information] Route matched with "{action = \"GetAll\", controller = \"Booking\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.BookingDisplayDto]]] GetAll()" on controller "VSM.Controllers.BookingController" ("VehicleServiceManagement").
+2025-08-07 14:24:24 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:24 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:24:24 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:24 [Debug] Executing controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:24:24 [Debug] Executed controller factory for controller "VSM.Controllers.BookingController" ("VehicleServiceManagement")
+2025-08-07 14:24:24 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:24:24 [Debug] Creating DbConnection.
+2025-08-07 14:24:24 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:24:24 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:24:24 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:24 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:24 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:24:24 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT b.\"BookingID\", b.\"BookedAt\", b.\"CustomerID\", b.\"DeliveryTime\", b.\"Imageurl\", b.\"IsDeleted\", b.\"Slot\", b.\"Status\", c.\"CustomerID\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\"
+FROM \"Bookings\" AS b
+INNER JOIN \"Customers\" AS c ON b.\"CustomerID\" = c.\"CustomerID\"
+ORDER BY CASE
+    WHEN b.\"Status\" = 'Booked' THEN 0
+    WHEN b.\"Status\" = 'Reviewed' THEN 1
+    WHEN b.\"Status\" = 'Cancelled' THEN 2
+    ELSE 3
+END"
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] The navigation '"Booking"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Context '"VSMContext"' started tracking '"Booking"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:24 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 2ms reading results.
+2025-08-07 14:24:24 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:24 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:24:24 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:24:24 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:24:24 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:24:24 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:24:24 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListWhereIterator`1[[VSM.Models.Booking, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-08-07 14:24:24 [Information] Executed action "VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)" in 35.0391ms
+2025-08-07 14:24:24 [Information] Executed endpoint '"VSM.Controllers.BookingController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:24 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:24:24 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:24 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:24 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Booking""" - 200 null "application/json; charset=utf-8" 37.835ms
+2025-08-07 14:24:27 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - null null
+2025-08-07 14:24:27 [Debug] 1 candidate(s) found for the request path '"/api/v1/Bill"'
+2025-08-07 14:24:27 [Debug] Request matched endpoint '"405 HTTP Method Not Supported"'
+2025-08-07 14:24:27 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+2025-08-07 14:24:27 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:27 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:27 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:27 [Information] CORS policy execution successful.
+2025-08-07 14:24:27 [Debug] The request is a preflight request.
+2025-08-07 14:24:27 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - 204 null null 0.3466ms
+2025-08-07 14:24:27 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - "application/json" null
+2025-08-07 14:24:27 [Debug] 1 candidate(s) found for the request path '"/api/v1/Bill"'
+2025-08-07 14:24:27 [Debug] Endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"' with route pattern '"api/v{version:apiVersion}/Bill"' is valid for the request path '"/api/v1/Bill"'
+2025-08-07 14:24:27 [Debug] Request matched endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:27 [Debug] Successfully validated the token.
+2025-08-07 14:24:27 [Debug] AuthenticationScheme: "Bearer" was successfully authenticated.
+2025-08-07 14:24:27 [Debug] Authorization was successful.
+2025-08-07 14:24:27 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:27 [Debug] Static files was skipped as the request already matched an endpoint.
+2025-08-07 14:24:27 [Debug] The request has an origin header: '"http://localhost:4200"'.
+2025-08-07 14:24:27 [Information] CORS policy execution successful.
+2025-08-07 14:24:27 [Information] Executing endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:27 [Information] Route matched with "{action = \"GetAll\", controller = \"Bill\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[VSM.DTO.BillDisplayDto]]] GetAll(Int32, Int32, System.String)" on controller "VSM.Controllers.BillController" ("VehicleServiceManagement").
+2025-08-07 14:24:27 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2025-08-07 14:24:27 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2025-08-07 14:24:27 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:27 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2025-08-07 14:24:27 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2025-08-07 14:24:27 [Debug] Executing controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-08-07 14:24:27 [Debug] Executed controller factory for controller "VSM.Controllers.BillController" ("VehicleServiceManagement")
+2025-08-07 14:24:27 [Debug] Attempting to bind parameter '"page"' of type '"System.Int32"' ...
+2025-08-07 14:24:27 [Debug] Attempting to bind parameter '"page"' of type '"System.Int32"' using the name '"page"' in request data ...
+2025-08-07 14:24:27 [Debug] Done attempting to bind parameter '"page"' of type '"System.Int32"'.
+2025-08-07 14:24:27 [Debug] Done attempting to bind parameter '"page"' of type '"System.Int32"'.
+2025-08-07 14:24:27 [Debug] Attempting to validate the bound parameter '"page"' of type '"System.Int32"' ...
+2025-08-07 14:24:27 [Debug] Done attempting to validate the bound parameter '"page"' of type '"System.Int32"'.
+2025-08-07 14:24:27 [Debug] Attempting to bind parameter '"pageSize"' of type '"System.Int32"' ...
+2025-08-07 14:24:27 [Debug] Attempting to bind parameter '"pageSize"' of type '"System.Int32"' using the name '"pageSize"' in request data ...
+2025-08-07 14:24:27 [Debug] Done attempting to bind parameter '"pageSize"' of type '"System.Int32"'.
+2025-08-07 14:24:27 [Debug] Done attempting to bind parameter '"pageSize"' of type '"System.Int32"'.
+2025-08-07 14:24:27 [Debug] Attempting to validate the bound parameter '"pageSize"' of type '"System.Int32"' ...
+2025-08-07 14:24:27 [Debug] Done attempting to validate the bound parameter '"pageSize"' of type '"System.Int32"'.
+2025-08-07 14:24:27 [Debug] Attempting to bind parameter '"search"' of type '"System.String"' ...
+2025-08-07 14:24:27 [Debug] Attempting to bind parameter '"search"' of type '"System.String"' using the name '""' in request data ...
+2025-08-07 14:24:27 [Debug] Could not find a value in the request with name '""' for binding parameter '"search"' of type '"System.String"'.
+2025-08-07 14:24:27 [Debug] Done attempting to bind parameter '"search"' of type '"System.String"'.
+2025-08-07 14:24:27 [Debug] Done attempting to bind parameter '"search"' of type '"System.String"'.
+2025-08-07 14:24:27 [Debug] Attempting to validate the bound parameter '"search"' of type '"System.String"' ...
+2025-08-07 14:24:27 [Debug] Done attempting to validate the bound parameter '"search"' of type '"System.String"'.
+2025-08-07 14:24:27 [Debug] Entity Framework Core "9.0.5" initialized '"VSMContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5"' with options: "None"
+2025-08-07 14:24:27 [Debug] Creating DbConnection.
+2025-08-07 14:24:27 [Debug] Created DbConnection. (0ms).
+2025-08-07 14:24:27 [Debug] Opening connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:27 [Debug] Opened connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:27 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2025-08-07 14:24:27 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:27 [Debug] Initialized DbCommand for '"ExecuteReader"' (0ms).
+2025-08-07 14:24:27 [Debug] Executing DbCommand [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT b0.\"BillID\", b0.\"Amount\", b0.\"Description\", b0.\"ServiceRecordID\", b0.\"Status\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", b1.\"Amount\", b1.\"BillId\", b1.\"CategoryName\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"Description\", s0.\"IsDeleted\", s0.\"VehicleID\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\", s3.\"CategoryID\", s3.\"Amount\", s3.\"Name\", s3.\"Status\", v.\"IsDeleted\", v.\"VechicleManufacturer\", v.\"VehicleModel\", v.\"VehicleNo\", v.\"VehicleType\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\", m.\"Email\", m.\"Name\", m.\"Phone\", m.\"Status\"
+FROM (
+    SELECT b.\"BillID\", b.\"Amount\", b.\"Description\", b.\"ServiceRecordID\", b.\"Status\"
+    FROM \"Bills\" AS b
+    LIMIT @__p_1 OFFSET @__p_0
+) AS b0
+INNER JOIN \"serviceRecords\" AS s ON b0.\"ServiceRecordID\" = s.\"ServiceRecordID\"
+INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+INNER JOIN \"Vehicles\" AS v ON s0.\"VehicleID\" = v.\"VehicleID\"
+INNER JOIN \"Customers\" AS c ON s.\"CustomerID\" = c.\"CustomerID\"
+INNER JOIN \"Mechanics\" AS m ON s.\"MechanicId\" = m.\"MechanicId\"
+LEFT JOIN \"BillCategoryDetail\" AS b1 ON b0.\"BillID\" = b1.\"BillId\"
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\", s2.\"Status\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s3 ON s0.\"ServiceID\" = s3.\"ServicesServiceID\"
+ORDER BY b0.\"BillID\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\""
+2025-08-07 14:24:27 [Information] Executed DbCommand ("7"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT b0.\"BillID\", b0.\"Amount\", b0.\"Description\", b0.\"ServiceRecordID\", b0.\"Status\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", b1.\"Amount\", b1.\"BillId\", b1.\"CategoryName\", s.\"BookingID\", s.\"CustomerID\", s.\"IsDeleted\", s.\"MechanicId\", s.\"ServiceID\", s.\"Status\", s0.\"Description\", s0.\"IsDeleted\", s0.\"VehicleID\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\", s3.\"CategoryID\", s3.\"Amount\", s3.\"Name\", s3.\"Status\", v.\"IsDeleted\", v.\"VechicleManufacturer\", v.\"VehicleModel\", v.\"VehicleNo\", v.\"VehicleType\", c.\"Email\", c.\"Name\", c.\"Phone\", c.\"Status\", m.\"Email\", m.\"Name\", m.\"Phone\", m.\"Status\"
+FROM (
+    SELECT b.\"BillID\", b.\"Amount\", b.\"Description\", b.\"ServiceRecordID\", b.\"Status\"
+    FROM \"Bills\" AS b
+    LIMIT @__p_1 OFFSET @__p_0
+) AS b0
+INNER JOIN \"serviceRecords\" AS s ON b0.\"ServiceRecordID\" = s.\"ServiceRecordID\"
+INNER JOIN \"Services\" AS s0 ON s.\"ServiceID\" = s0.\"ServiceID\"
+INNER JOIN \"Vehicles\" AS v ON s0.\"VehicleID\" = v.\"VehicleID\"
+INNER JOIN \"Customers\" AS c ON s.\"CustomerID\" = c.\"CustomerID\"
+INNER JOIN \"Mechanics\" AS m ON s.\"MechanicId\" = m.\"MechanicId\"
+LEFT JOIN \"BillCategoryDetail\" AS b1 ON b0.\"BillID\" = b1.\"BillId\"
+LEFT JOIN (
+    SELECT s1.\"ServiceCategoriesCategoryID\", s1.\"ServicesServiceID\", s2.\"CategoryID\", s2.\"Amount\", s2.\"Name\", s2.\"Status\"
+    FROM \"ServiceServiceCategory\" AS s1
+    INNER JOIN \"ServiceCategories\" AS s2 ON s1.\"ServiceCategoriesCategoryID\" = s2.\"CategoryID\"
+) AS s3 ON s0.\"ServiceID\" = s3.\"ServicesServiceID\"
+ORDER BY b0.\"BillID\", s.\"ServiceRecordID\", s0.\"ServiceID\", v.\"VehicleID\", c.\"CustomerID\", m.\"MechanicId\", b1.\"Id\", s3.\"ServiceCategoriesCategoryID\", s3.\"ServicesServiceID\""
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Mechanic"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Mechanic"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Mechanic"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."Vehicle"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Vehicle"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Customer"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Customer"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Bill"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Mechanic"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Bill"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Bill"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceRecord"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"Service"."ServiceRecord"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] The navigation '"ServiceRecord"."Service"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"Service"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"ServiceServiceCategory"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Context '"VSMContext"' started tracking '"BillCategoryDetail"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-07 14:24:27 [Debug] Closing data reader to '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:27 [Debug] A data reader for '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' is being disposed after spending 20ms reading results.
+2025-08-07 14:24:27 [Debug] Closing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:27 [Debug] Closed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:27 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-07 14:24:27 [Debug] No information found on request to perform content negotiation.
+2025-08-07 14:24:27 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-07 14:24:27 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-07 14:24:27 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2025-08-07 14:24:27 [Information] Executing "OkObjectResult", writing value of type '"System.Linq.Enumerable+ListSelectIterator`2[[VSM.Models.Bill, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[VSM.DTO.BillDisplayDto, VehicleServiceManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-08-07 14:24:27 [Information] Executed action "VSM.Controllers.BillController.GetAll (VehicleServiceManagement)" in 28.9728ms
+2025-08-07 14:24:27 [Information] Executed endpoint '"VSM.Controllers.BillController.GetAll (VehicleServiceManagement)"'
+2025-08-07 14:24:27 [Debug] '"VSMContext"' disposed.
+2025-08-07 14:24:27 [Debug] Disposing connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"'.
+2025-08-07 14:24:27 [Debug] Disposed connection to database '"VehicleServiceManagement"' on server '"tcp://localhost:5432"' (0ms).
+2025-08-07 14:24:27 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7176""""/api/v1/Bill""?page=1&pageSize=100" - 200 null "application/json; charset=utf-8" 29.5912ms
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQG"" received FIN.
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQH"" received FIN.
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQG"" is closed. The last processed stream ID was 7.
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQG"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQH"" is closed. The last processed stream ID was 7.
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQH"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2025-08-07 14:26:00 [Debug] The connection queue processing loop for "0HNEJSG3V4EQG" completed.
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQG"" stopped.
+2025-08-07 14:26:00 [Debug] The connection queue processing loop for "0HNEJSG3V4EQH" completed.
+2025-08-07 14:26:00 [Debug] Connection id ""0HNEJSG3V4EQH"" stopped.

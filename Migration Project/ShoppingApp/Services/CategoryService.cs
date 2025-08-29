@@ -18,7 +18,7 @@ namespace ShoppingApp.Services
 
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
-            return await _context.Categories.OrderBy(c => c.Name).ToListAsync();
+            return await _context.Categories.OrderBy(c => c.CategoryId).ToListAsync();
         }
 
         public async Task<Category?> GetByIdAsync(int id)
